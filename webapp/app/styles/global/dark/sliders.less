@@ -1,0 +1,314 @@
+/*-----------------------------------*/
+/* Sliders */
+/*-----------------------------------*/
+
+/*
+    - Content image sliders
+    - Most commented slider
+    - Feature slider
+    - Image Slider
+*/
+
+
+
+/*-----------------------------------*/
+/* Content image sliders */
+/*-----------------------------------*/
+
+.caroufredsel_wrapper{margin: 0 auto !important;}
+
+.carouFredsel{
+  position: relative;
+  z-index: 0;
+  /*margin-bottom: 50px;*/
+  height: 150px;
+}
+//新添加
+.carouFredsel img{
+  height: 100%
+}
+//新添加
+.carouFredsel.style2,
+.carouFredsel.style3 {
+  height: 130px;
+}
+.carouFredsel li{
+  float: left;
+  position: relative;
+}
+.carousel-image{
+  overflow: hidden;
+  height: 141px;
+}
+.carouFredsel .carousel-image {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.carouFredsel .carousel-image img {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+.carouFredsel.style2 .carousel-image,
+.carouFredsel.style3 .carousel-image {
+  height: 120px;
+}
+.carouFredsel li:hover .carousel-image a{
+  display:block;
+  background: #1d1610 url(../../../images/global/dark/icons/hover.png) center 50px no-repeat;
+}
+.carouFredsel.feature li:hover .carousel-image,
+.carouFredsel.most-commented li:hover .carousel-image{
+  background: none;
+}
+.carouFredsel li:hover .carousel-title,
+.carouFredsel.style3.gradient-inverse li:hover .carousel-title{
+  display: none;
+}
+.carouFredsel.feature li:hover .carousel-title,
+.carouFredsel.most-commented li:hover .carousel-title{
+  display: block;
+}
+.carousel-title {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px 15px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICAgIDxzdG9wIG9mZnNldD0iNzIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.65) 72%, rgba(0,0,0,0) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.9)), color-stop(72%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.65) 72%,rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.65) 72%,rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.65) 72%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.65) 72%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=1 );
+  border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+}
+.carousel-title p{
+  text-shadow: none;
+  color: #fff;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.carouFredsel .prev,
+.carouFredsel .next{
+  display: block;
+  width: 9px;
+  height: 141px;
+  overflow: hidden;
+  text-indent: 100px;
+  background-image: url(../../../images/global/dark/caroufredsel_controls.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+}
+.carouFredsel.style2 .prev,
+.carouFredsel.style2 .next,
+.carouFredsel.style3 .prev,
+.carouFredsel.style3 .next {
+  height: 120px;
+}
+.carouFredsel .prev{background-position: left center; left:0;}
+.carouFredsel .next{background-position: right center; right:0;}
+
+.col-sm-12 .carouFredsel .prev{left:6px;}
+.col-sm-12 .carouFredsel .next{right:6px;}
+.col-sm-8 .carouFredsel .prev{left:8px;}
+.col-sm-8 .carouFredsel .next{right:8px;}
+.col-sm-6 .carouFredsel .prev{left:18px;}
+.col-sm-6 .carouFredsel .next{right:18px;}
+.col-sm-4 .carouFredsel .prev{left:35px;}
+.col-sm-4 .carouFredsel .next{right:35px;}
+
+@media (max-width: 991px) and (min-width: 768px){
+  .col-sm-8 .carouFredsel .prev{left:28px;}
+  .col-sm-8 .carouFredsel .next{right:28px;}
+  .col-sm-6 .carouFredsel .prev{left:58px;}
+  .col-sm-6 .carouFredsel .next{right:58px;}
+  .col-sm-4 .carouFredsel .prev{left:0;}
+  .col-sm-4 .carouFredsel .next{right:0;}
+}
+@media (max-width: 767px){
+  .carouFredsel .prev{left:5px !important;}
+  .carouFredsel .next{right:5px !important;}
+}
+
+.carouFredsel li{
+  width: 220px;
+  height: 141px;
+  margin: 0 1px;
+}
+.carouFredsel.style2 li,
+.carouFredsel.style3 li {
+  width: 186px;
+  height: 120px;
+  margin: 0 1px;
+}
+.carouFredsel.style3 li {margin: 0 6px;}
+
+.carouFredsel .carousel-title {
+  top: 44px;
+  left: 6px;
+  right: 6px;
+  bottom: auto;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+.carouFredsel.style3 .carousel-title {
+  top: auto;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+.carouFredsel.style3.gradient-inverse .carousel-title {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjY1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC45Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 28%, rgba(0,0,0,0.9) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(28%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.9)));
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.9) 100%);
+  background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.9) 100%);
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.9) 100%);
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 28%,rgba(0,0,0,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e6000000',GradientType=1 );
+  text-align: right;
+}
+
+/*-----------------------------------*/
+/* Most commented slider */
+/*-----------------------------------*/
+
+.carouFredsel.most-commented{
+  background: none;
+  padding: 0;
+  height: auto;
+}
+.carouFredsel.most-commented li {height: 194px;}
+
+.carouFredsel.most-commented .carousel-title{
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 2px 3px;
+  background: none;
+  filter:none;
+}
+.carouFredsel.most-commented .carousel-title p{
+  font-size: @font-size + 1;
+  padding-left: 10px;
+  color: #7b8e9f;
+  line-height: 18px;
+}
+
+/*-----------------------------------*/
+/* Feature slider */
+/*-----------------------------------*/
+
+.carouFredsel.feature{
+  height: 306px;
+  border-top: 1px solid #596775;
+  border-left: 1px solid #596775;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  .border-radius(@border-radius * 1.2);
+  background: url(../../../images/global/dark/bg-widget.png) repeat;
+  position: relative;
+  z-index: 0;
+  padding: 5px 5px 9px;
+  margin-bottom: 50px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.carouFredsel.feature li{
+  height: 300px;
+  margin: 4px 2px 0;
+}
+.carouFredsel.feature li{width: 236px;}
+.carouFredsel.feature li.wide{width: 440px;}
+@media (max-width:479px){
+    .carouFredsel.feature li.wide{display: none;}
+}
+.carouFredsel.feature .carousel-image{height: 300px;}
+
+.carouFredsel.feature .prev,
+.carouFredsel.feature .next{
+  width: 23px;
+  height: 60px;
+  background-image: url(../../../images/global/dark/caroufredsel_controls3.png);
+  top:133px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  background-color: transparent;
+}
+.carouFredsel.feature .prev{left:4px; background-position: top left;}
+.carouFredsel.feature .next{right:4px; background-position: top right;}
+
+.carouFredsel.feature .carousel-title {
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  .border-radius-bottom(@border-radius * 1.2);
+}
+.carouFredsel.feature .carousel-title h5{
+  text-shadow: none;
+  color: #fff;
+  margin: 0;
+  white-space: nowrap;
+  height: 48px;
+  line-height: 48px;
+  display: inline-block;
+  padding-left: 24px;
+}
+.ico-feature{
+  width:26px;
+  height:26px;
+  background-image: url(../../../images/global/dark/icons/feature_icon.png);
+  position: absolute;
+  top: -241px;
+  left: 13px;
+}
+.ico-feature.ico-feature1{background-position: left 0;}
+.ico-feature.ico-feature2{background-position: left -26px;}
+
+.carouFredsel.feature .badge{
+  position: absolute;
+  top: -4px;
+  right: -3px;
+}
+
+/*-----------------------------------*/
+/* Image Slider */
+/*-----------------------------------*/
+
+.widget_gallery{margin-bottom: 50px;}
+.widget_gallery .carousel-inner {height: 230px;}
+.widget_gallery .carousel-inner > .item{height: 230px !important;}
+.widget_gallery .carousel-control {top: 82px;}
+.widget_gallery .carousel-indicators {top: 21px;}

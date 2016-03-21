@@ -1,0 +1,76 @@
+/*
+ *
+ *  * custom.css
+ *  * Created on 16-2-21 上午10:12 by wuyufei
+ *  *
+ *  * Copyright (c) ByseeCloud 2011-2016.
+ *  * All rights reserved.
+ *  *
+ *  * This software is furnished under a license. Use, duplication,
+ *  * disclosure and all other uses are restricted to the rights
+ *  * specified in the written license agreement.
+ *
+ */
+/*-----------------logo----------------------- */
+.logo {
+	margin: 10px 10px 10px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.logo, .site-name-and-slogan {
+	float: left;
+}
+.site-name {
+	padding-top:25px;
+	font-size: 36px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.header-right {
+	float: right;
+}
+.user, .language {
+	float: right;
+}
+.language {
+	margin-top: 10px;
+}
+.language img{
+	cursor:pointer;
+}
+#ngProcess {
+  position: relative;
+}
+.big-data-menu-reconfig {
+	border-radius: 0px;
+	border-left: 0px solid #525B68;
+}
+/*覆盖原有样式*/
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+}
+.boxed-velvet.widget_search.styled .inner {
+    padding: 6px !important;
+}
+
+.widget_userInfo {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #293038;
+    float: left;
+    margin-right: 12px;
+}
+.widget_subtitle {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #CC7B4C;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}

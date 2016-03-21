@@ -1,0 +1,48 @@
+/*-----------------------------------*/
+/* Pagination */
+/*-----------------------------------*/
+
+.tf_pagination{
+  margin-bottom: 20px;
+}
+.tf_pagination .inner, .tf_pagination .inner .inner_links{
+  background-image: url(../../../images/global/dark/buttons.png);
+  background-repeat: no-repeat;
+  background-position: right -37px;
+}
+.tf_pagination.style2 .inner{background-position: right -333px;}
+
+.tf_pagination .inner{
+  display: inline-block;
+  padding-right: 20px;
+  margin:0 8px;
+  box-shadow: 0 15px 12px -16px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 15px 12px -16px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 15px 12px -16px rgba(0, 0, 0, 0.8);
+  vertical-align: bottom;
+}
+.tf_pagination .inner .inner_links{
+  padding-left: 20px;
+  background-position: left 0;
+}
+.tf_pagination.style2 .inner .inner_links{background-position: left -296px;}
+
+.tf_pagination .page-numbers{
+  display: inline-block;
+  height:37px;
+  line-height: 37px;
+  padding:0 2px;
+  color: #fefae5;
+  text-shadow: 1px 1px 1px rgba(161,75,39,0.43);
+}
+.tf_pagination .page-numbers:hover,
+.tf_pagination .page-numbers.page_current{color: #332826;}
+
+/* Responsive */
+@media (max-width:479px){
+    .tf_pagination .page_prev,
+    .tf_pagination .page_next,
+    .tf_pagination .inner{
+		margin-bottom:10px;
+	}
+}

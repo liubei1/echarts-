@@ -1,0 +1,179 @@
+/*-----------------------------------*/
+/* Filters */
+/*-----------------------------------*/
+
+/*
+    - Horizontal Filter
+    - Categories Filter
+    - Checkbox Filter, Radiobox Filter
+    - Filter Results
+*/
+
+
+
+/*-----------------------------------*/
+/* Horizontal Filter */
+/*-----------------------------------*/
+
+.blog_filter {
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 767px){
+  .blog_filter{margin-left: 10px; margin-right: 10px;}
+}
+
+.blog_filter ul {
+  border-top: 1px dashed #bfbfbf;
+  border-bottom: 1px dashed #bfbfbf;
+}
+.blog_filter.boxed ul {border: 0 none;}
+
+.blog_filter ul li {
+  display: inline-block;
+}
+.blog_filter .ico-cat{
+  width:25px;
+  height:30px;
+  background-image:url(../../../images/global/arctic/icons/categories_icons2.png);
+  vertical-align: middle;
+  margin-right: 11px;
+  top:0;
+  left: 7px;
+}
+.blog_filter.boxed .ico-cat{
+  background-image:url(../../../images/global/arctic/icons/categories_icons.png);
+}
+.blog_filter .ico-cat.ico-cat1{background-position: 0 0;}
+.blog_filter .ico-cat.ico-cat2{background-position: -25px 0;}
+.blog_filter .ico-cat.ico-cat3{background-position: -50px 0;}
+.blog_filter .ico-cat.ico-cat4{background-position: -75px 0;}
+.blog_filter .ico-cat.ico-cat5{background-position: -100px 0;}
+.blog_filter .ico-cat.ico-cat6{background-position: -125px 0;}
+
+.blog_filter li a:hover .ico-cat1, .blog_filter li.current-menu-item .ico-cat1{background-position: 0 -30px;}
+.blog_filter li a:hover .ico-cat2, .blog_filter li.current-menu-item .ico-cat2{background-position: -25px -30px;}
+.blog_filter li a:hover .ico-cat3, .blog_filter li.current-menu-item .ico-cat3{background-position: -50px -30px;}
+.blog_filter li a:hover .ico-cat4, .blog_filter li.current-menu-item .ico-cat4{background-position: -75px -30px;}
+.blog_filter li a:hover .ico-cat5, .blog_filter li.current-menu-item .ico-cat5{background-position: -100px -30px;}
+.blog_filter li a:hover .ico-cat6, .blog_filter li.current-menu-item .ico-cat6{background-position: -125px -30px;}
+
+.blog_filter.boxed .ico-cat.ico-cat2,
+.blog_filter.boxed .ico-cat.ico-cat5{top:-2px;}
+
+.blog_filter a {
+  display: inline-block;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 10px;
+  font-size: @font-size + 1;
+  font-weight: 700;
+  color:#878787;
+  text-shadow: 0 2px 0 #fff;
+  position: relative;
+  white-space: nowrap;
+}
+.blog_filter a:hover, .blog_filter li.current-menu-item a {color:#292929;}
+.blog_filter.boxed a:hover, .blog_filter.boxed li.current-menu-item a {color: @link-color-hover;}
+.blog_filter .note{top:10px; right:-4px;}
+
+
+/*-----------------------------------*/
+/* Categories Filter */
+/*-----------------------------------*/
+
+.widget_categories_filter .counter{
+  display: inline-block;
+  width:34px;
+  height:18px;
+  line-height: 18px;
+  font-size: @font-size - 3;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  float: right;
+  margin-top: 4px;
+  background: #878787;
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow:inset 0 0 1px #fff;
+  -webkit-box-shadow:inset 0 0 1px #fff;
+  -moz-box-shadow:inset 0 0 1px #fff;
+}
+
+/*-----------------------------------*/
+/* Checkbox Filter, Radiobox Filter */
+/*-----------------------------------*/
+
+.widget_checkbox_filter .counter{float: right;}
+.widget_checkbox_filter label:hover, .widget_adv_filter label:hover{color: @link-color-hover;}
+.widget_checkbox_filter .custom-checkbox label {margin: 0 0 10px 0;}
+.widget_radio_filter label {
+  float: left;
+  margin-bottom: 7px;
+}
+.widget_checkbox_filter .rowSubmit,
+.widget_radio_filter .rowSubmit{
+  text-align: center;
+}
+.widget_checkbox_filter .inner,
+.widget_radio_filter .inner{
+  padding:21px 24px 10px;
+}
+.widget_checkbox_filter .widget-title,
+.widget_radio_filter .widget-title{
+  margin-bottom: 24px;
+}
+.widget_checkbox_filter .divider{margin:11px 0 12px !important;}
+.widget_radio_filter .divider{margin:10px 0 10px !important;}
+
+/*-----------------------------------*/
+/* Filter Results */
+/*-----------------------------------*/
+
+.widget_adv_filter .inner{padding: 0 1px;}
+
+.widget_adv_filter .adv_block{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dedede;
+  padding: 18px 25px;
+}
+.widget_adv_filter .rowSubmit.adv_block{
+  border-bottom: 0 none;
+  padding: 9px 25px;
+}
+.widget_adv_filter .widget-title{
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 0;
+  padding: 20px 25px 18px;
+}
+.input_date{position: relative;}
+
+.input_date .input_icon{
+  background:url(../../../images/global/arctic/icons/calendar.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 26px;
+  right: 36px;
+}
+.widget_adv_filter .rowSubmit{
+  text-align: center;
+}
+.widget_adv_filter .field_text {
+  float: none;
+  margin: 0;
+  width: auto;
+}
+.widget_adv_filter h6{
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+.widget_adv_filter .custom-checkbox label,
+.widget_adv_filter .custom-radio label{
+  margin-bottom: 10px;
+  padding:0 0 0 36px;
+}
+.range-slider{margin: 46px 0 16px;}

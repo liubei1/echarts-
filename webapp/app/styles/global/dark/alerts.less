@@ -1,0 +1,60 @@
+/*-----------------------------------*/
+/* Info Boxes */
+/*-----------------------------------*/
+
+.info-boxes{margin-bottom: 70px;}
+
+.alert{
+  position: relative;
+  margin-bottom: 24px;
+  padding: 0;
+  border: 0 none;
+  background: #41818b;
+  text-shadow: none;
+}
+.alert.alert-warning{background: #dfc84a;}
+.alert.alert-error{background: #804b3f;}
+.alert.alert-success{background: #3d5331;}
+
+.alert-body{padding: 24px 20px 24px 56px;}
+
+.alert .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  float: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  overflow: hidden;
+  text-indent: 1200px;
+  background-color: rgba(0,0,0,0);
+}
+.alert span, .alert p{
+  display: inline-block;
+  margin: 0;
+  font-size: @font-size * 1.22;
+  line-height: 23px;
+}
+.alert p{padding-left: 3px; font-weight: 600;}
+.alert span, .alert p{color: #a3eafb;}
+.alert.alert-warning span, .alert.alert-warning p{color: #815501;}
+.alert.alert-error span, .alert.alert-error p{color: #f27b55;}
+.alert.alert-success span, .alert.alert-success p{color: #a3c945;}
+
+.alert .alert-label{
+  position: absolute;
+  top:15px;
+  left:-34px;
+  z-index: 2;
+  width: 82px;
+  height: 50px;
+  background-image: url(../../../images/global/dark/icons/infobox_label.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin: 0;
+}
+.alert.alert-warning .alert-label{background-position:center -50px;}
+.alert.alert-error .alert-label{background-position:center -100px;}
+.alert.alert-success .alert-label{background-position:center -150px;}

@@ -1,0 +1,142 @@
+/*-----------------------------------*/
+/* Footers */
+/*-----------------------------------*/
+
+footer {padding-bottom: 80px;}
+
+/*-----------------------------------*/
+/* Footer Default Style */
+/*-----------------------------------*/
+
+.footer {
+  padding-bottom: 50px;
+  position: relative;
+}
+.footer .divider-top,
+.footer .divider-bottom{
+  border-top: 1px dashed #bfbfbf;
+  border-bottom: 1px dashed #fff;
+  margin-bottom: 36px;
+}
+.footer-menu {margin-bottom: 34px;}
+
+.footer-menu h6 {
+  font-size: @font-size * 1.08;
+  color: #f0a02e;
+  text-transform: uppercase;
+  text-shadow: none;
+  margin-bottom:18px;
+}
+.footer-menu li{margin-bottom: 14px;}
+
+.footer-menu a,
+.footer-menu span {
+  font-size: @font-size * 0.92;
+}
+.footer-bottom {
+  margin-bottom: 16px;
+  position: relative;
+}
+.footer-bottom a,
+.footer-bottom span{
+  display: block;
+  font-size: @font-size * 0.92;
+  padding-left: 30px;
+}
+.footer-bottom.copyright {text-align: right;}
+.footer-bottom.copyright span {padding-left: 0;}
+
+.ico-footer-support {
+  width: 25px;
+  height: 20px;
+  background: url(../../../images/global/chubby/icons/footer-support.png) 0 0 no-repeat;
+  margin: 0;
+  position: absolute;
+  top: -3px;
+  left: -1px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .ico-footer-support {
+    background-image: url(../../../images/global/chubby/icons/footer-support-x2.png);
+    background-size: 50px auto;
+  }
+}
+.ico-footer-support2 {background-position: 0 -20px;}
+.ico-footer-support3 {background-position: 0 -40px;}
+
+@media (max-width: 767px) {
+  .footer-bottom.copyright {text-align: left;}
+}
+
+/*-----------------------------------*/
+/* Footer Dark */
+/*-----------------------------------*/
+
+.footer-dark {
+  background: #1f2020;
+  text-shadow: none;
+  padding: 42px 0 34px;
+}
+.footer-dark:before {
+  content: '';
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.footer-dark .divider-top{display: none;}
+.footer-dark .divider-bottom{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #444;
+  margin-bottom: 45px;
+}
+.footer-dark .footer-menu {margin-bottom: 46px;}
+.footer-dark .footer-menu h6 {color: #fff;}
+
+.footer-dark .footer-menu a,
+.footer-dark .footer-menu span {
+  color: #8c8c8c;
+}
+.footer-dark .footer-bottom a,
+.footer-dark .footer-bottom span {
+  color: #737373;
+}
+.footer-dark .footer-menu a:hover,
+.footer-dark .footer-bottom a:hover {
+  color: @link-color-hover;
+}
+.footer-dark .ico-footer-support {background-position: -25px 0;}
+.footer-dark .ico-footer-support2 {background-position: -25px -20px;}
+.footer-dark .ico-footer-support3 {background-position: -25px -40px;}
+
+/*-----------------------------------*/
+/* Footer Light */
+/*-----------------------------------*/
+
+.footer-light {
+  padding: 50px 0;
+  background: #fbfbfb;
+  border-top: 1px solid #dfdcd6;
+  border-bottom: 1px solid #dfdcd6;
+  -webkit-box-shadow: 0 1px 1px rgba(224,222,220,0.75);
+  box-shadow: 0 1px 1px rgba(224,222,220,0.75);
+}
+.footer-light:after {
+  content: '';
+  height: 4px;
+  background: #fbfbfb;
+  border-bottom: 1px solid #dfdcd6;
+  -webkit-box-shadow: 0 1px 1px rgba(224,222,220,0.75);
+  box-shadow: 0 1px 1px rgba(224,222,220,0.75);
+  position: absolute;
+  bottom:-6px;
+  left: 0;
+  right: 0;
+}
+.footer-light .divider-top{display: none;}
+.footer-light .divider-bottom{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #fff;
+}

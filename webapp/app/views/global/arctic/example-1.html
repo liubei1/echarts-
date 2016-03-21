@@ -1,0 +1,541 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]--> 
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arctic Sunset | Homepage Example</title>
+
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.10.0.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+
+<!-- Style CSS-->
+<link href="style.less" media="screen" rel="stylesheet/less" type="text/css">
+
+<!-- scripts  -->
+<script src="js/general.js"></script>
+<!-- Placeholders -->
+<script type="text/javascript" src="js/jquery.powerful-placeholder.min.js"></script>
+<!-- Lightbox prettyPhoto -->
+<script src="js/jquery.prettyPhoto.js"></script>
+<!-- PlaySlider -->
+<script type="text/javascript" src="js/playSlider.js"></script>
+<!-- Audio Player  -->
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function(){
+
+        new jPlayerPlaylist({
+            jPlayer: "#jquery_jplayer_1",
+            cssSelectorAncestor: "#jp_container_1"
+        }, [
+            {
+                title:"",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+            },
+            {
+                title:"",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+            },
+            {
+                title:"",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            }
+        ], {
+            swfPath: "js",
+            supplied: "oga, mp3",
+            wmode: "window",
+            smoothPlayBar: false,
+            keyEnabled: false
+        });
+    });
+    //]]>
+</script>
+
+<!-- CarouFredSel  -->
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+
+        $('#carouFredsel-6').carouFredSel({
+            next : "#carousel-next-6",
+            prev : "#carousel-prev-6",
+            auto: false,
+            scroll: {items : 1}
+        });
+
+        $(window).resize(function() {
+            $('#carouFredsel-6').carouFredSel({
+                next : "#carousel-next-6",
+                prev : "#carousel-prev-6",
+                auto: false,
+                scroll: {items : 1}
+            });
+        })
+    });
+</script>
+
+<!-- LESS -->
+<script src="js/libs/less.js"></script>
+
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<body>
+
+    <!-- Header-->
+    <div class="header">
+        <div class="header-inner">
+            <!-- container-->
+            <div class="container">
+                <!-- row-->
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <!-- Main Slider -->
+                        <div class="playSlider">
+                            <ul class="slide-content">
+                                <li>
+                                    <div class="textHolder">
+                                        <h3>01. MTV Europe</h3>
+                                        <p><strong><a href="#">MTV Europe</a></strong><span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>
+                                    </div>
+                                    <img src="images/temp/top-slider-1.jpg" alt="" />
+                                </li>
+
+                                <li>
+                                    <div class="textHolder">
+                                        <h3>02. Pixar Up Movie</h3>
+                                        <p><strong><a href="#">Fan of Pixar movie UP takes to the skies</a></strong><span>We helped Glade Inc. design their latest fragrance for househould perfumes</span></p>
+                                    </div>
+                                    <img src="images/temp/top-slider-2.jpg" alt="" />
+                                </li>
+
+                                <li>
+                                    <div class="textHolder">
+                                        <h3>03. Scotch &amp; Soda</h3>
+                                        <p><strong><a href="#">Scotch &amp; Soda</a></strong><span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>
+                                    </div>
+                                    <img src="images/temp/top-slider-3.jpg" alt="" />
+                                </li>
+
+                                <li>
+                                    <div class="textHolder">
+                                        <h3>04. Mercedes Benz</h3>
+                                        <p><strong><a href="#">Mercedes Benz</a></strong><span>a premium sports and orthopedic rehabilitation facility.</span></p>
+                                    </div>
+                                    <img src="images/temp/top-slider-4.jpg" alt="" />
+                                </li>
+
+                            </ul>
+                            <div class="progressBar"><div class="progressIndicator"></div></div>
+                        </div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                var playslider = $(".playSlider").html();
+
+                                $('.playSlider').playSlider({
+                                    animationSpeed: 1000,
+                                    easing: '',
+                                    autoplay: true,
+                                    autoplaySpeed: 4000,
+                                    keyBrowse: false
+                                });
+
+                                $(window).resize(function() {
+                                    $('.playSlider').empty()
+                                    .html(playslider)
+                                    .playSlider({
+                                        animationSpeed: 1000,
+                                        easing: '',
+                                        autoplay: true,
+                                        autoplaySpeed: 4000,
+                                        keyBrowse: false
+                                    });
+                                });
+                            });
+                        </script>
+                        <!--/ Main Slider -->
+
+                    </div>
+                </div>
+                <!--/ row-->
+            </div>
+            <!--/ container-->
+        </div>
+    </div>
+    <!--/ Header-->
+
+    <!-- container-->
+    <div class="container">
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Horizontal Filter -->
+                <div class="blog_filter boxed clearfix">
+                    <ul class="filter_menu">
+                        <li><a href="#"><i class="ico-cat ico-cat1"></i>Awesome Ideas</a></li>
+                        <li><a href="#"><i class="ico-cat ico-cat2"></i>TV Shows</a></li>
+                        <li class="current-menu-item"><a href="#"><i class="ico-cat ico-cat3"></i>Around the World</a></li>
+                        <li><a href="#"><i class="ico-cat ico-cat4"></i>Gaming<sup class="note">2</sup></a></li>
+                        <li><a href="#"><i class="ico-cat ico-cat5"></i>Photography</a></li>
+                        <li><a href="#"><i class="ico-cat ico-cat6"></i>Graphic Design</a></li>
+                    </ul>
+                </div>
+                <!--/ Horizontal Filter -->
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- content-->
+                <div class="content " role="main">
+                    <!-- post list -->
+                    <div class="postlist">
+
+                        <!-- post item-->
+                        <div class="post-item post-quote boxed">
+                            <div class="inner">
+                                <div class="ribbon ribbon-yellow"><span><i class="post-label"></i></span></div>
+                                <div class="post-title"><h2><a href="#">There is only one boss. The customer. And he can fire everybody in the compa- ny from the chairman on down, simply by spending his money somewhere else.</a></h2></div>
+                                <div class="post-meta-top">
+                                    <span class="post-date">september 5th, 2013</span>
+                                    <span class="post-author">Sam Walton</span>
+                                </div>
+                                <div class="post-meta-bot post-meta-links"></div>
+                            </div>
+                        </div>
+                        <!--/post item-->
+
+                        <!-- post item images -->
+                        <div class="post-item post-img boxed">
+                            <div class="inner">
+                                <div class="ribbon"><span><i class="post-label label-image"></i></span></div>
+                                <div class="post-title"><h2><a href="#">Awesome Illustrations by Viet-My Bui, a Designer from Vietnam.</a></h2></div>
+                                <div class="post-meta-top">
+                                    <span class="post-date">september 5th, 2013</span>
+                                    <span class="post-author">Viet-My Bui</span>
+                                </div>
+                                <div class="post-meta-bot">
+                                    <div class="post-carousel">
+                                        <div id="myCarousel" class="carousel slide" data-interval="20000">
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="active item"><img src="images/temp/post_img5.jpg" alt="" /></div>
+                                                <div class="item"><img src="images/temp/post_img3.jpg" alt="" /></div>
+                                                <div class="item"><img src="images/temp/post_img4.jpg" alt="" /></div>
+                                            </div>
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            </ol>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/post item images -->
+
+                        <!-- post item audio -->
+                        <div class="post-item post-audio boxed">
+                            <div class="inner">
+                                <div class="ribbon ribbon-blue"><span><i class="post-label label-audio"></i></span></div>
+                                <div class="post-title"><h2><a href="#">Coldplay Releases “Charlie Brown”</a></h2></div>
+                                <div class="post-meta-top">
+                                    <span class="post-date">september 5th, 2013</span>
+                                    <span class="post-author">John Doe</span>
+                                </div>
+                                <div class="post-image"><img src="images/temp/post_img6.jpg" alt="" /></div>
+                                <div class="post-meta-bot">
+                                    <!-- jplayer-->
+                                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                                    <div id="jp_container_1" class="jp-audio">
+                                        <div class="jp-type-playlist">
+                                            <div class="jp-gui jp-interface">
+                                                <div class="jp-progress">
+                                                    <div class="jp-seek-bar">
+                                                        <div class="jp-play-bar"></div>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="jp-controls">
+                                                    <li><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a></li>
+                                                    <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                                    <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                                    <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                                                    <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                                    <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                                </ul>
+                                                <div class="jp-volume-bar">
+                                                    <div class="jp-volume-bar-value"></div>
+                                                </div>
+                                                <div class="jp-current-time"></div>
+                                                <div class="jp-duration"></div>
+                                                <ul class="jp-toggles">
+                                                    <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+                                                    <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                                                    <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                                    <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="jp-playlist">
+                                                <ul>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="jp-no-solution">
+                                                <span>Update Required</span>
+                                                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/ jplayer-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/post item audio -->
+
+                    </div>
+                    <!--/ postlist-->
+                </div>
+                <!--/ content-->
+            </div>
+
+            <div class="col-sm-4">
+                <!-- sidebar-->
+                <div class="sidebar">
+
+                    <!-- latest stories -->
+                    <div class="widget-container widget_recent_entries boxed">
+                        <div class="inner">
+                            <h3 class="widget-title">Latest Stories</h3>
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest1.png" alt="" /></a>
+                                    <a href="#" class="post-title">UP fan takes to the skies in a house by tying hundreds of balloons to it just like</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest2.png" alt="" /></a>
+                                    <a href="#" class="post-title">Working in paradise is just murder! Ben Miller is on the case in</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest3.png" alt="" /></a>
+                                    <a href="#" class="post-title">Mancini red rage! Kompany facing ban for 'nothing' fumes City</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest4.png" alt="" /></a>
+                                    <a href="#" class="post-title">Adebayor set for Africa Cup of Nations as Togo chief overrules decision to</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/latest stories -->
+
+                    <!-- widget flickr-->
+                    <div class="widget-container flickr boxed clearfix">
+                        <div class="inner">
+                            <h3 class="widget-title">Flickr Photo Stream</h3>
+                            <div class="flickr-inner">
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest1.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest2.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest3.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest4.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest5.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest6.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest7.png" alt="" /></a></div>
+                                <div class="flickr_badge_image"><a href="#"><img src="images/temp/latest8.png" alt="" /></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ widget flickr-->
+
+                    <!-- newsletter widget -->
+                    <div class="widget-container newsletterBox boxed">
+                        <div class="inner">
+                            <h3 class="widget-title">Newsletter</h3>
+                            <form method="get" action="#">
+                                <span class="btn btn-red"><input type="submit" value="Go" /></span>
+                                <div class="input_wrap"><input type="text" value="" name="email" class="inputField" /></div>
+                                <div class="newsletter_text"><a href="#" class="link-news-rss">Subscribe also to our <span>RSS feed</span></a></div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--/ newsletter widget -->
+
+                </div>
+                <!--/ sidebar-->
+            </div>
+        </div>
+        <!--/ row-->
+
+        <div class="divider"></div>
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- Carousel Most commented -->
+                <div class="carouFredsel most-commented">
+                    <ul id="carouFredsel-6">
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-11.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-12.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-13.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-14.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-9.png" alt="" /></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-6" class="prev" href="#">prev</a>
+                    <a id="carousel-next-6" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel Most commented -->
+
+            </div>
+        </div>
+        <!--/ row-->
+    </div>
+    <!--/ container-->
+
+    <!-- Footer -->
+    <div class="footer footer-dark">
+        <div class="divider-full"></div>
+
+        <!-- container-->
+        <div class="container">
+
+            <div class="divider-top"></div>
+
+            <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>OUR HOSTING</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Website Hosting</span></a></li>
+                            <li><a href="#"><span>Reseller Hosting</span></a></li>
+                            <li><a href="#"><span>Cloud Servers</span></a></li>
+                            <li><a href="#"><span>Site Supercharge</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>AFFILIATES</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Hosting Affiliates</span></a></li>
+                            <li><a href="#"><span>Affiliate Banners</span></a></li>
+                            <li><a href="#"><span>Affiliate Login</span></a></li>
+                            <li><a href="#"><span>Affiliate Sign-up</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>SUPPORT</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Knowledgebase</span></a></li>
+                            <li><a href="#"><span>Community Forum</span></a></li>
+                            <li><a href="#"><span>Video Tutorials</span></a></li>
+                            <li><a href="#"><span>Contact Live Support</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>ABOUT US</span></h3>
+                        <ul>
+                            <li><a href="#"><span>About Cloud-Host</span></a></li>
+                            <li><a href="#"><span>Our Team</span></a></li>
+                            <li><a href="#"><span>In the Press</span></a></li>
+                            <li><a href="#"><span>Contact us directly</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>CAREERS</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Join our team</span></a></li>
+                            <li><a href="#"><span>Job Offerings Board</span></a></li>
+                            <li><a href="#"><span>Send your Resume</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_contact">
+                        <h3 class="widget-title"><span>OUR ADDRESS</span></h3>
+                        <ul class="contact-address">
+                            <li class="address"><span>Rue Teissere, #.24 060</span></li>
+                            <li class="city"><span>Cannes, France</span></li>
+                            <li class="phone"><span>Phone: +33(0) 9399 79</span></li>
+                            <li class="fax"><span>Fax: +33(0) 5499 7987</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bottom"></div>
+
+            <div class="row">
+                <div class="col-sm-2"><div class="write_email footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support1"></i><span>Write us an Email</span></a></div></div>
+                <div class="col-sm-2"><div class="live_chat footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support2"></i><span>Live Chat 24 / 7</span></a></div></div>
+                <div class="col-sm-4"><div class="live_support footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support3"></i><span>Support: +33 (0) 9399 7987</span></a></div></div>
+                <div class="col-sm-4"><div class="copyright footer_bottom"><span>&copy; Copyright 2012 | Hosting Co. All rights reserved</span></div></div>
+            </div>
+        </div>
+        <!--/ container-->
+    </div>
+    <!--/ Footer -->
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+/*-----------------------------------*/
+/* Info Boxes */
+/*-----------------------------------*/
+
+.info-boxes{margin-bottom: 70px;}
+.alert{
+  position: relative;
+  margin-bottom: 23px;
+  padding: 0;
+  border: 0 none;
+  background: #ecfcff url(../../../images/global/arctic/alert-notice.png) left bottom repeat-x;
+}
+.alert.alert-warning{background: #fffdec url(../../../images/global/arctic/alert-warning.png) left bottom repeat-x;}
+.alert.alert-error{background: #ffebe6 url(../../../images/global/arctic/alert-error.png) left bottom repeat-x;}
+.alert.alert-success{background: #efffe6 url(../../../images/global/arctic/alert-success.png) left bottom repeat-x;}
+.alert-body{
+  padding: 24px 40px 24px 56px;
+}
+.alert .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-indent: 1200px;
+  background-color: rgba(0,0,0,0);
+}
+.alert span, .alert p{
+  display: inline-block;
+  margin: 0;
+  font-size: @font-size * 1.22;
+  line-height: 23px;
+}
+.alert span{padding-right: 3px;}
+.alert p{font-family: @font-family;}
+.alert .alert-body{color: #11a2c5;}
+.alert.alert-warning .alert-body{color: #c58811;}
+.alert.alert-error .alert-body{color: #e7522e;}
+.alert.alert-success .alert-body{color: #86ad25;}
+.alert .ribbon{
+  position: absolute;
+  top: 16px;
+  left: -35px;
+}
+.alert .ribbon span{background-position:left -300px;}
+.alert .ribbon{background-position:right -350px;}
+.alert.alert-warning .ribbon span{background-position:left -100px;}
+.alert.alert-warning .ribbon{background-position:right -150px;}
+.alert.alert-error .ribbon span{background-position:left 0;}
+.alert.alert-error .ribbon{background-position:right -50px;}
+.alert.alert-success .ribbon span{background-position:left -200px;}
+.alert.alert-success .ribbon{background-position:right -250px;}
+.alert .ribbon .post-label{background-position:center -80px;}
+.alert.alert-warning .ribbon .post-label{background-position:center -100px;}
+.alert.alert-error .ribbon .post-label{background-position:center -120px;}
+.alert.alert-success .ribbon .post-label{background-position:center -140px;}

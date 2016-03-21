@@ -1,0 +1,44 @@
+/*-----------------------------------*/
+/* Toggles */
+/*-----------------------------------*/
+
+.toggle {position: relative; margin-bottom: 50px;}
+.sidebar .toggle{margin-bottom: 30px;}
+.toggle.collapsed.boxed:after {display: none;}
+.toggle-header {display: inline-block;}
+.toggle.boxed .toggle-header {display: block;}
+
+.toggle-header h4{
+  display: inline-block;
+  margin-bottom: 0;
+  color: #f87600;
+}
+.toggle.boxed .toggle-header h4{color: @header-color;}
+
+.toggle-header span {
+  display: inline-block;
+  text-shadow: 0 1px 1px #fff;
+  font-size: @font-size * 1.36;
+  color:#f87600;
+}
+.toggle-link{
+  display: block;
+  padding: 11px 40px 12px 0;
+  position: relative;
+}
+.toggle.boxed .toggle-link{padding-left: 23px;}
+
+.toggle-link:before {
+  content: '\2212';
+  font-family: 'Glyphicons Halflings';
+  color: #f87600;
+  text-shadow: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.toggle-link.collapsed:before {content: '\2b';}
+.toggle.boxed .toggle-link:before {color: @header-color;}
+
+.toggle-body .inner {padding: 8px 5px 0;}
+.toggle.boxed .toggle-body .inner {padding: 9px 33px 12px;}

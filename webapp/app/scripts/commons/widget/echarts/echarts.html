@@ -1,0 +1,232 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="tabs_framed styled">
+            <div class="inner">
+                <ul class="tabs clearfix active_bookmark1" id='chartDesignTabs'>
+                    <li class="active"><a href="#events" data-toggle="tab" translate>{{"WIDGET.ECHARTS.PRESET_CHARTS"}}</a></li>
+                    <li>
+                        <a href="#reminders" data-toggle="tab">
+                            <sup class="note">3</sup>{{"WIDGET.ECHARTS.CUSTOM_CHARTS" | translate}}
+                        </a>
+                    </li>
+                    <li><a href="#starred" data-toggle="tab" translate>{{"WIDGET.ECHARTS.MANUAL_CHARTS"}}</a></li>
+                </ul>
+
+                <div class="tab-content clearfix">
+                    <div class="tab-pane clearfix fade in active" id="events" style="height: 700px">
+
+                        <div class="chart-customize-preset" ng-click="selectChartType($event)" style="height:100%">
+                            <a href=""><img src="./app/images/echarts3/area-rainfall.png" alt="" name="areaRainfall" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/area-simple.png" alt="" name="areaSimple" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/area-stack.png" alt="" name="areaStack" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar1.png" alt="" name="bar1" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-negative.png" alt="" name="barNegative" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-negative2.png" alt="" name="barNegative2" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-stack.png" alt="" name="barStack" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-waterfall.png" alt="" name="barWaterfall" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-waterfall2.png" alt="" name="barWaterfall2" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-y-category.png" alt="" name="barYCategory" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/bar-y-category-stack.png" alt="" name="barYCategoryStack" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/boxplot-light-velocity.png" alt="" name="boxplotLightVelocity" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/boxplot-light-velocity2.png" alt="" name="boxplotLightVelocity2" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/boxplot-multi.png" alt="" name="boxplotMulti" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/candlestick-sh.png" alt="" name="candlestickSh" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/confidence-band.png" alt="" name="confidenceBand" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/dynamic-data.png" alt="" name="dynamicData" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/effectScatter-map.png" alt="" name="effectScatterMap" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/funnel.png" alt="" name="funnel" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/funnel-align.png" alt="" name="funnelAlign" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/funnel-customize.png" alt="" name="funnelCustomize" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/funnel-mutiple.png" alt="" name="funnelMutiple" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/gauge.png" alt="" name="gauge" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/gauge-car.png" alt="" name="gaugeCar" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/geo-lines.png" alt="" name="geoLines" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/graph.png" alt="" name="graph" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/graph-circular-layout.png" alt="" name="graphCirculaLayout" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/graph-force.png" alt="" name="graphForce" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/graph-force2.png" alt="" name="graphForce2" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/graph-webkit-dep.png" alt="" name="graphWebkitDep" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/grid-multiple.png" alt="" name="gridMultiple" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/heatmap-cartesian.png" alt="" name="heatmapCartesian" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/heatmap-map.png" alt="" name="heatmapMap" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-easing.png" alt="" name="lineEasing" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-log.png" alt="" name="lineLog" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-marker.png" alt="" name="lineMarker" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-polar.png" alt="" name="linePolar" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-polar2.png" alt="" name="linePolar2" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-stack.png" alt="" name="lineStack" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/line-y-category.png" alt="" name="lineYCategory" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/map-china.png" alt="" name="mapChina" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/map-china-dataRange.png" alt="" name="mapChinaDataRange" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/map-HK.png" alt="" name="mapHK" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/map-usa.png" alt="" name="mapUsa" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/map-world-dataRange.png" alt="" name="mapWorldDataRange" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/mix-line-bar.png" alt="" name="mixLineBar" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/mix-timeline-finance.png" alt="" name="mixTimelineFinance" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/mix-zoom-on-value.png" alt="" name="mixZoomOnValue" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/parallel-aqi.png" alt="" name="parallelAqi" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/pie-custom.png" alt="" name="pieCustom" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/pie-doughnut.png" alt="" name="pieDoughnut" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/pie-nest.png" alt="" name="pieNest" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/pie-roseType.png" alt="" name="pieRoseType" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/pie-simple.png" alt="" name="pieSimple" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/sankey-energy.png" alt="" name="sankeyEnergy" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/sankey-product.png" alt="" name="sankeyProduct" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-anscombe-quartet.png" alt="" name="scatterAnscombeQuartet" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-aqi-color.png" alt="" name="scatterAqiColor" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-large.png" alt="" name="scatterLarge" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-life-expectancy-timeline.png" alt="" name="scatterLifeExpectancyTimeline" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-map.png" alt="" name="scatterMap" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-painter-choice.png" alt="" name="scatterPainterChoice" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-polar-punchCard.png" alt="" name="scatterPolarPunchCard" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-punchCard.png" alt="" name="scatterPunchCard" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-weibo.png" alt="" name="scatterWeibo" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-weight.png" alt="" name="scatterWeight" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/scatter-world-population.png" alt="" name="scatterWorldPopulation" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/treemap-disk.png" alt="" name="treemapDisk" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                            <a href=""><img src="./app/images/echarts3/treemap-obama.png" alt="" name="treemapObama" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/></a>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery(function()
+                            {
+                                jQuery('.chart-customize-preset').jScrollPane({
+                                    verticalDragMaxHeight: 39,
+                                    verticalDragMinHeight: 39
+                                });
+                                $(window).resize(function() {
+                                    jQuery('.chart-customize-preset').jScrollPane({
+                                        verticalDragMaxHeight: 39,
+                                        verticalDragMinHeight: 39
+                                    });
+                                });
+                            });
+                        </script>
+                        <!--< div class="scrollbar" style="width: 100%">
+                            <div class="inner">
+                                &lt;!&ndash;place your content here&ndash;&gt;
+                                <img src="./app/images/echarts3/area-rainfall.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/area-simple.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/area-stack.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar1.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-negative.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-negative2.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-stack.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-waterfall.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-waterfall2.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-y-category.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/bar-y-category-stack.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/boxplot-light-velocity.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/boxplot-light-velocity2.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/boxplot-multi.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/candlestick-sh.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/confidence-band.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/dynamic-data.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/effectScatter-map.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/funnel.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/funnel-align.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/funnel-customize.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/funnel-mutiple.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/gauge.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/gauge-car.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/geo-lines.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/graph.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/graph-circular-layout.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/graph-force.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/graph-force2.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/graph-webkit-dep.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/grid-multiple.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/heatmap-cartesian.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/heatmap-map.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-easing.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-log.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-marker.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-polar.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-polar2.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-stack.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/line-y-category.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/map-china.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/map-china-dataRange.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/map-HK.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/map-usa.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/map-world-dataRange.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/mix-line-bar.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/mix-timeline-finance.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/mix-zoom-on-value.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/parallel-aqi.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/pie-custom.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/pie-doughnut.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/pie-nest.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/pie-roseType.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/pie-simple.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/sankey-energy.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/sankey-product.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-anscombe-quartet.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-aqi-color.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-large.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-life-expectancy-timeline.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-map.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-painter-choice.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-polar-punchCard.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-punchCard.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-weibo.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-weight.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/scatter-world-population.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/treemap-disk.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                                <img src="./app/images/echarts3/treemap-obama.png" alt="" style="width: 132px;height: 120px;margin: 1px 1px 1px 1px" class="img-thumbnail"/>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="tab-pane clearfix fade" id="reminders">
+                        <div >
+							<label class="label_title">数据来源</label>
+							<select class="select_styled" style="width:100%"   ng-change="chartDataChange()" ng-model='selectChartDataModel' ng-options="x.id as x.name for x in chartSelectData"></select>
+						</div>
+						<div class="field_text field_textarea">
+							<div id="edit_buttons" class="edit_buttons"></div>
+							<label for="styled_message" class="label_title"></label>
+							<textarea cols="30" rows="10" name="styled_message" style="height:100px;width:100%"
+								class="textarea textarea_middle" ng-model='chartSourceData'>{{chartSourceData}}</textarea>
+						</div>
+						<div class="field_text field_textarea">
+							<div id="edit_buttons" class="edit_buttons"></div>
+							<label for="styled_message" class="label_title">图表配置</label>
+							<textarea cols="30" rows="10" name="styled_message" style="height:230px;width:100%"
+								class="textarea textarea_middle" ng-model='chartOption'>{{chartOption}}</textarea>
+						</div>
+                    </div>
+                    <div class="tab-pane clearfix fade" id="starred">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div style="margin-bottom: 8px">
+            <a href="#" class="btn btn-follow"><span translate>{{"WIDGET.ECHARTS.RELOAD"}}</span></a>
+            <a href="#" class="btn btn-follow"><span translate>{{"WIDGET.ECHARTS.SAVE"}}</span></a>
+        </div>
+        <div class="tabs_framed styled">
+            <div class="inner">
+                <div class="tab-content clearfix">
+                    <div class="tab-pane clearfix fade in active" id="charts">
+                        <!--place your content here-->
+                        <div style="width:100%;height:100%;border:1px solid #ffffff;background-color: #ffffff">
+                            <div style="width:100%;height:700px" id="mainss"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    jQuery(function()
+    {
+        jQuery('.scrollbar').jScrollPane({
+            verticalDragMaxHeight: 39,
+            verticalDragMinHeight: 39
+        });
+    });
+</script>

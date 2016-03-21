@@ -1,0 +1,13 @@
+{
+  "GLOABL":{
+    "APP_NAME": "Data Digger",
+    "APP_VERSION": "1.0.0",
+    "TEST_NAME":"testname"
+  },
+  "LOGIN":{
+    "LOGIN_USERNAME":"username",
+    "LOGIN_PASSWORD":"password",
+    "LOGIN_REMEMBER":"Remember Me",
+    "LOGIN_SUBMIT":"Login In"
+  }
+}

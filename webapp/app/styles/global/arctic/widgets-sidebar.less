@@ -1,0 +1,214 @@
+/*-----------------------------------*/
+/* Sidebar widgets */
+/*-----------------------------------*/
+
+/*
+    - Widget Categories
+    - Widget Latest Stories, Latest Comments
+    - Widget Tags
+    - Widget Flickr
+    - Widget Text
+    - Widget Calendar
+*/
+
+
+
+.widget-container{margin-bottom: 25px;}
+.widget-container .widget-title{
+  font-size: @font-size * 1.43;
+  margin-bottom:13px;
+}
+
+/* Widget Categories */
+
+.widget_categories .inner{
+  padding: 22px 28px 16px;
+}
+
+.widget_categories li,
+.widget_recent_comments li,
+.widget_recent_entries li{
+  border-bottom: 1px solid #E1E0E0;
+  border-top: 1px solid #FFF;
+  padding: 8px 0;
+}
+.widget_categories li.first,
+.widget_recent_comments li.first,
+.widget_recent_entries li.first{
+  border-top: 0 none;
+}
+.widget_categories li.last,
+.widget_recent_comments li.last,
+.widget_recent_entries li.last{
+  border-bottom: 0 none;
+}
+.widget_categories li a{
+  font-size: @font-size + 1;
+  color: #747474;
+  position: relative;
+}
+.widget_categories li a span{position: relative;}
+.widget_categories li a:hover, .widget_categories li.current-menu-item a{color: @link-color-hover;}
+
+.widget_categories .ico-cat{
+  width:25px;
+  height:30px;
+  background-image:url(../../../images/global/arctic/icons/categories_icons.png);
+  vertical-align: middle;
+  margin-right: 11px;
+}
+.widget_categories .ico-cat.ico-cat1{background-position: 0 0; top:2px;}
+.widget_categories .ico-cat.ico-cat2{background-position: -25px 0; top:-2px;}
+.widget_categories .ico-cat.ico-cat3{background-position: -50px 0; top:-1px;}
+.widget_categories .ico-cat.ico-cat4{background-position: -75px 0;}
+.widget_categories .ico-cat.ico-cat5{background-position: -100px 0; top:-2px;}
+.widget_categories .ico-cat.ico-cat6{background-position: -125px 0;}
+
+.widget_categories li a:hover .ico-cat1, .widget_categories li.current-menu-item .ico-cat1{background-position: 0 -30px; top:2px;}
+.widget_categories li a:hover .ico-cat2, .widget_categories li.current-menu-item .ico-cat2{background-position: -25px -30px;}
+.widget_categories li a:hover .ico-cat3, .widget_categories li.current-menu-item .ico-cat3{background-position: -50px -30px;}
+.widget_categories li a:hover .ico-cat4, .widget_categories li.current-menu-item .ico-cat4{background-position: -75px -30px;}
+.widget_categories li a:hover .ico-cat5, .widget_categories li.current-menu-item .ico-cat5{background-position: -100px -30px;}
+.widget_categories li a:hover .ico-cat6, .widget_categories li.current-menu-item .ico-cat6{background-position: -125px -30px;}
+
+.widget_categories .note{
+  top:-7px !important;
+  right:-17px !important;
+}
+
+/* Widget Latest Stories, Latest Comments */
+
+.widget_recent_entries .inner,
+.widget_recent_comments .inner{
+  padding: 22px 28px 12px;
+}
+
+.widget_recent_comments .widget-title,
+.widget_recent_entries .widget-title {
+  margin-bottom: 8px;
+}
+.widget_recent_comments li,
+.widget_recent_entries li {
+  padding: 15px 0 17px;
+}
+.widget-container .widget-thumb{
+  float: left;
+  vertical-align: top;
+  width:60px;
+  height: 58px;
+  margin-right:16px;
+  margin-top: 3px;
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  -moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+}
+.widget-container .widget-thumb img{
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100% !important;
+}
+.widget-container .post-title,
+.widget-container .recent_comment{
+  font-weight: 400;
+  color: @font-color;
+  line-height: 16px;
+}
+.widget-container .recent_comment a{
+  color: @link-color-hover;
+}
+.widget-container a.post-title:hover{
+  color: @link-color-hover;
+}
+
+/* Widget Tags */
+
+.widget_tag_cloud .inner{padding: 22px 26px 27px;}
+.widget_tag_cloud .widget-title {margin-bottom: 17px;}
+
+.tagcloud a{
+  display:inline-block;
+  font-family: Arial;
+  font-size: @font-size - 2;
+  font-weight: 700;
+  text-align: center;
+  white-space:nowrap;
+  background-image:url(../../../images/global/arctic/tag.png);
+  background-repeat:no-repeat;
+  background-position:right -28px;
+  height: 28px;
+  line-height: 28px;
+  padding-right:15px;
+  color:#6f6f6f;
+  text-shadow:0 1px 1px #fff;
+  margin:5px;
+}
+.tagcloud a:hover{color: @link-color-hover;}
+
+.tagcloud a span{
+  display:inline-block;
+  background-image:url(../../../images/global/arctic/tag.png);
+  background-repeat:no-repeat;
+  background-position:left 0;
+  padding-left:21px;
+  line-height:inherit;
+}
+
+/* Widget Flickr */
+
+.flickr .inner {
+  padding: 22px 22px 27px;
+}
+.flickr .widget-title {
+  margin-bottom: 18px;
+}
+.flickr-inner{text-align: center; font-size: 0;}
+
+.flickr_badge_image{
+  display: inline-block;
+  margin:1px;
+}
+.flickr_badge_image a{
+  display: block;
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  -moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+}
+.flickr_badge_image a img{
+  display: block;
+  width: 60px;
+  height: 60px !important;
+  position: relative;
+  z-index: -1;
+}
+.ie8 .flickr .flickr_badge_image {
+  width:60px !important;
+  height:60px !important;
+}
+
+/* Widget Text */
+
+.widget_text .inner{padding: 22px 28px 9px;}
+.widget_text .widget-title {margin-bottom: 14px;}
+
+.widget_text .textwidget p{
+  line-height:21px;
+  margin-bottom: 15px;
+}
+
+/* Widget Calendar */
+
+.widget_calendar{
+  border: 5px solid #ddd;
+}
+.widget_calendar .inner{
+  padding: 0 20px 20px;
+}
+.widget_calendar.boxed {
+  background: url(../../../images/global/arctic/box_bg_bot.jpg) bottom repeat-x #fafafa;
+  .border-radius(@border-radius * 1.5);
+}
+.ie8 #date_departure {
+  display: none !important;
+}

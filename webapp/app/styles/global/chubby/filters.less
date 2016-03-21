@@ -1,0 +1,174 @@
+/*-----------------------------------*/
+/* Filters */
+/*-----------------------------------*/
+
+/*
+    - Horizontal Filters
+        - Horizontal Filter Style 1
+        - Horizontal Filter Style 2
+    - Categories Filter
+    - Checkbox Filter, Radiobox Filter
+    - Filter Results
+*/
+
+
+
+/*-----------------------------------*/
+/* Horizontal Filters */
+/*-----------------------------------*/
+
+/* Horizontal Filter Style1 */
+
+.blog-filter {margin-bottom: 30px; position: relative;}
+.blog-filter ul {text-align: center;}
+.blog-filter li {display: inline-block;}
+
+.blog-filter a {
+  display: block;
+  position: relative;
+  padding: 17px 11px 11px;
+  font-size: @font-size * 1.08;
+  white-space: nowrap;
+}
+.blog-filter a:hover, .blog-filter li.current-menu-item a {color: @link-color-hover;}
+
+.blog-filter .ico-cat {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 2px;
+  background: url(../../../images/global/chubby/icons/categories-icons-2.png) 0 0 no-repeat;
+}
+.blog-filter .ico-cat2 {background-position: 0 -30px;}
+.blog-filter .ico-cat3 {background-position: 0 -60px;}
+.blog-filter .ico-cat4 {background-position: 0 -90px;}
+.blog-filter .ico-cat5 {background-position: 0 -120px;}
+.blog-filter .ico-cat6 {background-position: 0 -150px;}
+.blog-filter li:hover .ico-cat, .blog-filter li.current-menu-item .ico-cat {background-position: -30px 0;}
+.blog-filter li:hover .ico-cat2, .blog-filter li.current-menu-item .ico-cat2 {background-position: -30px -30px;}
+.blog-filter li:hover .ico-cat3, .blog-filter li.current-menu-item .ico-cat3 {background-position: -30px -60px;}
+.blog-filter li:hover .ico-cat4, .blog-filter li.current-menu-item .ico-cat4 {background-position: -30px -90px;}
+.blog-filter li:hover .ico-cat5, .blog-filter li.current-menu-item .ico-cat5 {background-position: -30px -120px;}
+.blog-filter li:hover .ico-cat6, .blog-filter li.current-menu-item .ico-cat6 {background-position: -30px -150px;}
+
+/* Horizontal Filter Style 2 */
+
+.blog-filter.style2 a {padding: 12px 11px 10px;}
+
+.blog-filter.style2 {
+  border-top: 1px dashed #bfbfbf;
+  border-bottom: 1px dashed #fff;
+}
+.blog-filter.style2 ul {
+  border-bottom: 1px dashed #bfbfbf;
+  border-top: 1px dashed #fff;
+}
+
+.blog-filter.style2 .ico-cat {background-image: url(../../../images/global/chubby/icons/categories-icons-3.png);}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .blog-filter .ico-cat {
+    background-image: url(../../../images/global/chubby/icons/categories-icons-2-x2.png);
+    background-size: 60px auto;
+  }
+  .blog-filter.style2 .ico-cat {
+    background-image: url(../../../images/global/chubby/icons/categories-icons-3-x2.png);
+    background-size: 60px auto;
+  }
+}
+
+/*-----------------------------------*/
+/* Categories Filter */
+/*-----------------------------------*/
+
+.widget-categories-filter li a {padding: 14px 36px 15px 38px;}
+.widget-categories-filter .ico-cat {left: 2px; right: auto;}
+
+.widget-categories-filter .counter {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  width: 34px;
+  height: 18px;
+  line-height: 16px;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background: #605647;
+  border: 1px solid #666;
+  border-radius: 10px;
+  -webkit-box-shadow:inset 0 0 1px rgba(255,255,255,0.8);
+  box-shadow:inset 0 0 1px rgba(255,255,255,0.8);
+}
+
+@media (max-width: 479px), (min-width: 768px) and (max-width: 991px) {
+  .widget-categories-filter li a {padding: 8px 36px 9px 38px;}
+  .widget-categories-filter .ico-cat {top: 4px;}
+  .widget-categories-filter .counter {top: 7px;}
+}
+
+/*-----------------------------------*/
+/* Checkbox Filter, Radiobox Filter */
+/*-----------------------------------*/
+
+.widget-checkbox-filter .widget-title,
+.widget-radio-filter .widget-title{
+  margin-bottom: 24px;
+}
+.widget-checkbox-filter .counter {float: right;}
+.widget-checkbox-filter label {margin-bottom: 17px;}
+.widget-radio-filter label {margin-bottom: 9px;}
+
+.widget-checkbox-filter .rowSubmit,
+.widget-radio-filter .rowSubmit {
+  text-align: center;
+  border-top: 1px dashed #d4d4d4;
+  margin-top: 10px;
+  padding: 19px 0 5px;
+}
+.widget-checkbox-filter label,
+.widget-radio-filter label,
+.widget-adv-filter label {
+  font-size: @font-size * 1.08;
+}
+.widget-checkbox-filter label:hover,
+.widget-radio-filter label:hover,
+.widget-adv-filter label:hover {
+  color: @link-color-hover;
+}
+
+/*-----------------------------------*/
+/* Filter Results */
+/*-----------------------------------*/
+
+.widget-adv-filter .inner {padding: 0;}
+
+.widget-adv-filter .adv-block {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #dedede;
+  padding: 19px 26px;
+  margin: 0;
+}
+.widget-adv-filter .adv-block:first-child {border-top: none;}
+.widget-adv-filter .adv-block:last-child {border-bottom: none;}
+
+.widget-adv-filter .field_text {float: none; width: auto; margin: 0;}
+.widget-adv-filter .field_text:after {
+  content: '\e109';
+  font-family: 'Glyphicons Halflings';
+  font-size: 18px;
+  color: @link-color-hover;
+  text-shadow: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.widget-adv-filter h6{color: #292929; text-transform: uppercase; margin-bottom: 18px;}
+.widget-adv-filter .custom-checkbox label {margin-bottom: 17px;}
+.widget-adv-filter .rowCheckbox:last-child .custom-checkbox label {margin-bottom: 4px;}
+.widget-adv-filter .rowSubmit {text-align: center;}
+
+@media (max-width: 479px), (min-width: 768px) and (max-width: 991px) {
+  .widget-adv-filter .adv-block {padding: 15px 10px;}
+}

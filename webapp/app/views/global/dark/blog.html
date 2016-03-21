@@ -1,0 +1,860 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Velvet | Blog</title>
+
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.10.0.js"></script>
+<script src="js/libs/jquery-ui.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+
+<!-- Style CSS-->
+<link href="style.less" media="screen" rel="stylesheet/less" type="text/css">
+
+<!-- scripts  -->
+<script src="js/general.js"></script>
+<!-- custom input -->
+<script src="js/jquery.customInput.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Placeholders -->
+<script type="text/javascript" src="js/jquery.powerful-placeholder.min.js"></script>
+<!-- Calendar -->
+<script src="js/jquery-ui.multidatespicker.js"></script>
+<!-- Video Player  -->
+<script src="js/video.js"></script>
+<!-- Audio Player  -->
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+
+		new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1"
+		}, [
+			{
+				title:"<img src='images/temp/music-player1.png' alt='' /><ul><li class='item-artist'><span>01.</span>Rudimental</li><li class='item-song'>Waiting All Night (feat. Ella Eyre)</li><li class='item-album'>Folllow Your Heart | 2013</li></ul>",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			},
+			{
+				title:"<img src='images/temp/music-player2.png' alt='' /><ul><li class='item-artist'><span>02.</span>Daft Punk</li><li class='item-song'>Get Lucky (ft. Pharell Williams)</li><li class='item-album'>Tron Legacy | 2013</li></ul>",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+			},
+			{
+				title:"<img src='images/temp/music-player3.png' alt='' /><ul><li class='item-artist'><span>03.</span>Justin Timberlake</li><li class='item-song'>Mirrors</li><li class='item-album'>20/20 Experience | 2013</li></ul>",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+			}
+		], {
+			swfPath: "js",
+			supplied: "oga, mp3",
+			wmode: "window",
+			smoothPlayBar: false,
+			keyEnabled: false
+		});
+	});
+	//]]>
+</script>
+
+<!-- Scroll Bars -->
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript">
+    jQuery(function()
+    {
+        jQuery('.widget_categories ul').jScrollPane({
+            verticalDragMaxHeight: 39,
+            verticalDragMinHeight: 39
+        });
+        $(window).resize(function() {
+            jQuery('.widget_categories ul').jScrollPane({
+                verticalDragMaxHeight: 39,
+                verticalDragMinHeight: 39
+            });
+        });
+    });
+</script>
+
+<!-- LESS -->
+<script src="js/libs/less.js"></script>
+
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div class="body_wrap">
+
+    <div class="container">
+
+		<!-- row-->
+		<div class="row">
+			<div class="col-sm-8">
+				<!-- content-->
+				<div class="content " role="main">
+
+					<!-- post list -->
+					<div class="postlist">
+
+						<h6 class="foo">Blog post example</h6>
+						<!-- post item-->
+						<div class="post-item">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">Comedy Central to host five-day comedy festival on Vine and Twitter next month</a></h2></div>
+								<div class="post-image"><div class="badge badge-new"></div><img src="images/temp/post_img1.jpg" alt=""></div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+								<div class="clear"></div>
+                                <div class="post-desc">
+									<p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Blog post with background</h6>
+						<!-- post item-->
+						<div class="post-item boxed style2">
+							<div class="inner">
+                                <div class="post-title"><h2><a href="#">Best ADS for 2013: what to watch out for!</a></h2></div>
+                                <div class="post-image"><img src="images/temp/post_img2.jpg" alt=""></div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="clear"></div>
+								<div class="post-desc">
+									<p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, i wanted to trip with you on a porttitor lectus condimentum laoreet.</p>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Blog post with image on left</h6>
+						<!-- post item-->
+						<div class="post-item style3 clearfix">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">'SimCity' scheduled for first major update, server downtime begins at 4PM ET on Monday</a></h2></div>
+								<div class="post-image"><img src="images/temp/post_img3.jpg" alt=""></div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+								<div class="post-desc">
+									<p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+								</div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+								<div class="post-meta-bot post-meta-links">
+									<a href="#" class="btn btn-red"><span>Read more</span></a>
+								</div>
+
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">BLOG POST WITH BACKGROUND AND IMAGE RIGHT</h6>
+						<!-- post item-->
+						<div class="post-item boxed style4 clearfix">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">Cameras become art with casings made books</a></h2></div>
+								<div class="post-image"><img src="images/temp/post_img4.jpg" alt=""></div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-desc">
+									<p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, i wanted to trip with you on a porttitor</p>
+								</div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="post-meta-bot post-meta-links">
+									<a href="#" class="btn btn-red"><span>Read more</span></a>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Quote blog entry</h6>
+						<!-- post item-->
+						<div class="post-item post-quote boxed">
+							<span class="post-label"></span>
+                            <div class="inner">
+								<div class="post-title"><h2><a href="#">“Quisque Eget Odio Ac Lectus Vestibulum Faucibus Eget In Metus. In Pellentesque Faucibus Iiritus ep Vestibulum. Nulla At Nulla Nunc Eu Ullamcorper Orcitur Lorep Misup Quisque”</a></h2></div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="clear"></div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Image blog entry</h6>
+						<!-- post item images -->
+						<div class="post-item post-img boxed">
+                            <span class="post-label label-image"></span>
+                            <div class="inner">
+								<div class="post-title"><h2><a href="#">Pellentesque Faucibus Iiritus ep Vestibulum. Nulla At Nulla Nunc Eu Ullamcorper</a></h2></div>
+								<div class="post-image">
+									<div class="post-carousel">
+										<div id="myCarousel" class="carousel slide" data-interval="20000">
+											<!-- Carousel items -->
+											<div class="carousel-inner">
+												<div class="active item">
+                                                    <img src="images/temp/post_img5.jpg" alt="" />
+                                                    <div class="carousel-title"><h6>Star Dust</h6><p>Not a flat you live inside</p></div>
+                                                </div>
+												<div class="item">
+                                                    <img src="images/temp/post_img1.jpg" alt="" />
+                                                    <div class="carousel-title"><h6>Star Track</h6><p>Not a flat you live inside</p></div>
+                                                </div>
+												<div class="item">
+                                                    <img src="images/temp/post_img2.jpg" alt="" />
+                                                    <div class="carousel-title"><h6>Star Dust</h6><p>Not a flat you live inside</p></div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/temp/post_img6.jpg" alt="" />
+                                                    <div class="carousel-title"><h6>Star Track</h6><p>Not a flat you live inside</p></div>
+                                                </div>
+											</div>
+											<!-- Carousel indicators -->
+											<ol class="carousel-indicators">
+												<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+												<li data-target="#myCarousel" data-slide-to="1"></li>
+												<li data-target="#myCarousel" data-slide-to="2"></li>
+												<li data-target="#myCarousel" data-slide-to="3"></li>
+											</ol>
+											<!-- Carousel nav -->
+											<a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+											<a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+										</div>
+									</div>
+								</div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="clear"></div>
+							</div>
+						</div>
+						<!--/post item images -->
+
+						<h6 class="foo">Video blog entry</h6>
+						<!-- post item video -->
+						<div class="post-item post-video boxed">
+                            <span class="post-label label-video"></span>
+							<div class="inner">
+                                <div class="post-title"><h2><a href="#">Sed Auctor Neque Eu Tellus Rhoncus Ut Eleifend</a></h2></div>
+                                <div class="post-image">
+                                    <div class="video_player">
+                                        <video id="my_video_1" class="video-js vjs-default-skin" controls loop
+                                               preload="auto" poster="images/temp/vjs_poster.png"
+                                               data-setup="{}">
+                                            <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
+                                        </video>
+										<script>
+											_V_("my_video_1").ready(function(){
+												var myPlayer = this;
+												var aspectRatio = 192/380;
+												var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+												myPlayer.width(width).height( width * aspectRatio );
+
+												function resizeVideoJS(){
+													var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+													myPlayer.width(width).height( width * aspectRatio );
+												}
+												resizeVideoJS();
+												window.onresize = resizeVideoJS;
+											});
+										</script>
+                                    </div>
+								</div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="clear"></div>
+							</div>
+						</div>
+						<!--/post item video -->
+
+						<h6 class="foo">Audio blog entry</h6>
+						<!-- post item audio -->
+						<div class="post-item post-audio boxed">
+                            <span class="post-label label-audio"></span>
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">The Official UK Top40 Singles Chart</a></h2></div>
+								<div class="post-image clearfix">
+									<!-- jplayer-->
+									<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+									<div id="jp_container_1" class="jp-audio">
+										<div class="jp-type-playlist">
+                                            <div class="jp-gui jp-interface">
+                                                <div class="song_title_wrap">
+                                                    <div class="song_title"></div>
+                                                </div>
+                                                <div class="jp-controls-wrap">
+                                                    <div class="jp-progress">
+                                                        <div class="jp-seek-bar">
+                                                            <div class="jp-play-bar"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="jp-controls">
+                                                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                                                    </ul>
+                                                    <div class="jp-volume-bar">
+                                                        <div class="jp-volume-bar-value"></div>
+                                                    </div>
+                                                    <div class="jp-current-time"></div>
+                                                    <div class="jp-duration"></div>
+                                                </div>
+											</div>
+                                            <div class="jp-playlist">
+                                                <ul class="jp-playlist-inner">
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+											<div class="jp-no-solution">
+												<span>Update Required</span>
+												To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+											</div>
+										</div>
+									</div>
+
+                                    <script type="text/javascript">
+                                        setTimeout(function () {
+                                            jQuery(function() {
+                                                jQuery('.jp-playlist').jScrollPane({
+                                                    verticalDragMaxHeight: 39,
+                                                    verticalDragMinHeight: 39
+                                                });
+                                                $(window).resize(function() {
+                                                    jQuery('.jp-playlist').jScrollPane({
+                                                        verticalDragMaxHeight: 39,
+                                                        verticalDragMinHeight: 39
+                                                    });
+                                                });
+                                            });
+                                        }, 200);
+                                    </script>
+									<!--/ jplayer-->
+								</div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                                <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                                <div class="clear"></div>
+							</div>
+						</div>
+						<!--/post item audio -->
+
+					</div>
+					<!--/ postlist-->
+				</div>
+				<!--/ content-->
+		    </div>
+
+			<div class="col-sm-4">
+				<!-- sidebar-->
+				<div class="sidebar sidebar-thin">
+					<h6 class="foo">Sidebars</h6>
+
+					<!-- widget categories -->
+					<div class="widget-container widget_categories boxed">
+						<div class="inner">
+							<h3 class="widget-title">Categories</h3>
+							<ul>
+								<li><a href="#"><span>Blog Category 01</span></a></li>
+								<li class="current-menu-item"><a href="#"><span>Blog Category 02</span></a></li>
+								<li><a href="#"><span>Blog Category 03</span></a></li>
+								<li><a href="#"><span>Blog Category 04</span></a></li>
+								<li><a href="#"><span>Blog Category 05</span></a></li>
+								<li><a href="#"><span>Blog Category 06</span></a></li>
+								<li><a href="#"><span>Blog Category 07</span></a></li>
+								<li><a href="#"><span>Blog Category 08</span></a></li>
+								<li><a href="#"><span>Blog Category 09</span></a></li>
+								<li><a href="#"><span>Blog Category 10</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!--/widget categories-->
+
+					<!-- latest stories -->
+					<div class="widget-container widget_recent_entries boxed-velvet">
+						<div class="inner">
+							<h3 class="widget-title">Latest Stories</h3>
+							<ul>
+								<li class="clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/latest1.png" alt="" /></a>
+									<a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+								</li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest2.png" alt="" /></a>
+                                    <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest3.png" alt="" /></a>
+                                    <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest4.png" alt="" /></a>
+                                    <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest5.png" alt="" /></a>
+                                    <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn"><span>Read more</span></a>
+						</div>
+					</div>
+					<!--/latest stories -->
+
+					<!-- latest comments-->
+					<div class="widget-container widget_recent_comments boxed-velvet">
+						<div class="inner">
+							<h3 class="widget-title">Latest Comments</h3>
+							<ul id="recentcomments">
+								<li class="recentcomments clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/latest6.png" alt="" /></a>
+									<span class="recent_comment"><a href="#" rel="external nofollow">Mike Millerton: </a>Degestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+								</li>
+                                <li class="recentcomments clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest7.png" alt="" /></a>
+                                    <span class="recent_comment"><a href="#" rel="external nofollow">Sandy Gravers Moll: </a>Purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</span>
+                                </li>
+                                <li class="recentcomments clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest8.png" alt="" /></a>
+                                    <span class="recent_comment"><a href="#" rel="external nofollow">Danny Ocean: </a>Egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+                                </li>
+                                <li class="recentcomments clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest9.png" alt="" /></a>
+                                    <span class="recent_comment"><a href="#" rel="external nofollow">Freddy Myers: </a>egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+                                </li>
+                                <li class="recentcomments clearfix">
+                                    <a href="#" class="widget-thumb"><img src="images/temp/latest10.png" alt="" /></a>
+                                    <span class="recent_comment"><a href="#" rel="external nofollow">Jonhatan Destric: </a>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn"><span>Read more</span></a>
+						</div>
+					</div>
+					<!-- latest comments-->
+
+					<!-- widget tags-->
+					<div class="widget-container widget_tag_cloud">
+						<div class="inner">
+							<h3 class="widget-title">Popular Tags</h3>
+							<div class="tagcloud">
+								<a href="#" class="tag-link-1" title="2 topics"><span>Design</span></a>
+								<a href="#" class="tag-link-2" title="3 topics"><span>Fashion</span></a>
+								<a href="#" class="tag-link-3" title="5 topics"><span>Cinema</span></a>
+								<a href="#" class="tag-link-4" title="8 topics"><span>Electricity</span></a>
+								<a href="#" class="tag-link-5" title="9 topics"><span>Kitchen</span></a>
+								<a href="#" class="tag-link-6" title="3 topics"><span>Angels</span></a>
+                                <a href="#" class="tag-link-1" title="2 topics"><span>Design</span></a>
+                                <a href="#" class="tag-link-2" title="3 topics"><span>Fashion</span></a>
+                                <a href="#" class="tag-link-3" title="5 topics"><span>Cinema</span></a>
+                                <a href="#" class="tag-link-4" title="8 topics"><span>Electricity</span></a>
+                                <a href="#" class="tag-link-5" title="9 topics"><span>Cooking</span></a>
+                                <a href="#" class="tag-link-6" title="3 topics"><span>Design</span></a>
+
+							</div>
+						</div>
+					</div>
+					<!--/ widget tags-->
+
+					<!-- widget flickr-->
+					<div class="widget-container flickr boxed-velvet clearfix">
+						<div class="inner">
+							<h3 class="widget-title">Flickr Photo Stream</h3>
+							<div class="flickr-inner">
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest1.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest2.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest3.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest4.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest9.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest6.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest7.png" alt="" /></a></div>
+								<div class="flickr_badge_image"><a href="#"><img src="images/temp/latest8.png" alt="" /></a></div>
+							</div>
+						</div>
+					</div>
+					<!--/ widget flickr-->
+
+					<!-- widget text-->
+					<div class="widget-container widget_text boxed-velvet">
+						<div class="inner">
+							<h3 class="widget-title">Text widget</h3>
+							<div class="textwidget">
+								<p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut</p>
+							</div>
+						</div>
+					</div>
+					<!-- /widget text-->
+
+					<!-- widget calendar-->
+					<div class="widget-container widget_calendar boxed-velvet">
+						<div class="inner">
+							<input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+							<script>
+								// <![CDATA[
+								jQuery(document).ready(function($) {
+									var daysRange = 5;
+
+									function assignCalendar(id){
+										$('<div class="calendar" />')
+												.insertAfter( $(id) )
+												.multiDatesPicker({
+													dateFormat: 'yy-mm-dd',
+													minDate: new Date(),
+													maxDate: '+1y',
+													altField: id,
+													firstDay: 1,
+													showOtherMonths: true
+												}).prev().hide();
+									}
+
+									assignCalendar('#date_departure');
+								});
+								// ]]>
+							</script>
+						</div>
+					</div>
+					<!--/ widget calendar-->
+
+				</div>
+				<!--/ sidebar-->
+		    </div>
+		</div>
+		<!--/ row-->
+
+		<!-- row-->
+	    <div class="row">
+		    <!-- content -->
+		    <div class="content clearfix">
+
+			    <div class="col-sm-12"><h6 class="foo">Popular blog entries</h6></div>
+			    <!-- post list -->
+			    <div class="postlist">
+
+                    <div class="col-sm-4">
+		                <!-- post item wide -->
+		                <div class="post-item-wide">
+			                <div class="inner">
+                                <div class="post_title">
+                                    <h2><a href="#">Curabitur Vulputate, Ligula Lacinia Scelerisque</a></h2>
+                                </div>
+                                <div class="post-image">
+                                    <div class="badge badge-outlet"></div>
+					                <img src="images/temp/post_img7.jpg" alt="" />
+				                </div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+				                <div class="post-descr">
+					                <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+				                </div>
+				                <div class="post-meta-bot post-meta-links">
+                                    <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+					                <a href="#" class="btn btn-red"><span>Read more</span></a>
+				                </div>
+			                </div>
+                        </div>
+		                <!--/ post item wide -->
+                    </div>
+
+				    <div class="col-sm-4">
+					    <!-- post item wide -->
+					    <div class="post-item-wide">
+						    <div class="inner">
+                                <div class="post_title">
+                                    <h2><a href="#">Amet Leo Consequat Posuere. Vestibulum Ante</a></h2>
+                                </div>
+                                <div class="post-image">
+                                    <div class="badge badge-popular"></div>
+								    <img src="images/temp/post_img8.jpg" alt="" />
+							    </div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+							    <div class="post-descr">
+								    <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+							    </div>
+							    <div class="post-meta-bot post-meta-links">
+                                    <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+								    <a href="#" class="btn btn-red"><span>Read more</span></a>
+							    </div>
+							</div>
+					    </div>
+					    <!--/ post item wide -->
+				    </div>
+
+				    <div class="col-sm-4">
+					    <!-- post item wide -->
+					    <div class="post-item-wide">
+						    <div class="inner">
+                                <div class="post_title">
+                                    <h2><a href="#">Etiam At Risus Et Justo Dignissim Congue.</a></h2>
+                                </div>
+                                <div class="post-image">
+                                    <div class="badge badge-try"></div>
+								    <img src="images/temp/post_img9.jpg" alt="" />
+							    </div>
+                                <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+							    <div class="post-descr">
+								    <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+							    </div>
+							    <div class="post-meta-bot post-meta-links">
+                                    <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+								    <a href="#" class="btn btn-red"><span>Read more</span></a>
+							    </div>
+						    </div>
+					    </div>
+					    <!--/ post item wide -->
+				    </div>
+
+				</div>
+			    <!--/ post list -->
+            </div>
+		    <!--/ content -->
+	    </div>
+	    <!--/ row-->
+
+		<!-- row-->
+		<div class="row">
+			<div class="col-sm-8">
+				<!-- content -->
+				<div class="content">
+
+					<h6 class="foo">Comments section with reply form</h6>
+
+					<!-- post comments -->
+					<div class="comment-list clearfix" id="comments">
+						<h2>4 Comments already</h2>
+						<a href="#addcomments" class="link-add-comment anchor">Join the Discussion</a>
+
+						<ol>
+							<li class="comment">
+
+								<div class="comment-body">
+                                    <div class="inner">
+                                        <div class="comment-arrow"></div>
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar1.png" alt="" /></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author">Justin Timberlake</a> <span class="comment-date">April 3rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                                            </div>
+                                            <div class="comment-entry">
+                                                Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+								</div>
+
+							</li>
+
+							<li class="comment">
+
+								<div class="comment-body">
+                                    <div class="inner">
+                                        <div class="comment-arrow"></div>
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar2.png" alt="" /></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author">Mila Kunis</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                                            </div>
+                                            <div class="comment-entry">
+                                                Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+								</div>
+
+								<!-- comment reply -->
+								<ul class="children">
+									<li class="comment">
+                                        <div class="comment-body">
+                                            <div class="inner">
+                                                <div class="comment-arrow"></div>
+                                                <div class="comment-avatar">
+                                                    <div class="avatar"><img src="images/temp/avatar3.png" alt="" /></div>
+                                                </div>
+                                                <div class="comment-text">
+                                                    <div class="comment-author clearfix">
+                                                        <a href="#" class="link-author">Madalina Ghenea</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                                                    </div>
+                                                    <div class="comment-entry">
+                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+									</li>
+								</ul>
+								<!--/ comment reply -->
+
+							</li>
+
+							<li class="comment">
+
+								<div class="comment-body">
+                                    <div class="inner">
+                                        <div class="comment-arrow"></div>
+                                        <div class="comment-avatar">
+                                            <div class="avatar"><img src="images/temp/avatar4.png" alt="" /></div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <div class="comment-author clearfix">
+                                                <a href="#" class="link-author">Gerard Butler</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                                            </div>
+                                            <div class="comment-entry">
+                                                Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+								</div>
+
+							</li>
+
+						</ol>
+					</div>
+					<!--/ post comments -->
+
+					<!-- comment form -->
+					<div class="add-comment add-comment-velvet" id="addcomments">
+
+						<div class="add-comment-title"><h3>Leave a Message</h3></div>
+
+						<div class="comment-form">
+							<form action="#" method="post" id="commentForm" class="ajax_form">
+
+								<div class="form-inner">
+									<div class="field_text">
+										<label for="name" class="label_title">Name:</label>
+										<input type="text" name="name" id="name" value="" class="inputtext input_middle required" />
+									</div>
+									<div class="field_text omega">
+										<label for="email" class="label_title">Email Address (not disclosed):</label>
+										<input type="text" name="email" id="email" value="" class="inputtext input_middle required" />
+									</div>
+									<div class="clear"></div>
+									<div class="field_text field_textarea">
+										<label for="message" class="label_title">Comment:</label>
+										<textarea cols="30" rows="10" name="message" id="message" class="textarea textarea_middle required"></textarea>
+									</div>
+									<div class="clear"></div>
+								</div>
+
+								<div class="rowSubmit">
+                                    <a onclick="document.getElementById('commentForm').reset();return false" href="#" class="link-reset btn btn-black"><span>Discard</span></a>
+                                    <span class="btn btn-send"><input type="submit" id="send" value="Send Message" /></span>
+								</div>
+
+							</form>
+						</div>
+					</div>
+					<!--/ comment form -->
+
+					<h6 class="foo">Pagination</h6>
+
+					<!-- tf pagination -->
+					<div class="tf_pagination">
+						<a class="page_prev btn btn-left" href="#"><span>Previous</span></a>
+						<div class="inner">
+							<div class="inner_links">
+								<a href="#" class="page-numbers">1</a>
+								<a href="#" class="page-numbers">2</a>
+								<a href="#" class="page-numbers">3</a>
+								<span class="page-numbers page_current">4</span>
+								<a href="#" class="page-numbers">5</a>
+								<a href="#" class="page-numbers">6</a>
+								<a href="#" class="page-numbers">7</a>
+								<a href="#" class="page-numbers">8</a>
+								<a href="#" class="page-numbers">9</a>
+								<a href="#" class="page-numbers">10</a>
+							</div>
+						</div>
+						<a class="page_next btn btn-right" href="#"><span>Next</span></a>
+					</div>
+					<!--/ tf pagination -->
+
+                    <!-- tf pagination -->
+                    <div class="tf_pagination style2">
+                        <a class="page_prev btn btn-left btn-acute" href="#"><span>Previous</span></a>
+                        <div class="inner">
+                            <div class="inner_links">
+                                <a href="#" class="page-numbers">1</a>
+                                <a href="#" class="page-numbers">2</a>
+                                <a href="#" class="page-numbers">3</a>
+                                <span class="page-numbers page_current">4</span>
+                                <a href="#" class="page-numbers">5</a>
+                                <a href="#" class="page-numbers">6</a>
+                                <a href="#" class="page-numbers">7</a>
+                                <a href="#" class="page-numbers">8</a>
+                                <a href="#" class="page-numbers">9</a>
+                                <a href="#" class="page-numbers">10</a>
+                            </div>
+                        </div>
+                        <a class="page_next btn btn-right btn-acute" href="#"><span>Next</span></a>
+                    </div>
+                    <!--/ tf pagination -->
+
+                    <div class="buttons">
+                        <a href="#" class="btn btn-round"><span>Normal</span></a>
+                        <a href="#" class="btn btn-round hover"><span>Hover</span></a>
+                        <a href="#" class="btn btn-round active"><span>Pressed</span></a>
+                    </div>
+
+				</div>
+				<!--/ content -->
+			</div>
+		</div>
+		<!--/ row-->
+
+		<!-- row-->
+		<div class="row">
+			<!-- content -->
+			<div class="content dividers clearfix">
+
+				<div class="col-sm-12"><h6 class="foo">Dividers</h6></div>
+
+				<div class="col-sm-12"><div class="divider"></div></div>
+				<div class="col-sm-6"><div class="divider"></div></div>
+				<div class="col-sm-6"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+                <div class="clearfix"></div>
+				<div class="col-sm-12"><div class="divider dashed"></div></div>
+				<div class="col-sm-6"><div class="divider dashed"></div></div>
+				<div class="col-sm-6"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+
+			</div>
+			<!--/ content -->
+		</div>
+		<!--/ row-->
+
+	</div>
+	<!--/ container-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<div class="body_wrap" ng-controller="imgSliderDesignControl">
+		<div class="col-md-12">
+			<select class="select_styled" ng-change="themeChange()" ng-model='theme' ng-options="x.id as x.name for x in themeOption"></select>
+		</div>
+		<div>
+			<div class="content" role="main">
+				
+					<div class="col-md-5">
+						<!-- comment form class="add-comment add-comment-velvet styled" id="addcomments"-->
+							  <div class="{{panelClass}}" id="addcomments">
+								<div class="add-comment-title"><h3>轮播</h3></div>
+								<div class="comment-form"><div class="form-inner" style="padding: 30px 19px 32px 0px;">
+										<div class="field_text" style="float:right;margin-bottom: 10px;" ng-repeat="item in chartConfig">
+											<div class="col-md-7">
+												<div class="input_wrap"><input class="inputField" name="s" id="s2" placeholder="图片路径"  ng-model='selectModel[item.ngModel]' value="" type="text" /></div>
+											</div>
+											<div  class="col-md-5">
+												<a href="#" class="btn btn-green btn-small" style="margin-top: -3px;" ng-click="addChartConfig()"><span>添加</span></a>
+												<a href="#" class="btn btn-green btn-small" style="margin-top: -3px;" ng-show="$index>0" ng-click="removeChartConfig($index)"><span>删除</span></a>
+											
+											</div>
+										</div>
+										<div class="clear"></div>
+										
+										<div class="rowSubmit">
+											<a ng-click="preView()" href="#" class="link-reset btn btn-black"><span>预览组件</span></a>
+											<a onclick="document.getElementById('commentForm').reset();return false" href="#" class="link-reset btn btn-black"><span>保存组件</span></a>
+										</div>
+									</div>
+								</div>
+							  </div>
+					</div>
+					<div class="col-md-7">
+						<div class="widget-container widget_gallery boxed boxed-cream">
+							<div class="inner">
+								<div id="myCarousel" class="carousel slide" data-interval="5000">
+									<!-- Carousel items -->
+									<div class="carousel-inner id1">
+										<div class="item active">
+											<img src="{{selectModelFirst.src}}" alt="" style="height: 300px; ">
+										</div>
+										
+										<div class="item"	ng-repeat="item in sliderArray">
+											<img src="{{item.src}}" alt="" style="height: 300px;">
+										</div>
+										
+										
+									</div>
+									<!-- Carousel indicators -->
+									<ol class="carousel-indicators">
+										
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="{{item.dataTo}}"  ng-repeat="item in sliderArray"></li>
+									</ol>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel" data-slide="prev" hidefocus="true" style="outline: none;"></a>
+									<a class="carousel-control right" href="#myCarousel" data-slide="next" hidefocus="true" style="outline: none;"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+			
+		</div>
+	</div>

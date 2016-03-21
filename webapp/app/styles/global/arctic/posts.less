@@ -1,0 +1,370 @@
+/*-----------------------------------*/
+/* Post Items */
+/*-----------------------------------*/
+
+/*
+- Post Items
+      - Post Item Labels
+      - Post Items Default Style
+      - Post Items Style 2
+      - Post Items Style 3
+      - Post Items Style 4, Post Quotes
+      - Post Images
+      - Post Video, Post Audio
+      - Post Intro Text
+- Popular Post Items
+      - Popular Post Items without Background
+      - Popular Post Items with Background
+*/
+
+
+
+/* Post Item Labels */
+
+.post-item .ribbon{
+  position: absolute;
+  top:26px;
+  left:-34px;
+  z-index: 2;
+}
+.post-label{
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/global/arctic/icons/post_label.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin: 0;
+  margin-top: 8px;
+}
+.post-label.label-image{background-position: center -20px;}
+.post-label.label-video{background-position: center -40px;}
+.post-label.label-audio{background-position: center -60px;}
+
+/* Post Items Default Style */
+
+.post-item,
+.post-item-wide{
+  position: relative;
+  margin-bottom:50px;
+}
+
+.post-item h2,
+.post-item-wide h2{
+  font-size: @font-size * 2.08;
+  margin-bottom:10px;
+}
+.post-item h2 a, .post-item-wide h2 a{color: @link-color;}
+.post-item h2 a:hover, .post-item-wide h2 a:hover{color: @link-color-hover;}
+
+.post-item .post-meta-top{
+  margin-bottom: 33px;
+}
+
+.post-item .post-meta-top span{
+  display: inline-block;
+  font-size: @font-size - 1;
+  font-weight: 700;
+  color:#868686;
+  text-transform: uppercase;
+  height:22px;
+  line-height:22px;
+  padding:0 10px 0 25px;
+  background-image: url(../../../images/global/arctic/icons/posted.png);
+  background-repeat: no-repeat;
+  text-shadow:0 1px 1px rgba(255,255,255,1);
+}
+.post-item .post-meta-top span.post-date{background-position: 0 -22px;}
+.post-item .post-meta-top span.post-author{background-position: 0 0;}
+
+.post-item .post-image,
+.post-item-wide .post-image{
+  .border-radius(@border-radius * 0.75);
+  box-shadow:inset 0 0 6px rgba(0,0,0,0.30);
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.30);
+  -moz-box-shadow:inset 0 0 6px rgba(0,0,0,0.30);
+}
+.post-item .post-image img,
+.post-item-wide .post-image img{
+  .border-radius(@border-radius * 0.75);
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+.post-item .post-image{
+  margin-bottom: 27px;
+}
+.post-item .post-desc{
+  margin-bottom: 23px;
+}
+.post-item .post-desc p{
+  margin-bottom: 10px;
+}
+.post-item .post-meta-links .btn-green{
+  margin-left:0;
+  padding-right: 26px;
+}
+.post-item .post-meta-links .btn-green span{
+  padding-left:26px;
+}
+.post-item .btn{
+  margin-left: 0;
+}
+
+/* Post Items Style 2 */
+
+.post-item.style2 .inner,
+.post-item.style4 .inner,
+.post-item.post-quote .inner,
+.post-item.post-video .inner,
+.post-item.post-audio .inner{
+  padding:32px;
+}
+.post-item.style2 h2{
+  margin-top: 4px;
+  margin-bottom:10px;
+}
+.post-item.style2 .post-meta-top{
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+
+/* Post Items Style 3 */
+
+.post-item.style3 .post-image{
+  width:48%;
+  float: left;
+  margin: 6px 21px 5px 0;
+}
+.post-item.style3 .post-meta-top {
+  margin-bottom: 16px;
+}
+.post-item.style3 .post-meta-top span {
+  margin-bottom: 10px;
+}
+.post-item.style3 .post-desc {
+  margin-bottom: 21px;
+}
+
+/* Post Items Style 4, Post Quotes */
+
+.post-item.style4 .inner{padding-top: 25px;}
+.post-item.post-quote .inner{padding: 46px 40px 14px 60px;}
+
+.post-item.style4 .post-image{
+  width:54%;
+  float: right;
+  margin: 7px 0 5px 10px;
+}
+.post-item.style4 h2 {
+  margin-bottom: 10px;
+}
+.post-item.post-quote h2 {
+  line-height: 34px;
+  margin-bottom: 11px;
+}
+.post-item.style4 .post-meta-top{
+  margin-bottom: 14px;
+}
+.post-item.style4 .post-meta-top span {
+  margin-bottom:13px;
+}
+.post-item.post-quote .post-meta-top span {
+  padding: 0px 18px 0px 27px;
+}
+.post-item.style4 .post-desc {
+  margin-bottom: 20px;
+}
+.post-item.style4 .post-desc p {
+  margin-bottom: 20px;
+}
+
+/* Post Images */
+
+.post-item.post-img .inner{padding: 50px 62px 40px;}
+
+.post-item.post-img .post-meta-top {
+  margin-bottom: 27px;
+  margin-left: -4px;
+}
+.post-item.post-img .post-meta-top span {
+  padding: 0 8px 0 33px;
+}
+.carousel-inner {
+  height: 300px;
+  .border-radius(@border-radius * 0.75);
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.45);
+  -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.45);
+  -moz-box-shadow:inset 0 0 10px rgba(0,0,0,0.45);
+}
+.carousel-inner > .item {
+  z-index: -1;
+  height: 300px;
+  overflow:hidden;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: auto;
+  max-width: none;
+}
+.carousel-control {
+  position: absolute;
+  top: 119px;
+  left: 0;
+  width: 23px;
+  height: 62px;
+  margin-top: 0;
+  background-image:url(../../../images/global/arctic/post_image_controls.png) !important;
+  background-position: left top !important;
+  background-color: transparent;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  opacity: 1;
+  filter: none !important;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-position: right top !important;
+}
+.carousel-indicators {display: none;}
+
+/* Post Video, Post Audio */
+
+.post-item.post-video .inner{padding: 54px 62px 14px;}
+.post-item.post-audio .inner{padding: 50px 62px 14px;}
+
+.post-item.post-video .post-image {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  margin: 0 0 17px 0;
+}
+.post-item.post-audio .post-image {margin: 0 0 9px 0;}
+
+.post-item.post-video .post-image img{
+  z-index:0;
+}
+.post-item.post-video h2 {
+  line-height: 33px;
+  margin-bottom: 12px;
+}
+.post-item.post-video .post-meta-top{
+  margin-left: -6px;
+}
+.post-item.post-audio .post-meta-top {
+  margin-bottom: 33px;
+  margin-left: -5px;
+}
+.post-item.post-video .post-meta-top span {
+  padding: 0px 6px 0px 31px;
+  margin-bottom:0;
+}
+.post-item.post-audio .post-meta-top span {
+  padding: 0px 9px 0px 27px;
+}
+
+/* Post Intro Text */
+
+.post-item.intro-text{margin-bottom: 50px;}
+.post-item.intro-text-boxed .divider{display: none;}
+
+.post-item.intro-text .post-meta-top span,
+.post-item.intro-text-boxed .post-meta-top span{
+  font-size: @font-size - 1;
+  text-transform: uppercase;
+  color:#989898;
+  text-shadow: 0 1px 1px #fff;
+  padding-right:11px;
+}
+.post-item.intro-text .post-meta-top {
+  margin-bottom: 21px;
+}
+.post-intro-text p{
+  font-family: @font-family;
+  font-size: @font-size * 1.22;
+  font-weight: 400;
+  color:#de3511;
+  line-height: 23px;
+  margin: 0;
+}
+.post-item.intro-text-boxed .post-intro-text {
+  background: url(../../../images/global/arctic/box_bg_bot.jpg) bottom repeat-x #fafafa;
+  .border-radius(@border-radius);
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.13);
+  margin-bottom:20px;
+  padding: 18px 27px;
+}
+.post-item.intro-text .divider {margin: 17px 0;}
+
+/*-----------------------------------*/
+/* Popular Post Items */
+/*-----------------------------------*/
+
+/* Popular Post Items without Background */
+
+.post-item-wide .inner{
+  position: relative;
+}
+.post-item-wide .badge{
+  position: absolute;
+  top:-4px;
+  right:-4px;
+  z-index: 1;
+}
+.post-item-wide .btn{
+  margin:0;
+}
+.post-item-wide h2 {
+  margin-bottom: 7px;
+  line-height: 32px;
+}
+.post-item-wide p {margin-bottom: 10px;}
+
+.post-item-wide .post-image{
+  margin-bottom:20px;
+}
+.post-item-wide .post-meta-top{
+  margin-bottom: 28px;
+  margin-left: -3px;
+}
+.post-item-wide .post-meta-top span {
+  display: block;
+  font-size: @font-size - 1;
+  font-weight: 700;
+  color: #868686;
+  text-transform: uppercase;
+  height: 20px;
+  line-height: 22px;
+  padding: 0 20px 0 29px;
+  background-image: url(../../../images/global/arctic/icons/posted.png);
+  background-repeat: no-repeat;
+  background-position: 0 -22px;
+}
+.post-item-wide .post-descr{
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+/* Popular Post Items with Background */
+
+.post-item-wide.boxed .inner{
+  padding: 32px 33px 36px;
+}
+
+/* Responsive */
+@media (max-width:479px){
+  .post-item.boxed .inner,
+  .post-item-wide.boxed .inner{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .post-item .ribbon {top: 10px;}
+}

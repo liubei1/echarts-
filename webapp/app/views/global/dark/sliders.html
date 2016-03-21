@@ -1,0 +1,879 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Velvet | Sliders and Footers</title>
+
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.10.0.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+
+<!-- Style CSS-->
+<link href="style.less" media="screen" rel="stylesheet/less" type="text/css">
+
+<!-- scripts  -->
+<script src="js/general.js"></script>
+<!-- Placeholders -->
+<script type="text/javascript" src="js/jquery.powerful-placeholder.min.js"></script>
+<!-- Lightbox prettyPhoto -->
+<script src="js/jquery.prettyPhoto.js"></script>
+<!-- aw showcase -->
+<script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
+<!-- PlaySlider -->
+<script type="text/javascript" src="js/playSlider.js"></script>
+
+<!-- CarouFredSel  -->
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+
+		$('#carouFredsel-1').carouFredSel({
+			next : "#carousel-next-1",
+			prev : "#carousel-prev-1",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-2').carouFredSel({
+			next : "#carousel-next-2",
+			prev : "#carousel-prev-2",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-3').carouFredSel({
+			next : "#carousel-next-3",
+			prev : "#carousel-prev-3",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-4').carouFredSel({
+			next : "#carousel-next-4",
+			prev : "#carousel-prev-4",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-5').carouFredSel({
+			next : "#carousel-next-5",
+			prev : "#carousel-prev-5",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-6').carouFredSel({
+			next : "#carousel-next-6",
+			prev : "#carousel-prev-6",
+			auto: false,
+			scroll: {items : 1}
+		});
+		$('#carouFredsel-7').carouFredSel({
+			next : "#carousel-next-7",
+			prev : "#carousel-prev-7",
+			auto: false,
+			scroll: {items : 1}
+		});
+
+    $(window).resize(function() {
+
+        $('#carouFredsel-1').carouFredSel({
+            next : "#carousel-next-1",
+            prev : "#carousel-prev-1",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-2').carouFredSel({
+            next : "#carousel-next-2",
+            prev : "#carousel-prev-2",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-3').carouFredSel({
+            next : "#carousel-next-3",
+            prev : "#carousel-prev-3",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-4').carouFredSel({
+            next : "#carousel-next-4",
+            prev : "#carousel-prev-4",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-5').carouFredSel({
+            next : "#carousel-next-5",
+            prev : "#carousel-prev-5",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-6').carouFredSel({
+            next : "#carousel-next-6",
+            prev : "#carousel-prev-6",
+            auto: false,
+            scroll: {items : 1}
+        });
+        $('#carouFredsel-7').carouFredSel({
+            next : "#carousel-next-7",
+            prev : "#carousel-prev-7",
+            auto: false,
+            scroll: {items : 1}
+        });
+
+    })
+	});
+</script>
+
+<!-- LESS -->
+<script src="js/libs/less.js"></script>
+
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div class="body_wrap">
+    <!--/ container-->
+    <div class="container">
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h6 class="foo">Top slider</h6>
+
+                <!-- Top slider -->
+                <div id="top-slider" class="showcase">
+                    <div class="showcase-slide">
+                        <div class="showcase-content">
+                            <a href="#"><img src="images/temp/top-slider-1.jpg" alt="" /></a>
+                        </div>
+                        <div class="showcase-thumbnail">
+                            <div class="showcase-thumbnail-content">
+                                <div class="inner">
+                                    <p>Beautiful flying people are invading some corn fields in Lacoste land</p>
+                                    <h3 class="photography">Photography</h3>
+                                </div>
+                            </div>
+                            <div class="showcase-thumbnail-cover"></div>
+                        </div>
+                    </div>
+                    <div class="showcase-slide">
+                        <div class="showcase-content">
+                            <a href="#"><img src="images/temp/top-slider-2.jpg" alt="" /></a>
+                        </div>
+                        <div class="showcase-thumbnail">
+                            <div class="showcase-thumbnail-content">
+                                <div class="inner">
+                                    <p>Learn how to enjoy more the weekend getaways, together with your family</p>
+                                    <h3 class="gadgets">Gadgets</h3>
+                                </div>
+                            </div>
+                            <div class="showcase-thumbnail-cover"></div>
+                        </div>
+                    </div>
+                    <div class="showcase-slide">
+                        <div class="showcase-content">
+                            <a href="#"><img src="images/temp/top-slider-3.jpg" alt="" /></a>
+                        </div>
+                        <div class="showcase-thumbnail">
+                            <div class="showcase-thumbnail-content">
+                                <div class="inner">
+                                    <p>Best music albums of 2010: Lifestyle Mojo</p>
+                                    <h3 class="music">Music</h3>
+                                </div>
+                            </div>
+                            <div class="showcase-thumbnail-cover"></div>
+                        </div>
+                    </div>
+                    <div class="showcase-slide">
+                        <div class="showcase-content">
+                            <a href="#"><img src="images/temp/top-slider-4.jpg" alt="" /></a>
+                        </div>
+                        <div class="showcase-thumbnail">
+                            <div class="showcase-thumbnail-content">
+                                <div class="inner">
+                                    <p>Beautiful flying people are invading some corn fields in Lacoste land</p>
+                                    <h3 class="photography">Video</h3>
+                                </div>
+                            </div>
+                            <div class="showcase-thumbnail-cover"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        var topSlider = $("#top-slider").html();
+
+                        $("#top-slider").awShowcase({
+                            fit_to_parent:			true,
+                            auto:					true,
+                            interval:				5000,
+                            continuous:				true,
+                            arrows:					false,
+                            buttons:				false,
+                            transition:				'fade',
+                            transition_delay:		300,
+                            transition_speed:		500,
+                            show_caption:			'onhover',
+                            thumbnails:				true,
+                            thumbnails_position:	'inside-last',
+                            thumbnails_direction:	'vertical'
+                        });
+
+                        $(window).resize(function() {
+                            $('#top-slider').empty()
+                            .html(topSlider)
+                            .awShowcase({
+                                fit_to_parent:			true,
+                                auto:					true,
+                                interval:				500000,
+                                continuous:				true,
+                                arrows:					false,
+                                buttons:				false,
+                                transition:				'fade',
+                                transition_delay:		300,
+                                transition_speed:		500,
+                                show_caption:			'onhover',
+                                thumbnails:				true,
+                                thumbnails_position:	'inside-last',
+                                thumbnails_direction:	'vertical'
+                            });
+                        });
+                    });
+                </script>
+                <!--/ Top slider -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h6 class="foo">Feature slider</h6>
+
+                <!-- Carousel Feature -->
+                <div class="carouFredsel feature">
+                    <ul id="carouFredsel-7">
+                        <li class="wide">
+                            <a href="#">
+                                <div class="carousel-title"><i class="ico-feature ico-feature1"></i><h5>Wall e animated series</h5></div>
+                                <div class="carousel-image"><img src="images/temp/feature-slider-1.png" alt="" /></div>
+                            </a>
+                            <div class="badge style2 badge-discount"></div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><i class="ico-feature ico-feature2"></i><h5>Toy Story 3</h5></div>
+                                <div class="carousel-image"><img src="images/temp/feature-slider-2.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><i class="ico-feature ico-feature2"></i><h5>Ratatouille</h5></div>
+                                <div class="carousel-image"><img src="images/temp/feature-slider-3.png" alt="" /></div>
+                            </a>
+                            <div class="badge style2 badge-try"></div>
+                        </li>
+                        <li class="wide">
+                            <a href="#">
+                                <div class="carousel-title"><i class="ico-feature ico-feature1"></i><h5>Wall e series</h5></div>
+                                <div class="carousel-image"><img src="images/temp/feature-slider-4.png" alt="" /></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-7" class="prev" href="#">prev</a>
+                    <a id="carousel-next-7" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel Feature -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h6 class="foo">Main slider</h6>
+
+                <!-- Main Slider -->
+                <div class="playSlider">
+                    <ul class="slide-content">
+                        <li>
+                            <div class="textHolder">
+                                <h3>01. MTV Europe</h3>
+                                <p><strong><a href="#">MTV Europe</a></strong><span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>
+                            </div>
+                            <img src="images/temp/main-slider-1.jpg" alt="" />
+                        </li>
+
+                        <li>
+                            <div class="textHolder">
+                                <h3>02. Pixar Up Movie</h3>
+                                <p><strong><a href="#">Fan of Pixar movie UP takes to the skies</a></strong><span>We helped Glade Inc. design their latest fragrance for househould perfumes</span></p>
+                            </div>
+                            <img src="images/temp/main-slider-2.jpg" alt="" />
+                        </li>
+
+                        <li>
+                            <div class="textHolder">
+                                <h3>03. Scotch &amp; Soda</h3>
+                                <p><strong><a href="#">Scotch &amp; Soda</a></strong><span>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></p>
+                            </div>
+                            <img src="images/temp/main-slider-3.jpg" alt="" />
+                        </li>
+
+                        <li>
+                            <div class="textHolder">
+                                <h3>04. Mercedes Benz</h3>
+                                <p><strong><a href="#">Mercedes Benz</a></strong><span>a premium sports and orthopedic rehabilitation facility.</span></p>
+                            </div>
+                            <img src="images/temp/main-slider-4.jpg" alt="" />
+                        </li>
+
+                    </ul>
+                    <div class="progressBar"><div class="progressIndicator"></div></div>
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var playslider = $(".playSlider").html();
+
+                        $('.playSlider').playSlider({
+                            animationSpeed: 1000,
+                            easing: '',
+                            autoplay: true,
+                            autoplaySpeed: 4000,
+                            keyBrowse: false
+                        });
+
+                        $(window).resize(function() {
+                            $('.playSlider').empty()
+                            .html(playslider)
+                            .playSlider({
+                                animationSpeed: 1000,
+                                easing: '',
+                                autoplay: true,
+                                autoplaySpeed: 4000,
+                                keyBrowse: false
+                            });
+                        });
+                    });
+                </script>
+                <!--/ Main Slider -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h6 class="foo">Content image sliders</h6>
+
+                <!-- Carousel -->
+                <div class="carouFredsel">
+                    <ul id="carouFredsel-1">
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-1.png" data-rel="prettyPhoto" title="Horton"><img src="images/temp/carousel-1.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-2.png" data-rel="prettyPhoto" title="Horton"><img src="images/temp/carousel-2.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-3.png" data-rel="prettyPhoto" title="Brave"><img src="images/temp/carousel-3.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-4.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-4.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-5.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-5.png" alt="" /></a></div>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-1" class="prev" href="#">prev</a>
+                    <a id="carousel-next-1" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-8">
+
+                <!-- Carousel -->
+                <div class="carouFredsel style2">
+                    <ul id="carouFredsel-2">
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-4.png" data-rel="prettyPhoto" title="Brave"><img src="images/temp/carousel-4.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-5.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-5.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-1.png" data-rel="prettyPhoto" title="Wall-e"><img src="images/temp/carousel-1.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-2.png" data-rel="prettyPhoto" title="Brave"><img src="images/temp/carousel-2.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-6.png" data-rel="prettyPhoto" title="Brave"><img src="images/temp/carousel-6.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-3.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-3.png" alt="" /></a></div>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-2" class="prev" href="#">prev</a>
+                    <a id="carousel-next-2" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel -->
+
+            </div>
+            <div class="col-sm-4">
+
+                <!-- Carousel -->
+                <div class="carouFredsel style2">
+                    <ul id="carouFredsel-3">
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-6.png" data-rel="prettyPhoto" title="Ice Age"><img src="images/temp/carousel-6.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-3.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-3.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-4.png" data-rel="prettyPhoto" title="Ice Age"><img src="images/temp/carousel-4.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-2.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-2.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-8.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-8.png" alt="" /></a></div>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-3" class="prev" href="#">prev</a>
+                    <a id="carousel-next-3" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-6">
+
+                <!-- Carousel -->
+                <div class="carouFredsel style3 gradient-inverse">
+                    <ul id="carouFredsel-4">
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-7.png" data-rel="prettyPhoto" title="Brave"><img src="images/temp/carousel-7.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-8.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-8.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-4.png" data-rel="prettyPhoto" title="Wall-e"><img src="images/temp/carousel-4.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-6.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-6.png" alt="" /></a></div>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-4" class="prev" href="#">prev</a>
+                    <a id="carousel-next-4" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel -->
+
+            </div>
+            <div class="col-sm-6">
+
+                <!-- Carousel -->
+                <div class="carouFredsel style3">
+                    <ul id="carouFredsel-5">
+                        <li>
+                            <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-9.png" data-rel="prettyPhoto" title="Megamind"><img src="images/temp/carousel-9.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-10.png" data-rel="prettyPhoto" title="Cars"><img src="images/temp/carousel-10.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-4.png" data-rel="prettyPhoto" title="Surf up"><img src="images/temp/carousel-4.png" alt="" /></a></div>
+                        </li>
+                        <li>
+                            <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                            <div class="carousel-image"><a href="images/temp/carousel-8.png" data-rel="prettyPhoto" title="Cars"><img src="images/temp/carousel-8.png" alt="" /></a></div>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-5" class="prev" href="#">prev</a>
+                    <a id="carousel-next-5" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel -->
+
+            </div>
+        </div>
+        <!--/ row-->
+
+        <!-- row-->
+        <div class="row">
+            <div class="col-sm-12">
+                <h6 class="foo">Most commented slider</h6>
+
+                <!-- Carousel Most commented -->
+                <div class="carouFredsel most-commented">
+                    <ul id="carouFredsel-6">
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-11.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>The Inside Anatomy of Pixar's CARS Characters</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-12.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-13.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Action Figure Insider Best Toy News on the</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-14.png" alt="" /></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="carousel-title"><p>Disney's Latest Attraction Based on Pixar Cars</p></div>
+                                <div class="carousel-image"><img src="images/temp/carousel-9.png" alt="" /></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a id="carousel-prev-6" class="prev" href="#">prev</a>
+                    <a id="carousel-next-6" class="next" href="#">next</a>
+                </div>
+                <!--/ Carousel Most commented -->
+
+            </div>
+        </div>
+        <!--/ row-->
+    </div>
+    <!--/ container-->
+
+<footer>
+
+    <div class="container"><div class="row"><div class="col-sm-12"><h6 class="foo">Dark footer</h6></div></div></div>
+
+    <!-- Footer Dark -->
+    <div class="footer footer-dark">
+        <div class="divider-full"></div>
+
+        <!-- container-->
+        <div class="container">
+
+            <div class="divider-top"></div>
+
+            <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>OUR HOSTING</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Website Hosting</span></a></li>
+                            <li><a href="#"><span>Reseller Hosting</span></a></li>
+                            <li><a href="#"><span>Cloud Servers</span></a></li>
+                            <li><a href="#"><span>Site Supercharge</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>AFFILIATES</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Hosting Affiliates</span></a></li>
+                            <li><a href="#"><span>Affiliate Banners</span></a></li>
+                            <li><a href="#"><span>Affiliate Login</span></a></li>
+                            <li><a href="#"><span>Affiliate Sign-up</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>SUPPORT</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Knowledgebase</span></a></li>
+                            <li><a href="#"><span>Community Forum</span></a></li>
+                            <li><a href="#"><span>Video Tutorials</span></a></li>
+                            <li><a href="#"><span>Contact Live Support</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>ABOUT US</span></h3>
+                        <ul>
+                            <li><a href="#"><span>About Cloud-Host</span></a></li>
+                            <li><a href="#"><span>Our Team</span></a></li>
+                            <li><a href="#"><span>In the Press</span></a></li>
+                            <li><a href="#"><span>Contact us directly</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>CAREERS</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Join our team</span></a></li>
+                            <li><a href="#"><span>Job Offerings Board</span></a></li>
+                            <li><a href="#"><span>Send your Resume</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_contact">
+                        <h3 class="widget-title"><span>OUR ADDRESS</span></h3>
+                        <ul class="contact-address">
+                            <li class="address"><span>Rue Teissere, #.24 060</span></li>
+                            <li class="city"><span>Cannes, France</span></li>
+                            <li class="phone"><span>Phone: +33(0) 9399 79</span></li>
+                            <li class="fax"><span>Fax: +33(0) 5499 7987</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bottom"></div>
+
+            <div class="row">
+                <div class="col-sm-2"><div class="write_email footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support1"></i><span>Write us an Email</span></a></div></div>
+                <div class="col-sm-2"><div class="live_chat footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support2"></i><span>Live Chat 24 / 7</span></a></div></div>
+                <div class="col-sm-4"><div class="live_support footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support3"></i><span>Support: +33 (0) 9399 7987</span></a></div></div>
+                <div class="col-sm-4"><div class="copyright footer_bottom"><span>&copy; Copyright 2012 | Hosting Co. All rights reserved</span></div></div>
+            </div>
+        </div>
+        <!--/ container-->
+    </div>
+    <!--/ Footer Dark -->
+
+    <div class="container"><div class="row"><div class="col-sm-12"><h6 class="foo">No background footer</h6></div></div></div>
+
+    <!-- Footer Default Style -->
+	<div class="footer">
+        <div class="divider-full"></div>
+
+        <!-- container-->
+        <div class="container">
+
+            <div class="divider-top"></div>
+
+            <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>OUR HOSTING</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Website Hosting</span></a></li>
+                            <li><a href="#"><span>Reseller Hosting</span></a></li>
+                            <li><a href="#"><span>Cloud Servers</span></a></li>
+                            <li><a href="#"><span>Site Supercharge</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>AFFILIATES</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Hosting Affiliates</span></a></li>
+                            <li><a href="#"><span>Affiliate Banners</span></a></li>
+                            <li><a href="#"><span>Affiliate Login</span></a></li>
+                            <li><a href="#"><span>Affiliate Sign-up</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>SUPPORT</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Knowledgebase</span></a></li>
+                            <li><a href="#"><span>Community Forum</span></a></li>
+                            <li><a href="#"><span>Video Tutorials</span></a></li>
+                            <li><a href="#"><span>Contact Live Support</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>ABOUT US</span></h3>
+                        <ul>
+                            <li><a href="#"><span>About Cloud-Host</span></a></li>
+                            <li><a href="#"><span>Our Team</span></a></li>
+                            <li><a href="#"><span>In the Press</span></a></li>
+                            <li><a href="#"><span>Contact us directly</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>CAREERS</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Join our team</span></a></li>
+                            <li><a href="#"><span>Job Offerings Board</span></a></li>
+                            <li><a href="#"><span>Send your Resume</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_contact">
+                        <h3 class="widget-title"><span>OUR ADDRESS</span></h3>
+                        <ul class="contact-address">
+                            <li class="address"><span>Rue Teissere, #.24 060</span></li>
+                            <li class="city"><span>Cannes, France</span></li>
+                            <li class="phone"><span>Phone: +33(0) 9399 79</span></li>
+                            <li class="fax"><span>Fax: +33(0) 5499 7987</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bottom"></div>
+
+            <div class="row">
+                <div class="col-sm-2"><div class="write_email footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support1"></i><span>Write us an Email</span></a></div></div>
+                <div class="col-sm-2"><div class="live_chat footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support2"></i><span>Live Chat 24 / 7</span></a></div></div>
+                <div class="col-sm-4"><div class="live_support footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support3"></i><span>Support: +33 (0) 9399 7987</span></a></div></div>
+                <div class="col-sm-4"><div class="copyright footer_bottom"><span>&copy; Copyright 2012 | Hosting Co. All rights reserved</span></div></div>
+            </div>
+        </div>
+        <!--/ container-->
+	</div>
+	<!--/ Footer Default Style -->
+
+    <div class="container"><div class="row"><div class="col-sm-12"><h6 class="foo">Light footer</h6></div></div></div>
+
+    <!-- Footer Light -->
+    <div class="footer footer-light">
+        <div class="divider-full"></div>
+
+        <!-- container-->
+        <div class="container">
+
+            <div class="divider-top"></div>
+
+            <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>OUR HOSTING</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Website Hosting</span></a></li>
+                            <li><a href="#"><span>Reseller Hosting</span></a></li>
+                            <li><a href="#"><span>Cloud Servers</span></a></li>
+                            <li><a href="#"><span>Site Supercharge</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>AFFILIATES</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Hosting Affiliates</span></a></li>
+                            <li><a href="#"><span>Affiliate Banners</span></a></li>
+                            <li><a href="#"><span>Affiliate Login</span></a></li>
+                            <li><a href="#"><span>Affiliate Sign-up</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>SUPPORT</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Knowledgebase</span></a></li>
+                            <li><a href="#"><span>Community Forum</span></a></li>
+                            <li><a href="#"><span>Video Tutorials</span></a></li>
+                            <li><a href="#"><span>Contact Live Support</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>ABOUT US</span></h3>
+                        <ul>
+                            <li><a href="#"><span>About Cloud-Host</span></a></li>
+                            <li><a href="#"><span>Our Team</span></a></li>
+                            <li><a href="#"><span>In the Press</span></a></li>
+                            <li><a href="#"><span>Contact us directly</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_nav_menu">
+                        <h3 class="widget-title"><span>CAREERS</span></h3>
+                        <ul>
+                            <li><a href="#"><span>Join our team</span></a></li>
+                            <li><a href="#"><span>Job Offerings Board</span></a></li>
+                            <li><a href="#"><span>Send your Resume</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="widget-container widget_contact">
+                        <h3 class="widget-title"><span>OUR ADDRESS</span></h3>
+                        <ul class="contact-address">
+                            <li class="address"><span>Rue Teissere, #.24 060</span></li>
+                            <li class="city"><span>Cannes, France</span></li>
+                            <li class="phone"><span>Phone: +33(0) 9399 79</span></li>
+                            <li class="fax"><span>Fax: +33(0) 5499 7987</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-bottom"></div>
+
+            <div class="row">
+                <div class="col-sm-2"><div class="write_email footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support1"></i><span>Write us an Email</span></a></div></div>
+                <div class="col-sm-2"><div class="live_chat footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support2"></i><span>Live Chat 24 / 7</span></a></div></div>
+                <div class="col-sm-4"><div class="live_support footer_bottom"><a href="#"><i class="ico-footer-support ico-footer-support3"></i><span>Support: +33 (0) 9399 7987</span></a></div></div>
+                <div class="col-sm-4"><div class="copyright footer_bottom"><span>&copy; Copyright 2012 | Hosting Co. All rights reserved</span></div></div>
+            </div>
+        </div>
+        <!--/ container-->
+    </div>
+    <!--/ Footer Light -->
+
+</footer>
+</div>
+</body>
+</html>

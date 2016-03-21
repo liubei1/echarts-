@@ -1,0 +1,26 @@
+{
+  "GLOABL":{
+    "APP_NAME": "大数据服务平台",
+    "TITLE_NAME": "大数据服务平台",
+    "APP_VERSION": "1.0.0",
+    "TEST_NAME":"测试名称"
+  },
+  "LOGIN":{
+    "LOGIN_USERNAME":"登录用户",
+    "LOGIN_PASSWORD":"登录密码",
+    "LOGIN_REMEMBER":"记住我",
+    "LOGIN_SUBMIT":"登   录"
+  },
+  "WIDGET":{
+    "ECHARTS":{
+      "RELOAD":"重新加载",
+      "SAVE":"保存配置",
+      "PRESET_CHARTS":"预设图表",
+      "COMMON_CHARTS":"通用设置",
+      "COMPONENT_CHARTS":"图表组件",
+      "COMPONENT":{
+        "TITLE":"标题"
+      }
+    }
+  }
+}

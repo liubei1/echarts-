@@ -1,0 +1,940 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chubby Stacks | Blog</title>
+
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.10.2.min.js"></script>
+<script src="js/libs/jquery-ui.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+
+<!-- Style LESS -->
+<link href="style.less" media="screen" rel="stylesheet/less" type="text/css">
+
+<!-- LESS.JS -->
+<script src="js/libs/less.js"></script>
+
+<!-- General Scripts -->
+<script src="js/general.js"></script>
+
+<!-- custom input -->
+<script src="js/jquery.customInput.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!-- Lightbox prettyPhoto -->
+<script src="js/jquery.prettyPhoto.js"></script>
+
+<!-- Calendar -->
+<script src="js/jquery-ui.multidatespicker.js"></script>
+
+<!-- Video Player  -->
+<script src="js/video.js"></script>
+<script>
+    videojs.options.flash.swf = "js/video-js.swf";
+</script>
+
+<!-- Audio Player  -->
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function(){
+
+        new jPlayerPlaylist({
+            jPlayer: "#jquery_jplayer_1",
+            cssSelectorAncestor: "#jp_container_1"
+        }, [
+            {
+                title:"<span class='item-artist'>Rihanna - </span><span class='item-song'>Only Girl</span><img class='item-image' src='images/temp/music-player-1.jpg' alt='' />",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+            },
+            {
+                title:"<span class='item-artist'>Yaki Da - </span><span class='item-song'>Dancing</span><img class='item-image' src='images/temp/music-player-2.jpg' alt='' />",
+                mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+            },
+            {
+                title:"<span class='item-artist'>Pandora - </span><span class='item-song'>Sands of Time</span><img class='item-image' src='images/temp/music-player-3.jpg' alt='' />",
+                mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+                oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            }
+        ], {
+            swfPath: "js",
+            supplied: "oga, mp3",
+            wmode: "window",
+            smoothPlayBar: false,
+            keyEnabled: false
+        });
+    });
+    //]]>
+</script>
+
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div class="body-wrap">
+	<div class="container">
+
+		<!-- row-->
+		<div class="row">
+			<div class="col-sm-8">
+				<!-- content-->
+				<div class="content " role="main">
+
+					<!-- post list -->
+					<div class="postlist">
+
+						<h6 class="foo">Blog post entry</h6>
+						<!-- post item-->
+						<div class="post-item">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">'Brave' princess Merida gets a sexy makeover, but fans aren't pleased.</a></h2></div>
+								<div class="post-carousel-wrap boxed">
+                                    <div class="post-carousel">
+                                        <div id="myCarousel" class="carousel slide" data-interval="20000">
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="active item">
+                                                    <a href="images/temp/post-img-1.jpg" data-rel="prettyPhoto" title="Disney’s Brave"><img src="images/temp/post-img-1.jpg" alt="" /></a>
+                                                    <div class="carousel-desc"><strong>Disney’s Brave</strong><span>- Change your fate.</span></div>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="images/temp/post-img-2.jpg" data-rel="prettyPhoto" title="Ice Age"><img src="images/temp/post-img-2.jpg" alt="" /></a>
+                                                    <div class="carousel-desc"><strong>Ice Age</strong><span>- Change your fate.</span></div>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="images/temp/post-img-3.jpg" data-rel="prettyPhoto" title="Horton"><img src="images/temp/post-img-3.jpg" alt="" /></a>
+                                                    <div class="carousel-desc"><strong>Horton</strong><span>- Change your fate.</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            </ol>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="post-desc">
+									<p>Angry fans of Pixar hit 'Brave' say princess Merida's sleek new look isn't sending young girls a positive message. A petition urges Disney to bring Merida back in her original form. Merida 2.0 has a whittled waist, frizz-free hair and bright, almond-shaped eyes. The “Brave” character got the modern makeover just in time for her crowning as an official</p>
+								</div>
+								<div class="post-meta-bot clearfix">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-small btn-white btn-caps"><span>4 Comments</span></a>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Blog post entry with background</h6>
+						<!-- post item-->
+						<div class="post-item boxed style2">
+							<div class="inner">
+								<div class="post-image"><img src="images/temp/post-img-2.jpg" alt=""></div>
+								<div class="post-title"><h2><a href="#">Can Despicable Me 2 beat Iron Man 3? It looks set to trounce the superhero!</a></h2></div>
+								<div class="post-desc">
+									<p>Despicable Me 2, the animated sequel to Universal’s 2010 blockbuster, beat both movies on Saturday and conjured a £4.8 million gross over a two-day time frame. Once its figures for this coming Friday, Saturday and Sunday are counted, it could rival Man of Steel’s £11.2m and Iron Man 3’s £13.7m as one</p>
+								</div>
+								<div class="post-meta-bot clearfix">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>8 Comments</span></a>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Blog post entry with image on the left</h6>
+						<!-- post item-->
+						<div class="post-item style3 clearfix">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">Free Birds In theaters: November 1st, 2013</a></h2></div>
+                                <div class="post-meta-top">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                </div>
+								<div class="post-image"><img src="images/temp/post-img-4.jpg" alt=""></div>
+								<div class="post-desc">
+									<p>In this hilarious, adventurous buddy comedy for audiences of all ages, directed by Jimmy Hayward (Horton Hears a Who!), two turkeys from differences and team up to travel back in time to change the course of history - and get turkey off the Thanksgiving menu for good.</p>
+									<p>Cast: <a href="#">Owen Wilson</a>, <a href="#">Woody Harrelson</a>, Amy Poehler, Dan Fogler, Lesley Nicol, George Takei.</p>
+								</div>
+								<div class="post-meta-bot clearfix">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>16 Comments</span></a>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Blog post entry with image on the right</h6>
+						<!-- post item-->
+						<div class="post-item boxed style4">
+							<div class="inner">
+								<div class="post-title"><h2><a href="#">Star Wars job goes to Toy Story 3 writer, fans waiting for first scripts.</a></h2></div>
+								<div class="post-image"><img src="images/temp/post-img-12.jpg" alt=""></div>
+								<div class="post-desc">
+									<p>Arndt won an Oscar for best original screenplay for the 2006 comedy Little Miss Sunshine. His screenplay for Toy Story 3 was nominated for best adapted screenplay in 2010.</p>
+									<p>Ford's Hollywood star rose with his appearances in the three Star Wars film, which he followed up with his role as archaeologist adventurer Indiana Jones and films including with The Fugitive and his Oscar-nominated turn in Witness. However, there actors Mark Hamill and Carrie Fisher in older incarnations of their characters - Luke Skywalker and Princess Leia - from the original Star Wars trilogy. Harrison Ford, who played space smuggler Han Solo, is also reported to be interested in reprising his.</p>
+								</div>
+                                <div class="post-meta-bot clearfix">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>6 Comments</span></a>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Quote blog entry</h6>
+						<!-- post item-->
+						<div class="post-item post-quote boxed">
+                            <span class="post-label"></span>
+                            <div class="inner">
+								<div class="post-title"><h2><a href="#">There is only one boss. The customer. And he can fire everybody in the company from the chairman on down, simply by spending his money</a></h2></div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/post item-->
+
+						<h6 class="foo">Image blog entry</h6>
+						<!-- post item images -->
+						<div class="post-item post-img boxed">
+                            <span class="post-label label-image"></span>
+                            <div class="inner">
+								<div class="post-title"><h2><a href="#">Awesome Illustrations by Viet-My Bui, a Designer from Vietnam.</a></h2></div>
+                                <div class="post-carousel">
+                                    <div id="myCarousel2" class="carousel slide" data-interval="20000">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item">
+                                                <a href="images/temp/post-img-5.jpg" data-rel="prettyPhoto" title="The Croods"><img src="images/temp/post-img-5.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/temp/post-img-1.jpg" data-rel="prettyPhoto" title="Ice Age"><img src="images/temp/post-img-1.jpg" alt="" /></a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/temp/post-img-3.jpg" data-rel="prettyPhoto" title="Horton"><img src="images/temp/post-img-3.jpg" alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <!-- Carousel indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                                        </ol>
+                                        <!-- Carousel nav -->
+                                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev"></a>
+                                        <a class="carousel-control right" href="#myCarousel2" data-slide="next"></a>
+                                    </div>
+                                </div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/post item images -->
+
+						<h6 class="foo">Video blog entry</h6>
+						<!-- post item video -->
+						<div class="post-item post-video boxed">
+                            <span class="post-label label-video"></span>
+                            <div class="inner">
+								<div class="post-image">
+                                    <video id="video1" controls preload="none" poster="images/temp/vjs-poster.jpg" class="video-js vjs-default-skin">
+                                        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                                        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                                    </video>
+									<script>
+                                        videojs("video1", {
+                                            "height": "auto",
+                                            "width": "auto"
+                                            }).ready(function() {
+                                                var myPlayer = this; // Store the video object
+                                                var aspectRatio = 3 / 5; // Make up an aspect ratio
+                                                function resizeVideoJS() {
+                                                    // Get the parent element's actual width
+                                                    var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
+                                                    // Set width to fill parent element, Set height
+                                                    myPlayer.width(width).height(width * aspectRatio);
+                                                }
+
+                                                resizeVideoJS(); // Initialize the function
+                                                window.onresize = resizeVideoJS; // Call the function on resize
+                                            });
+									</script>
+								</div>
+								<div class="post-title"><h2><a href="#">Impressive Illustrations by Theo Prins, a Designer from the USA.</a></h2></div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-about">
+                                        <span class="post-date">july 1ST, 2013</span>
+                                        <span class="post-author">Johnathan Doe</span>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/post item video -->
+
+						<h6 class="foo">Audio blog entry</h6>
+						<!-- post item audio -->
+						<div class="post-item post-audio boxed">
+                            <span class="post-label label-audio"></span>
+                            <div class="inner">
+								<div class="post-title"><h2><a href="#">Coldplay Releases “Charlie Brown” </a></h2></div>
+								<div class="post-meta-bot">
+                                    <!-- jplayer-->
+                                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                                    <div id="jp_container_1" class="jp-audio">
+                                        <div class="jp-gui jp-interface">
+                                            <div class="song-title"></div>
+                                            <div class="jp-current-time"></div>
+                                            <div class="jp-duration"></div>
+                                            <div class="jp-progress">
+                                                <div class="jp-seek-bar">
+                                                    <div class="jp-play-bar gradient">
+                                                        <div class="jp-seek-handle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jp-controls">
+                                                <a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a><!--
+                                                --><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a><!--
+                                                --><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a><!--
+                                                --><a href="javascript:;" class="jp-play" tabindex="1">play</a><!--
+                                                --><a href="javascript:;" class="jp-pause" tabindex="1">pause</a><!--
+                                                --><a href="javascript:;" class="jp-next" tabindex="1">next</a><!--
+                                                --><a href="javascript:;" class="jp-stop" tabindex="1">stop</a><!--
+                                                --><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a><!--
+                                                --><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a><!--
+                                                --><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a><!--
+                                                --><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a><!--
+                                                --><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a>
+                                            </div>
+                                            <div class="jp-volume-bar">
+                                                <div class="jp-volume-bar-value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-playlist">
+                                            <ul class="jp-playlist-inner">
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                        <div class="jp-no-solution">
+                                            <span>Update Required</span>
+                                            <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                        </div>
+                                    </div>
+                                    <!--/ jplayer-->
+								</div>
+							</div>
+						</div>
+						<!--/post item audio -->
+
+					</div>
+					<!--/ postlist-->
+				</div>
+				<!--/ content-->
+		    </div>
+
+			<div class="col-sm-4">
+				<!-- sidebar-->
+				<div class="sidebar">
+					<h6 class="foo">Sidebars</h6>
+
+					<!-- widget categories -->
+					<div class="widget-container widget-categories boxed">
+						<div class="inner">
+                            <h3 class="widget-title">Blog Categories</h3>
+                            <ul id="categories">
+                                <li><a href="#"><i class="ico-cat"></i><span>Awesome Ideas</span></a></li>
+                                <li><a href="#"><i class="ico-cat ico-cat2"></i><span><sup class="note note-red gradient">3</sup>TV Shows</span></a></li>
+                                <li><a href="#"><i class="ico-cat ico-cat3"></i><span>Around the World</span></a></li>
+                                <li class="current-menu-item"><a href="#"><i class="ico-cat ico-cat4"></i><span>Gaming</span></a></li>
+                                <li><a href="#"><i class="ico-cat ico-cat5"></i><span>Photography</span></a></li>
+                                <li><a href="#"><i class="ico-cat ico-cat6"></i><span>Graphic Design</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!--/widget categories-->
+
+					<!-- latest stories -->
+					<div class="widget-container widget-recent-stories boxed">
+						<div class="inner">
+							<h3 class="widget-title">Latest Stories</h3>
+							<ul>
+								<li class="clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-1.jpg" alt="" /></a>
+									<a href="#" class="post-title">UP fan takes to the skies in a house by tying hundreds of balloons to it just like</a>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-2.jpg" alt="" /></a>
+									<a href="#" class="post-title">Working in paradise is just murder! Ben Miller is on the case in glorious</a>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-3.jpg" alt="" /></a>
+									<a href="#" class="post-title">Mancini red rage! Kompany facing ban for 'nothing' fumes City manager but</a>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-4.jpg" alt="" /></a>
+									<a href="#" class="post-title">Adebayor set for Africa Cup of Nations as Togo chief overrules decision to leave</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--/latest stories -->
+
+					<!-- latest comments-->
+					<div class="widget-container widget-recent-comments boxed">
+						<div class="inner">
+							<h3 class="widget-title">Latest Comments</h3>
+							<ul id="recentcomments">
+								<li class="recentcomments clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-5.jpg" alt="" /></a>
+									<span class="recent_comment"><a href="#" rel="external nofollow">Jonatan Doe: </a>UP fan takes to the skies in a house by tying hundreds of balloons</span>
+								</li>
+								<li class="recentcomments clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-6.jpg" alt="" /></a>
+									<span class="recent_comment"><a href="#" rel="external nofollow">DimiB: </a>Working in paradise is just murder! Ben Miller is on the case in glorious</span>
+								</li>
+								<li class="recentcomments clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-7.jpg" alt="" /></a>
+									<span class="recent_comment"><a href="#" rel="external nofollow">Alex Luncasu: </a>Mancini red rage! Kompany facing ban for 'nothing' fumes City</span>
+								</li>
+								<li class="recentcomments clearfix">
+									<a href="#" class="widget-thumb"><img src="images/temp/thumb-8.jpg" alt="" /></a>
+									<span class="recent_comment"><a href="#" rel="external nofollow">BogdanC: </a>Adebayor set for Africa Cup of Nations as Togo chief overrules deci</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- latest comments-->
+
+					<!-- widget tags-->
+					<div class="widget-container widget-tags boxed">
+						<div class="inner">
+							<h3 class="widget-title">Tags</h3>
+							<div class="tagcloud">
+								<a href="#" title="2 topics"><span>Design</span></a>
+								<a href="#" title="3 topics"><span>Fashion Culture</span></a>
+								<a href="#" title="5 topics"><span>Electricity</span></a>
+								<a href="#" title="8 topics"><span>Kitchen</span></a>
+								<a href="#" title="9 topics"><span>Cinema</span></a>
+								<a href="#" title="3 topics"><span>Anniversaries</span></a>
+								<a href="#" title="6 topics"><span>Web</span></a>
+								<a href="#" title="8 topics"><span>Cooking</span></a>
+								<a href="#" title="9 topics"><span>Print</span></a>
+							</div>
+						</div>
+					</div>
+					<!--/ widget tags-->
+
+					<!-- widget flickr-->
+					<div class="widget-container widget-flickr boxed">
+						<div class="inner">
+							<h3 class="widget-title">Flickr Photo Stream</h3>
+							<div class="flickr-inner">
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-1.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-2.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-3.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-4.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-5.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-6.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-7.jpg" alt="" /></a></div>
+								<div class="flickr-image"><a href="#"><img src="images/temp/flickr-8.jpg" alt="" /></a></div>
+							</div>
+						</div>
+					</div>
+					<!--/ widget flickr-->
+
+					<!-- widget text-->
+					<div class="widget-container widget-text boxed">
+						<div class="inner">
+							<h3 class="widget-title">Text widget</h3>
+							<div class="textwidget">
+								<p>Microsoft's debut of the Surface family of tablets wowed on several levels yesterday, not the least of which is the fact that Redmond will be moving into direct competition with some of the hardware partners</p>
+							</div>
+						</div>
+					</div>
+					<!-- /widget text-->
+
+					<!-- widget calendar-->
+					<div class="widget-container widget-calendar boxed">
+						<div class="inner">
+							<input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+							<script>
+								// <![CDATA[
+								jQuery(document).ready(function($) {
+									var daysRange = 5;
+
+									function assignCalendar(id){
+										$('<div class="calendar" />')
+												.insertAfter( $(id) )
+												.multiDatesPicker({
+													dateFormat: 'yy-mm-dd',
+													minDate: new Date(),
+													maxDate: '+1y',
+													altField: id,
+													firstDay: 1,
+													showOtherMonths: true
+												}).prev().hide();
+									}
+
+									assignCalendar('#date_departure');
+								});
+								// ]]>
+							</script>
+						</div>
+					</div>
+					<!--/ widget calendar-->
+
+				</div>
+				<!--/ sidebar-->
+		    </div>
+		</div>
+		<!--/ row-->
+
+		<!-- row-->
+	    <div class="row">
+		    <!-- content -->
+		    <div class="content clearfix">
+
+			    <div class="col-sm-12"><h6 class="foo">Popular blog entries</h6></div>
+			    <!-- post list -->
+			    <div class="postlist">
+
+                    <div class="col-sm-4">
+		                <!-- post item wide -->
+		                <div class="post-item-popular">
+			                <div class="inner">
+                                <div class="badge badge-new"></div>
+				                <div class="post-image">
+					                <img src="images/temp/post-img-6.jpg" alt="" />
+				                </div>
+				                <div class="post_title">
+					                <h2><a href="#">Steve Carell gives life to lovely villain</a></h2>
+				                </div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+				                <div class="post-descr">
+					                <p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once renowned for its original.</p>
+				                </div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+			                </div>
+                        </div>
+		                <!--/ post item wide -->
+                    </div>
+
+				    <div class="col-sm-4">
+					    <!-- post item wide -->
+					    <div class="post-item-popular">
+						    <div class="inner">
+                                <div class="badge badge-fresh"></div>
+							    <div class="post-image">
+								    <img src="images/temp/post-img-7.jpg" alt="" />
+							    </div>
+							    <div class="post_title">
+								    <h2><a href="#">Despicable Me 2, Pixar and Disney’s latest</a></h2>
+							    </div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+							    <div class="post-descr">
+								    <p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once renowned for its original.</p>
+							    </div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+							</div>
+					    </div>
+					    <!--/ post item wide -->
+				    </div>
+
+				    <div class="col-sm-4">
+					    <!-- post item wide -->
+					    <div class="post-item-popular">
+						    <div class="inner">
+                                <div class="badge badge-sale"></div>
+							    <div class="post-image">
+								    <img src="images/temp/post-img-8.jpg" alt="" />
+							    </div>
+							    <div class="post_title">
+								    <h2><a href="#">Cute characters mean so much nowadays</a></h2>
+							    </div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+							    <div class="post-descr">
+								    <p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once renowned for its original.</p>
+							    </div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-white btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+						    </div>
+					    </div>
+					    <!--/ post item wide -->
+				    </div>
+
+				</div>
+			    <!--/ post list -->
+            </div>
+		    <!--/ content -->
+	    </div>
+	    <!--/ row-->
+
+		<!-- row-->
+		<div class="row">
+			<!-- content -->
+			<div class="content clearfix">
+
+				<div class="col-sm-12"><h6 class="foo">Popular blog entries with background</h6></div>
+				<!-- post list -->
+				<div class="postlist">
+
+					<div class="col-sm-4">
+						<!-- post item wide -->
+						<div class="post-item-popular boxed">
+							<div class="inner">
+								<div class="badge badge-new"></div>
+								<div class="post-image">
+									<img src="images/temp/post-img-9.jpg" alt="" />
+								</div>
+								<div class="post_title">
+									<h2><a href="#">Steve Carell gives life to lovely old supervillain</a></h2>
+								</div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+								<div class="post-descr">
+									<p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once wrtc renowned for its original stories. long line of sequels for film studio Pixar, which was once renowned for its original stories.</p>
+								</div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-gray btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/ post item wide -->
+					</div>
+
+					<div class="col-sm-4">
+						<!-- post item wide -->
+						<div class="post-item-popular boxed">
+							<div class="inner">
+								<div class="badge badge-fresh"></div>
+								<div class="post-image">
+									<img src="images/temp/post-img-10.jpg" alt="" />
+								</div>
+								<div class="post_title">
+									<h2><a href="#">Despicable Me 2, Pixar and Disney’s latest</a></h2>
+								</div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+								<div class="post-descr">
+									<p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once wrtc renowned for its original stories. long line of sequels for film studio Pixar, which was once renowned for its original stories.</p>
+								</div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-gray btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/ post item wide -->
+					</div>
+
+					<div class="col-sm-4">
+						<!-- post item wide -->
+						<div class="post-item-popular boxed">
+							<div class="inner">
+								<div class="badge badge-sale"></div>
+								<div class="post-image">
+									<img src="images/temp/post-img-11.jpg" alt="" />
+								</div>
+								<div class="post_title">
+									<h2><a href="#">Cute characters mean so much nowadays</a></h2>
+								</div>
+                                <div class="post-meta-about">
+                                    <span class="post-date">july 1ST, 2013</span>
+                                </div>
+								<div class="post-descr">
+									<p>The announcement marks the latest in a long line of sequels for film studio Pixar, which was once wrtc renowned for its original stories. long line of sequels for film studio Pixar, which was once renowned for its original stories.</p>
+								</div>
+                                <div class="post-meta-bot">
+                                    <div class="post-meta-links">
+                                        <a href="#" class="btn btn-small btn-caps"><span>Read more</span></a>
+                                        <a href="#" class="btn btn-gray btn-small btn-caps"><span>4 Comments</span></a>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<!--/ post item wide -->
+					</div>
+
+				</div>
+				<!--/ post list -->
+			</div>
+			<!--/ content -->
+		</div>
+		<!--/ row-->
+
+		<!-- row-->
+		<div class="row">
+			<div class="col-sm-8">
+				<!-- content -->
+				<div class="content">
+
+					<h6 class="foo">Comments section with reply form</h6>
+
+					<!-- post comments -->
+					<div class="comment-list clearfix" id="comments">
+						<h2>4 Readers Commented</h2>
+						<a href="#addcomments" class="link-add-comment anchor">Join Discussion</a>
+
+						<ol>
+							<li class="comment">
+								<div class="comment-body">
+									<div class="comment-avatar">
+										<div class="avatar"><img src="images/temp/avatar1.png" alt="" /></div>
+									</div>
+									<div class="comment-text">
+										<div class="comment-author clearfix">
+											<a href="#" class="link-author">Brad Pit</a>
+                                            <span class="comment-meta"><span class="comment-date">June 26, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a></span>
+										</div>
+										<div class="comment-entry">
+											William Bradley "Brad" Pitt is an American actor and film producer. Pitt has received four Academy Award nominations and five Golden Globe.
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="comment">
+								<div class="comment-body">
+									<div class="comment-avatar">
+										<div class="avatar"><img src="images/temp/avatar2.png" alt="" /></div>
+									</div>
+									<div class="comment-text">
+										<div class="comment-author clearfix">
+											<a href="#" class="link-author">Ari Gold</a>
+                                            <span class="comment-meta"><span class="comment-date">June 25, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a></span>
+										</div>
+										<div class="comment-entry">
+                                            Ari Gold is Vincent Chase's neurotic movie agent. He was an undergrad at Harvard University before earning his J.D./M.B.A. at the University of Michigan. In addition to reprising the role for the upcoming prequels of
+										</div>
+									</div>
+								</div>
+								<!-- comment reply -->
+								<ul class="children">
+									<li class="comment">
+										<div class="comment-body">
+											<div class="comment-avatar">
+												<div class="avatar"><img src="images/temp/avatar3.png" alt="" /></div>
+											</div>
+											<div class="comment-text">
+												<div class="comment-author clearfix">
+													<a href="#" class="link-author">Elijah Wood</a>
+                                                    <span class="comment-meta"><span class="comment-date">June 24, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a></span>
+												</div>
+												<div class="comment-entry">
+													Elijah Wood is an American actor best known for Frodo.
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<!--/ comment reply -->
+							</li>
+
+							<li class="comment">
+								<div class="comment-body">
+									<div class="comment-avatar">
+										<div class="avatar"><img src="images/temp/avatar4.png" alt="" /></div>
+									</div>
+									<div class="comment-text">
+										<div class="comment-author clearfix">
+											<a href="#" class="link-author">Superman</a>
+                                            <span class="comment-meta"><span class="comment-date">June 23, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a></span>
+										</div>
+										<div class="comment-entry">
+                                            Superman is a fictional character, a comic book superhero who appears in comic books published by DC Comics.
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ol>
+					</div>
+					<!--/ post comments -->
+
+					<!-- comment form -->
+					<div class="add-comment boxed" id="addcomments">
+						<div class="add-comment-title"><h3>Leave a reply</h3></div>
+						<div class="comment-form">
+							<form action="#" method="post" id="commentForm">
+								<div class="form-inner clearfix">
+									<div class="field_text">
+										<label for="name" class="label_title">Name</label>
+										<input type="text" name="name" id="name" value="" class="required" />
+									</div>
+									<div class="field_text omega">
+										<label for="email" class="label_title">Email (never published)</label>
+										<input type="text" name="email" id="email" value="" class="required" />
+									</div>
+                                    <div class="clearfix"></div>
+									<div class="field_text field_textarea">
+										<label for="message" class="label_title">Comment</label>
+										<textarea name="message" id="message" class="required"></textarea>
+									</div>
+								</div>
+                                <div class="rowSubmit clearfix">
+                                    <span class="btn btn-small btn-caps pull-left"><input type="submit" id="send" value="Send Comment" /></span>
+                                    <a class="btn btn-small btn-gray btn-caps pull-right" onclick="document.getElementById('commentForm').reset();return false" href="#"><span>Reset fields</span></a>
+                                </div>
+							</form>
+						</div>
+					</div>
+					<!--/ comment form -->
+
+					<h6 class="foo">Pagination</h6>
+
+					<!-- pagination -->
+                    <div class="pagination">
+                        <a href="#" class="btn btn-left btn-green"><span>Back</span></a>
+                        <div class="inner gradient">
+                            <div class="inner-links">
+                                <a href="#" class="page-numbers">2</a>
+                                <a href="#" class="page-numbers">3</a>
+                                <a href="#" class="page-numbers">4</a>
+                                &hellip;
+                                <span class="page-numbers page-current">6</span>
+                                &hellip;
+                                <a href="#" class="page-numbers">12</a>
+                                <a href="#" class="page-numbers">13</a>
+                                <a href="#" class="page-numbers">14</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-right btn-green"><span>Next</span></a>
+                    </div>
+                    <!--/ pagination -->
+
+                    <!-- pagination -->
+                    <div class="pagination style2">
+                        <a href="#" class="btn btn-left btn-acute-alt"><span>Back</span></a>
+                        <div class="inner gradient">
+                            <div class="inner-links">
+                                <a href="#" class="page-numbers">2</a>
+                                <a href="#" class="page-numbers">3</a>
+                                <a href="#" class="page-numbers">4</a>
+                                &hellip;
+                                <span class="page-numbers page-current">6</span>
+                                &hellip;
+                                <a href="#" class="page-numbers">12</a>
+                                <a href="#" class="page-numbers">13</a>
+                                <a href="#" class="page-numbers">14</a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-right btn-acute-alt"><span>Next</span></a>
+                    </div>
+                    <!--/ pagination -->
+
+				</div>
+				<!--/ content -->
+			</div>
+		</div>
+		<!--/ row-->
+
+		<!-- row-->
+		<div class="row">
+			<!-- content -->
+			<div class="dividers clearfix">
+
+				<div class="col-sm-12"><h6 class="foo">Dividers</h6></div>
+
+				<div class="col-sm-12"><div class="divider"></div></div>
+				<div class="col-sm-6"><div class="divider"></div></div>
+				<div class="col-sm-6"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+				<div class="col-sm-4"><div class="divider"></div></div>
+                <div class="clearfix"></div>
+				<div class="col-sm-12"><div class="divider dashed"></div></div>
+				<div class="col-sm-6"><div class="divider dashed"></div></div>
+				<div class="col-sm-6"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+				<div class="col-sm-4"><div class="divider dashed"></div></div>
+
+			</div>
+			<!--/ content -->
+		</div>
+		<!--/ row-->
+
+	</div>
+	<!--/ container-->
+
+</div>
+</body>
+</html>

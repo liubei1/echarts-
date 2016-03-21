@@ -1,0 +1,24 @@
+/*-----------------------------------*/
+/* Rating Stars */
+/*-----------------------------------*/
+
+.rate{
+  display: inline-block;
+  width: 122px;
+  height: 28px;
+  background-image:url(../../../images/global/dark/icons/rating.png);
+  background-repeat: no-repeat;
+  background-position: left 0;
+}
+.rate.rate-1{background-position:center -28px;}
+.rate.rate-2{background-position:center -56px;}
+.rate.rate-3{background-position:center -84px;}
+.rate.rate-4{background-position:center -112px;}
+.rate.rate-5{background-position:center -140px;}
+
+.rating {margin-bottom: 25px;}
+.rating span.star{display:block; float:left; width:21px; height:20px; padding: 0 3px; background-repeat: no-repeat;}
+.rating span.off{background-image: url(../../../images/global/dark/icons/star_off.png);}
+.rating span.on,
+.rating span.star:hover,
+.rating span.over{background-image: url(../../../images/global/dark/icons/star_on.png); cursor:pointer;}

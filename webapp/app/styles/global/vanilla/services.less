@@ -1,0 +1,112 @@
+/*-----------------------------------*/
+/* Services */
+/*-----------------------------------*/
+
+.service_list{margin-bottom:50px;}
+
+.service_list .service_title h2{
+  font-size: @font-size * 2;
+  color: #5f513f;
+  text-shadow: none;
+}
+.service_list .service_title p {
+  color: #6d9048;
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+/* Services without background */
+
+.service_list_1{margin-bottom:0;}
+
+.service_list_1 .service_item,
+.service_list_2 .service_item{
+  position:relative;
+  margin-bottom: 90px;
+  padding-left: 80px;
+}
+.service_list_1 .service_img,
+.service_list_2 .service_img{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.service_list_1 .service_img img,
+.service_list_2 .service_img img{
+  display: block;
+}
+.service_list_1 .service_title,
+.service_list_2 .service_title{
+  margin-bottom: 13px;
+}
+.service_list_1 .service_title h2,
+.service_list_2 .service_title h2{
+  margin-bottom:4px;
+}
+.service_desc p{
+  color:#736959;
+  text-shadow: 0 2px 2px rgba(255,255,255,0.2);
+  margin-bottom: 17px;
+}
+.service_list_1 .link-more{
+  margin-bottom:15px;
+}
+
+/* Services with background */
+
+.service_list_2 .inner{padding: 75px 0 0;}
+.service_list_2 .service_item{padding-right: 10%;}
+.service_list_2 .service_title{margin-bottom: 9px;}
+.service_list_2 .service_title p{margin-bottom: 14px;}
+.service_list_2 .service_desc p { margin-right: 10px;}
+
+@media (max-width: 767px){
+  .service_list_2 .service_img {left:10px;}
+}
+@media (max-width:479px){
+    .service_list_2 .inner {padding: 26px 10px 0 0;}
+    .service_list_1 .service_item, .service_list_2 .service_item {margin-bottom: 50px;}
+	.service_list_2 .service_item {padding-right: 0;}
+}
+
+/* Services 3 columns without background */
+
+.service_list_3,
+.service_list_4{
+  position: relative;
+  margin-bottom: 0;
+}
+
+.service_list_3 .service_item,
+.service_list_4 .service_item{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.service_list_3 .service_img{margin-bottom:24px;}
+.service_list_3 .service_img img{width:89%;}
+.service_list_3 .service_title h2{margin-bottom:5px;}
+
+.service_list_3 .service_desc p {
+  line-height: 21px;
+  margin-bottom: 22px;
+}
+/* Services 3 column with background */
+
+.service_list_4 .inner{padding: 47px 10px 39px;}
+
+.service_list_4 .service_img{
+  height:73px;
+  margin-bottom:45px;
+}
+.service_list_4 .service_title h2{
+  margin-bottom:4px;
+  font-size: @font-size * 1.62;
+}
+.service_list_4 .service_title p{
+  margin-bottom:33px;
+  font-size: @font-size - 1;
+  font-style: italic;
+}
+.service_list_4 .service_desc p {
+  margin: 0 20px 32px;
+}

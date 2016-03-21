@@ -1,0 +1,203 @@
+/*
+  - Widget Categories
+  - Widget Latest Stories, Latest Comments
+  - Widget Tags
+  - Widget Flickr
+  - Widget Text
+*/
+
+
+
+/*-----------------------------------*/
+/* Sidebar widgets */
+/*-----------------------------------*/
+
+.widget-container{margin-bottom: 30px;}
+.widget-container .widget-title{font-size: @font-size * 1.5; margin-bottom: 12px;}
+
+/* Widget Categories */
+
+.widget-categories li{border-top: 1px solid #e1e0e0;}
+
+.widget-categories li a {
+  display: block;
+  padding: 14px 30px 15px 0;
+  border-top: 1px solid #fff;
+  line-height: 17px;
+  color: @link-color;
+  text-shadow: 0 2px 0 #fff;
+  position: relative;
+}
+.widget-categories li:first-child,
+.widget-categories li:first-child a {
+  border-top: none;
+}
+.widget-categories li:hover a, .widget-categories li.current-menu-item a{color: @link-color-hover;}
+
+.widget-categories li span{
+  position: relative;
+}
+.widget-categories .ico-cat{
+  position: absolute;
+  top: 10px;
+  left: auto;
+  margin: 0;
+  right: -5px;
+  width:25px;
+  height:25px;
+  background-image:url(../../../images/global/chubby/icons/categories-icons.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .widget-categories .ico-cat {
+    background-image: url(../../../images/global/chubby/icons/categories-icons-x2.png);
+    background-size: 50px auto;
+  }
+}
+.widget-categories .ico-cat.ico-cat2{background-position: 0 -25px;}
+.widget-categories .ico-cat.ico-cat3{background-position: 0 -50px;}
+.widget-categories .ico-cat.ico-cat4{background-position: 0 -75px;}
+.widget-categories .ico-cat.ico-cat5{background-position: 0 -100px;}
+.widget-categories .ico-cat.ico-cat6{background-position: 0 -125px;}
+
+.widget-categories li:hover .ico-cat, .widget-categories li.current-menu-item .ico-cat{background-position: -25px 0;}
+.widget-categories li:hover .ico-cat2, .widget-categories li.current-menu-item .ico-cat2{background-position: -25px -25px;}
+.widget-categories li:hover .ico-cat3, .widget-categories li.current-menu-item .ico-cat3{background-position: -25px -50px;}
+.widget-categories li:hover .ico-cat4, .widget-categories li.current-menu-item .ico-cat4{background-position: -25px -75px;}
+.widget-categories li:hover .ico-cat5, .widget-categories li.current-menu-item .ico-cat5{background-position: -25px -100px;}
+.widget-categories li:hover .ico-cat6, .widget-categories li.current-menu-item .ico-cat6{background-position: -25px -125px;}
+
+@media (max-width: 479px), (min-width: 768px) and (max-width: 991px) {
+  .widget-categories li a {padding: 8px 30px 9px 0;}
+  .widget-categories .ico-cat {top: 4px;}
+}
+
+/* Widget Latest Stories, Latest Comments */
+
+.widget-recent-comments .widget-title,
+.widget-recent-stories .widget-title {
+  margin-bottom: 8px;
+}
+.widget-recent-comments li,
+.widget-recent-stories li {
+  padding: 17px 0;
+  border-bottom: 1px solid #e1e0e0;
+  border-top: 1px solid #fff;
+}
+.widget-recent-comments li:first-child,
+.widget-recent-stories li:first-child{
+  border-top: none;
+}
+.widget-recent-comments li:last-child,
+.widget-recent-stories li:last-child{
+  border-bottom: none;
+}
+.widget-container .widget-thumb{
+  float: left;
+  width:60px;
+  height: 58px;
+  margin-right:16px;
+  -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+}
+.widget-recent-comments li:nth-child(odd) .widget-thumb {
+  float: right;
+  margin-right: 0;
+  margin-left: 16px;
+}
+.widget-container .widget-thumb img{
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100% !important;
+}
+.widget-container .post-title,
+.widget-container .recent_comment,
+.widget-container .recent_comment a{
+  font-size: @font-size * 0.86;
+  line-height: 18px;
+}
+.widget-container .post-title {display: block;}
+
+@media (max-width: 479px), (min-width: 768px) and (max-width: 991px) {
+  .widget-recent-comments li, .widget-recent-stories li {padding: 8px 0;}
+  .widget-container .widget-thumb{margin-right: 5px; margin-top: 3px;}
+  .widget-recent-comments li:nth-child(odd) .widget-thumb {margin-left: 5px; }
+}
+
+/* Widget Tags */
+
+.tagcloud a {
+  display: inline-block;
+  font-size: @font-size * 0.86;
+  text-align: center;
+  white-space: nowrap;
+  background-image: url(../../../images/global/chubby/tag.png);
+  background-repeat: no-repeat;
+  background-position: right -30px;
+  padding-right: 16px;
+  margin: 5px 1px;
+}
+.tagcloud a span {
+  display:block;
+  background-image: url(../../../images/global/chubby/tag.png);
+  background-repeat: no-repeat;
+  background-position: left 0;
+  padding-left: 26px;
+  height: 28px;
+  line-height: 26px;
+}
+.tagcloud.style2 a {
+  font-size: @font-size * 0.8;
+  color: @link-color;
+  background-image: url(../../../images/global/chubby/tag-2.png);
+}
+.tagcloud.style2 a:hover {color: @link-color-hover;}
+.tagcloud.style2 a span {background-image: url(../../../images/global/chubby/tag-2.png);}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .tagcloud a,
+  .tagcloud a span {
+    background-image: url(../../../images/global/chubby/tag-x2.png);
+    background-size: 300px auto;
+  }
+  .tagcloud.style2 a,
+  .tagcloud.style2 a span {
+    background-image: url(../../../images/global/chubby/tag-2-x2.png);
+    background-size: 300px auto;
+  }
+}
+
+/* Widget Flickr */
+
+.widget-flickr .inner {padding: 20px 20px 24px;}
+.widget-flickr .widget-title {margin-bottom: 18px;}
+.flickr-inner{text-align: center; font-size: 0;}
+.flickr-image{display: inline-block; margin:1px;}
+
+.flickr-image a{
+  display: block;
+  -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+  box-shadow:inset 0 0 5px rgba(0,0,0,0.30);
+}
+.flickr-image a img{
+  display: block;
+  width: 60px;
+  height: 60px !important;
+  position: relative;
+  z-index: -1;
+}
+.ie8 .widget-flickr .flickr-image {
+  width:60px !important;
+  height:60px !important;
+}
+
+@media (max-width: 479px), (min-width: 768px) and (max-width: 991px) {
+  .widget-flickr .inner {padding: 20px 10px;}
+}
+
+/* Widget Text */
+
+.widget-text .inner {padding-bottom: 10px;}

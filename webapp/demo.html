@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<!--
+  ~ /*
+  ~  * demo.html
+  ~  * Created on 16-1-17 下午12:39 by wuyufei
+  ~  *
+  ~  * Copyright (c) ByseeCloud 2011-2016.
+  ~  * All rights reserved.
+  ~  *
+  ~  * This software is furnished under a license. Use, duplication,
+  ~  * disclosure and all other uses are restricted to the rights
+  ~  * specified in the written license agreement.
+  ~  */
+  -->
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<html>
+
+  <head>
+    <title>Data Digger</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="wuyufei" />
+    <link rel="shortcut icon" href="app/images/global/favicon.ico">
+
+    <!-- CSS Files -->
+      <!--BootStrap -->
+    <link href="bower/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Style CSS -->
+    <link href="app/styles/global/dark/style.less" media="screen" rel="stylesheet/less" type="text/css">
+    <!-- CSS Files End -->
+
+    <!-- JavaScripts -->
+      <!-- Modernizr -->
+    <script src="app/util/global/dark/libs/modernizr.min.js"></script>
+      <!-- JQuery -->
+    <script src="bower/modules/jquery/dist/jquery.min.js"></script>
+      <!-- jQuery UI JS -->
+    <script src="bower/modules/jquery-ui/jquery-ui.min.js"></script>
+      <!-- BootStrap -->
+    <script src="bower/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- Less -->
+    <script src="bower/modules/less/dist/less.min.js"></script>
+      <!-- AngularJS -->
+    <script type="text/javascript" src="bower/modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower/modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower/modules/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="app/scripts/app.js"></script>
+    <!--[if lt IE 9]>
+    <script src="app/util/global/html5shiv.js"></script>
+    <script src="app/util/global/respond.min.js"></script>
+    <![endif]-->
+    <!-- scripts -->
+    <script src="app/util/global/dark/general.js"></script>
+    <!-- JavaScripts End -->
+
+    <!------------------------------------>
+    <!-- main JS libs -->
+    <!--<script src="app/util/global/dark/libs/modernizr.min.js"></script>-->
+    <!--<script src="app/util/global/dark/libs/jquery-1.10.0.js"></script>-->
+    <!--<script src="app/util/global/dark/libs/jquery-ui.min.js"></script>-->
+    <!--<script src="app/util/global/dark/libs/bootstrap.min.js"></script>-->
+
+    <!-- Style CSS -->
+    <!--<link href="app/styles/global/dark/style.less" media="screen" rel="stylesheet/less" type="text/css">-->
+    <!-- LESS -->
+    <!--<script src="app/util/global/dark/libs/less.js"></script>-->
+
+
+
+
+
+  </head>
+
+  <body ng-app="bdcos">
+    <div class="body_wrap">
+      <div class="container">
+
+        <!-- content -->
+        <div class="content" role="main">
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-8">
+              <h6 class="foo">Menu</h6>
+
+              <!-- Website Menu -->
+              <div class="dropdown-wrap boxed-velvet">
+                <ul class="dropdown inner clearfix">
+                  <li class="menu-level-0"><a href="#"><span>Account</span></a></li>
+                  <li class="menu-level-0"><a href="#"><span>About Us</span></a>
+                    <ul class="submenu-1">
+                      <li class="menu-level-1"><a href="#">Portfolio</a></li>
+                      <li class="menu-level-1"><a href="#">Testimonials</a></li>
+                      <li class="menu-level-1"><a href="#">Contacts</a>
+                        <ul class="submenu-2">
+                          <li class="menu-level-2"><a href="#">Gallery images</a></li>
+                          <li class="menu-level-2"><a href="#">OneByOne Slider</a></li>
+                          <li class="menu-level-2"><a href="#">Video in header</a></li>
+                          <li class="menu-level-2"><a href="#">Image &amp; Video Slider</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="#"><span>Settings</span></a>
+                    <ul class="submenu-1">
+                      <li class="menu-level-1"><a href="#">Privacy Policy</a></li>
+                      <li class="menu-level-1"><a href="#">Copyright</a></li>
+                      <li class="menu-level-1"><a href="#">Terms of Service</a>
+                        <ul class="submenu-2">
+                          <li class="menu-level-2"><a href="#">Gallery images</a></li>
+                          <li class="menu-level-2"><a href="#">OneByOne Slider</a></li>
+                          <li class="menu-level-2"><a href="#">Video in header</a></li>
+                          <li class="menu-level-2"><a href="#">Image &amp; Video Slider</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="#"><span>Log Out</span></a></li>
+                </ul>
+              </div>
+              <!--/ Website Menu -->
+            </div>
+
+            <div class="col-sm-4">
+              <h6 class="foo">Search Box</h6>
+
+              <!-- search widget -->
+              <div class="widget-container widget_search styled boxed-velvet">
+                <div class="inner">
+                  <form method="get" id="searchform2" action="#">
+                    <div class="clearfix">
+                      <span class="btn btn-small"><input type="submit" id="searchsubmit2" value="Search" /></span>
+                      <div class="input_wrap"><input class="inputField" name="s" id="s2" placeholder="Search..."  value="" type="text" /></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--/ search widget -->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-4">
+              <h6 class="foo">Volume</h6>
+
+              <!-- Volume control -->
+              <div class="widget-knob widget-volume">
+                <input type="text" value="77"  autocomplete="off" id="volume" />
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('#volume').knobRot({
+                      'classes': ['volume'],
+                      'dragVertical': false,
+                      'frameCount': 49,
+                      'frameWidth': 149,
+                      'frameHeight': 149,
+                      'detent': true,
+                      'detentThreshold': 5,
+                      'minimumValue': 0,
+                      'maximumValue': 100,
+                      'hideInput': true
+                    });
+                  });
+                </script>
+              </div>
+              <!--/ Volume control -->
+            </div>
+
+            <div class="col-sm-4">
+              <h6 class="foo">Scroll Bars</h6>
+
+              <div class="scrollbars clearfix">
+                <!-- ScrollBars -->
+                <div class="scrollbar style2">
+                  <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                </div>
+                <div class="scrollbar style2">
+                  <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                </div>
+                <div class="scrollbar">
+                  <p>These examples show very basic functionality and exist so that I can test that any changes to jScrollPane work cross browser and don't cause any new problems. Note that these examples aren't meant to look pretty, they merely highlight different bits of functionaity which are available. If you want examples of jScrollPane looking good then check out the themes.</p>
+                </div>
+                <!--/ ScrollBars -->
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <h6 class="foo">Profile</h6>
+
+              <!-- Profile -->
+              <div class="widget-container widget_profile boxed-velvet">
+                <div class="inner">
+                  <div class="widget_profile_top clearfix">
+                    <div class="avatar"><img src="app/images/global/dark/temp/avatar.png" alt="" /></div>
+                    <h5>Victoria Lachetti</h5>
+                    <span class="subtitle">Top model</span>
+                    <div class="follow"><a href="#" class="btn btn-follow"><span>Follow</span></a></div>
+                  </div>
+                  <ul class="counters clearfix">
+                    <li class="first"><a href="#"><p>530</p><span>Tweets</span></a></li>
+                    <li><a href="#"><p>1450</p><span>Following</span></a></li>
+                    <li class="last"><a href="#"><p>980</p><span>Followers</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!--/ Profile -->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+
+            <div class="col-sm-5">
+              <h6 class="foo">Message</h6>
+
+              <!-- comment form -->
+              <div class="add-comment add-comment-velvet styled" id="addcomments">
+                <div class="add-comment-title"><h3>New Message</h3></div>
+                <div class="comment-form">
+                  <script type="text/javascript">
+                    bkLib.onDomLoaded(function() {
+                      var myNicEditor = new nicEditor({
+                        buttonList : [
+                          'bold',
+                          'italic',
+                          'underline',
+                          'forecolor',
+                          'left',
+                          'center',
+                          'right',
+                          'justify'
+                        ]
+                      });
+                      myNicEditor.setPanel('edit_buttons');
+                      myNicEditor.addInstance('styled_message');
+                    });
+                    setTimeout(function () {
+                      var nic_width = $('.nicEdit-panel').width();
+                      $('.nicEdit-container').css('width', nic_width);
+                      $('.nicEdit-main').css('width', nic_width-24);
+                    }, 2000);
+                    $(window).resize(function() {
+                      var nic_width = $('.nicEdit-panel').width();
+                      $('.nicEdit-container').css('width', nic_width);
+                      $('.nicEdit-main').css('width', nic_width-24);
+                    });
+                  </script>
+                  <form action="#" method="post" id="commentForm" class="ajax_form">
+
+                    <div class="email-styled"><input type="text" name="email" id="email" value="" placeholder="Black@gmail.com" class="inputtext input_middle required" /></div>
+
+                    <div class="form-inner">
+                      <div class="field_select">
+                        <label for="contact_name" class="label_title">Name:</label>
+                        <select name="contact_name" id="contact_name" multiple data-placeholder="Your Selection">
+                          <option value='example1@gmail.com'>Black Sabbath</option>
+                          <option value='example2@gmail.com'>Lana Ray</option>
+                          <option value='example3@gmail.com'>Toby Lightman</option>
+                          <option value='example4@gmail.com'>Lene Marlin</option>
+                          <option value='example5@gmail.com'>Deep Purple</option>
+                        </select>
+                      </div>
+                      <div class="field_text">
+                        <label for="subject" class="label_title">Subject:</label>
+                        <input type="text" name="subject" id="subject" value="" placeholder="Hello, Mike!" class="inputtext input_middle required" />
+                      </div>
+                      <div class="clear"></div>
+                      <div class="field_text field_textarea">
+                        <div id="edit_buttons" class="edit_buttons"></div>
+                        <label for="styled_message" class="label_title">Message:</label>
+                        <textarea cols="30" rows="10" name="styled_message" id="styled_message" class="textarea textarea_middle"></textarea>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <div class="rowSubmit">
+                      <a onclick="document.getElementById('commentForm').reset();return false" href="#" class="link-reset btn btn-black"><span>Discard</span></a>
+                      <span class="btn btn-send"><input type="submit" id="send" value="Send Message" /></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--/ comment form -->
+
+              <h6 class="foo">Image Slider</h6>
+
+              <!-- Image Slider -->
+              <div class="widget-container widget_gallery">
+                <div class="inner">
+                  <div id="myCarousel" class="carousel slide" data-interval="20000">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                      <div class="active item">
+                        <img src="app/images/global/dark/temp/main-slider-2.jpg" alt="" />
+                        <div class="carousel-title"><h6>Brave animated series</h6><p>Disney Pixar</p></div>
+                      </div>
+                      <div class="item">
+                        <img src="app/images/global/dark/temp/top-slider-2.jpg" alt="" />
+                        <div class="carousel-title"><h6>Horton</h6><p>Change your fate</p></div>
+                      </div>
+                      <div class="item">
+                        <img src="app/images/global/dark/temp/top-slider-3.jpg" alt="" />
+                        <div class="carousel-title"><h6>Surf up</h6><p>Change your fate</p></div>
+                      </div>
+                      <div class="item">
+                        <img src="app/images/global/dark/temp/top-slider-4.jpg" alt="" />
+                        <div class="carousel-title"><h6>Wall-e</h6><p>Disney Pixar</p></div>
+                      </div>
+                      <div class="item">
+                        <img src="app/images/global/dark/temp/top-slider-1.jpg" alt="" />
+                        <div class="carousel-title"><h6>Ice Age</h6><p>Change your fate</p></div>
+                      </div>
+                    </div>
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                      <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                  </div>
+                </div>
+              </div>
+              <!--/ Image Slider -->
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-2">
+              <h6 class="foo">Video Player</h6>
+
+              <!-- Video Player -->
+              <div class="video_player">
+                <div class="inner">
+                  <video id="my_video_1" class="video-js vjs-default-skin" controls loop
+                         preload="auto" poster="app/images/global/dark/temp/vjs_poster2.png"
+                         data-setup="{}">
+                    <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
+                  </video>
+                  <script>
+                    _V_("my_video_1").ready(function(){
+                      var myPlayer = this;
+                      var aspectRatio = 192/380;
+                      var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                      myPlayer.width(width).height( width * aspectRatio );
+
+                      function resizeVideoJS(){
+                        var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                        myPlayer.width(width).height( width * aspectRatio );
+                      }
+                      resizeVideoJS();
+                      window.onresize = resizeVideoJS;
+                    });
+                  </script>
+                </div>
+              </div>
+              <!--/ Video Player -->
+
+              <div class="progressbars">
+                <h6 class="foo">Progress Bars</h6>
+
+                <!-- Progress Bar -->
+                <div id="progressBar1" class="progressbar">
+                  <span class="mark-left">0%</span>
+                  <span class="mark-right">100%</span>
+                  <div class="percent"></div>
+                  <div class="pbar"></div>
+                  <div class="elapsed"></div>
+                  <div class="remained"></div>
+                </div>
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('#progressBar1').anim_progressbar({
+                      totaltime: 90
+                    });
+                  });
+                </script>
+                <!--/ Progress Bar -->
+
+                <!-- Range slider -->
+                <div class="range-slider">
+                  <input id="price_range" type="text" name="price_range" value="270;800">
+                </div>
+                <script type="text/javascript" >
+                  jQuery(document).ready(function($) {
+                    // Price Range Input
+                    $("#price_range").rangeslider({
+                      from: 50,
+                      to: 1000,
+                      limits: false,
+                      scale: ['$50', '$1000'],
+                      heterogeneity: ['50/500'],
+                      step: 10,
+                      smooth: true,
+                      dimension: '$'
+                    });
+                  });
+                </script>
+                <!-- Range slider -->
+
+                <!-- Progress Bar with download Bar -->
+                <div id="progressBar2" class="progressbar style2">
+                  <span class="mark-left">0%</span>
+                  <span class="mark-right">100%</span>
+                  <div class="percent"></div>
+                  <div class="pbar">
+                    <div id="downloadBar" class="downloadbar">
+                      <div class="pbar"></div>
+                    </div>
+                  </div>
+                  <div class="elapsed"></div>
+                  <div class="remained"></div>
+
+                </div>
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                    $('#progressBar2').anim_progressbar({
+                      totaltime: 180
+                    });
+                    $('#downloadBar').anim_progressbar({
+                      totaltime: 120
+                    });
+                  });
+                </script>
+                <!--/ Progress Bar with download Bar -->
+              </div>
+
+              <h6 class="foo">Statistics</h6>
+
+              <!-- Simple Graph -->
+              <div class="widget-container widget_graph boxed-velvet">
+                <div class="inner">
+                  <div id="graph" class="graph"></div>
+                </div>
+              </div>
+              <!--/ Simple Graph -->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <h6 class="foo">Buttons</h6>
+
+              <!-- Buttons -->
+              <div class="buttons-wrap">
+                <div class="buttons">
+                  <a href="#" class="btn btn-left"><span>Right</span></a>
+                  <a href="#" class="btn btn-pagination"><span>Download all files</span></a>
+                  <a href="#" class="btn btn-right"><span>&nbsp;Left&nbsp;</span></a>
+                </div>
+
+                <div class="buttons">
+                  <a href="#" class="btn btn-left btn-acute"><span>Right</span></a>
+                  <a href="#" class="btn btn-acute"><span>Download all files</span></a>
+                  <a href="#" class="btn btn-right btn-acute"><span>&nbsp;Left&nbsp;&nbsp;</span></a>
+                </div>
+
+                <div class="buttons">
+                  <a href="#" class="btn btn-round"><span>Normal</span></a>
+                  <a href="#" class="btn btn-round hover"><span>Hover</span></a>
+                  <a href="#" class="btn btn-round active"><span>Pressed</span></a>
+                </div>
+              </div>
+              <!--/ Buttons -->
+            </div>
+
+            <div class="col-sm-6">
+              <h6 class="foo">Tabs</h6>
+
+              <!-- tabs -->
+              <div class="tabs_framed styled">
+                <div class="inner">
+                  <ul class="tabs clearfix active_bookmark1">
+                    <li class="active"><a href="#events" data-toggle="tab">Events</a></li>
+                    <li><a href="#reminders" data-toggle="tab"><sup class="note">3</sup>Reminders</a></li>
+                    <li><a href="#starred" data-toggle="tab">Starred</a></li>
+                    <li><a href="#archive" data-toggle="tab">Archive</a></li>
+                  </ul>
+
+                  <div class="tab-content clearfix">
+                    <div class="tab-pane clearfix fade in active" id="events">
+                      <div class="tab_image"><img src="app/images/global/dark/temp/tabimage5.png" alt="" /></div>
+                      <h4>10 august 2012</h4>
+                      <p>He made his film debut with a mirror part in Black to the Future Part II</p>
+                      <a href="#" class="see-more"><span>Read More</span></a>
+                    </div>
+                    <div class="tab-pane clearfix fade" id="reminders">
+                      <div class="tab_image"><img src="app/images/global/dark/temp/tabimage6.png" alt="" /></div>
+                      <h4>5 November 2012</h4>
+                      <p>He made his film debut with a mirror part in Black to the Future Part II</p>
+                      <a href="#" class="see-more"><span>Read More</span></a>
+                    </div>
+                    <div class="tab-pane clearfix fade" id="starred">
+                      <div class="tab_image"><img src="app/images/global/dark/temp/tabimage7.png" alt="" /></div>
+                      <h4>11 October 2012</h4>
+                      <p>He made his film debut with a mirror part in Black to the Future Part II</p>
+                      <a href="#" class="see-more"><span>Read More</span></a>
+                    </div>
+                    <div class="tab-pane clearfix fade" id="archive">
+                      <div class="tab_image"><img src="app/images/global/dark/temp/tabimage8.png" alt="" /></div>
+                      <h4>14 September 2012</h4>
+                      <p>He made his film debut with a mirror part in Black to the Future Part II</p>
+                      <a href="#" class="see-more"><span>Read More</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ tabs -->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- row level 2 -->
+              <div class="row">
+                <div class="col-sm-4">
+                  <h6 class="foo">Dropdown</h6>
+
+                  <!-- Dropdown Menu -->
+                  <select class="select_styled select_styled_orange" name="contact_subject" id="contact_subject">
+                    <option value="">Stage Select</option>
+                    <option value="">Parking</option>
+                    <option value="">Bar &amp; Restaurant</option>
+                    <option value="">Residence</option>
+                    <option value="">Parking</option>
+                    <option value="">Bar &amp; Restaurant</option>
+                    <option value="">Residence</option>
+                    <option value="">House</option>
+                  </select>
+                  <!--/ Dropdown Menu -->
+                </div>
+
+                <div class="col-sm-6 col-sm-offset-2">
+                  <h6 class="foo">Calendar</h6>
+
+                  <!-- widget calendar-->
+                  <div class="widget-container widget_calendar boxed-velvet">
+                    <div class="inner">
+                      <input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+                      <script>
+                        // <![CDATA[
+                        jQuery(document).ready(function($) {
+                          var daysRange = 5;
+
+                          function assignCalendar(id){
+                            $('<div class="calendar" />')
+                                    .insertAfter( $(id) )
+                                    .multiDatesPicker({
+                                      dateFormat: 'yy-mm-dd',
+                                      minDate: new Date(),
+                                      maxDate: '+1y',
+                                      altField: id,
+                                      firstDay: 1,
+                                      showOtherMonths: true
+                                    }).prev().hide();
+                          }
+
+                          assignCalendar('#date_departure');
+                        });
+                        // ]]>
+                      </script>
+                    </div>
+                  </div>
+                  <!--/ widget calendar-->
+                </div>
+
+                <div class="col-sm-10">
+                  <h6 class="foo">Comment</h6>
+
+                  <!-- post comments -->
+                  <div class="comment-list clearfix" id="comments">
+                    <ol>
+                      <li class="comment">
+                        <div class="comment-body">
+                          <div class="inner">
+                            <div class="comment-arrow"></div>
+                            <div class="comment-avatar">
+                              <div class="avatar"><img src="app/images/global/dark/temp/avatar1.png" alt="" /></div>
+                            </div>
+                            <div class="comment-text">
+                              <div class="comment-author clearfix">
+                                <a href="#" class="link-author">Justin Timberlake</a> <span class="comment-date">June 26, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                              </div>
+                              <div class="comment-entry">
+                                He made his film debut with a minor part in Back to the Future Part II (1989), then landed a succession.
+                              </div>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <!--/ post comments -->
+                </div>
+              </div>
+              <!--/ row level 2 -->
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-md-offset-1">
+              <h6 class="foo">Audio Player</h6>
+
+              <!-- Widget Audio Player -->
+              <div class="widget-container widget-audio">
+                <div class="inner">
+                  <!-- jplayer-->
+                  <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                  <div id="jp_container_1" class="jp-audio">
+                    <div class="jp-type-playlist">
+                      <div class="jp-playlist">
+                        <ul class="jp-playlist-inner">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="jp-gui jp-interface">
+                        <div class="song_title_wrap">
+                          <div class="song_title"></div>
+                        </div>
+                        <div class="jp-controls-wrap">
+                          <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                              <div class="jp-play-bar"></div>
+                            </div>
+                          </div>
+                          <ul class="jp-controls">
+                            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                          </ul>
+                          <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                          </div>
+                          <div class="jp-current-time"></div>
+                          <div class="jp-duration"></div>
+                        </div>
+                      </div>
+                      <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ jplayer-->
+                </div>
+              </div>
+              <!-- Widget Audio Player -->
+
+              <h6 class="foo">Rating Stars</h6>
+
+              <!-- Rating Stars -->
+              <div class="rating clearfix">
+                <span class="star on"><input type="hidden" value="1"></span>
+                <span class="star on"><input type="hidden" value="2"></span>
+                <span class="star on"><input type="hidden" value="3"></span>
+                <span class="star off"><input type="hidden" value="4"></span>
+                <span class="star off"><input type="hidden" value="5"></span>
+              </div>
+              <!--/ Rating Stars -->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-12">
+              <h6 class="foo">Pricing</h6>
+
+              <!-- pricing1-->
+              <div class="pricing_box price_style1 clearfix">
+                <ul>
+
+                  <li class="price_col">
+                    <!--pricing item-->
+                    <div class="price_item">
+                      <div class="inner">
+                        <div class="badge"></div>
+                        <div class="price_col_head">
+                          <span class="price"><em>$ 59</em><span>per month</span></span>
+                        </div>
+                        <div class="price_col_body clearfix">
+                          <div class="price_body_inner">
+                            <div class="price_body_top">
+                              <strong>Basic</strong>
+                              <span>Lots of clients &amp; users</span>
+                            </div>
+                            <ul>
+                              <li>250 SKU’s</li>
+                              <li>1 GB Storage</li>
+                              <li>3,5% transaction fee</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="price_col_foot">
+                          <div class="sign_up"><a href="#" class="btn btn-large btn-black"><span>Try Now</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ pricing-item -->
+                  </li>
+
+                  <li class="price_col price_col_red col_active">
+                    <!--pricing item-->
+                    <div class="price_item">
+                      <div class="inner">
+                        <div class="badge"></div>
+                        <div class="price_col_head">
+                          <span class="price"><em>$ 299</em><span>per month</span></span>
+                        </div>
+                        <div class="price_col_body clearfix">
+                          <div class="price_body_inner">
+                            <div class="price_body_top">
+                              <strong>Premium</strong>
+                              <span>Lots of clients  & users</span>
+                            </div>
+                            <ul>
+                              <li>2,500 SKU’s</li>
+                              <li>5 GB Storage</li>
+                              <li>1,5% transaction fee</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="price_col_foot">
+                          <div class="sign_up"><a href="#" class="btn btn-red btn-large"><span>Subscribe</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ pricing-item -->
+                  </li>
+
+                  <li class="price_col price_col_blue">
+                    <!--pricing item-->
+                    <div class="price_item">
+                      <div class="badge"></div>
+                      <div class="inner">
+                        <div class="price_col_head">
+                          <span class="price"><em>$ 499</em><span>per month</span></span>
+                        </div>
+                        <div class="price_col_body clearfix">
+                          <div class="price_body_inner">
+                            <div class="price_body_top">
+                              <strong>Unlimited</strong>
+                              <span>Lots of clients &amp; users</span>
+                            </div>
+                            <ul>
+                              <li>Unlimited SKU’s</li>
+                              <li>20 GB Storage</li>
+                              <li>1% transaction fee</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="price_col_foot">
+                          <div class="sign_up"><a href="#" class="btn btn-large btn-black"><span>Try Now</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ pricing-item -->
+                  </li>
+
+                </ul>
+              </div>
+              <!--/ pricing1-->
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-3 col-sm-offset-1">
+              <h6 class="foo">Ribbons</h6>
+
+              <div class="ribbons">
+                <!-- Ribbons -->
+                <div class="ribbon"><span></span></div>
+                <div class="ribbon ribbon-red"><span></span></div>
+                <div class="ribbon ribbon-blue"><span></span></div>
+                <!--/ Ribbons -->
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-1">
+              <h6 class="foo">Tags</h6>
+
+              <!-- tags -->
+              <div class="tagcloud margin-30">
+                <a href="#" class="tag-link-1" title="2 topics"><span>Design</span></a>
+                <a href="#" class="tag-link-2" title="3 topics"><span>Fashion Culture</span></a>
+                <a href="#" class="tag-link-5" title="9 topics"><span>Cinema</span></a>
+                <a href="#" class="tag-link-3" title="5 topics"><span>Electricity</span></a>
+                <a href="#" class="tag-link-4" title="8 topics"><span>Kitchen</span></a>
+                <a href="#" class="tag-link-6" title="3 topics"><span>Anniversaries</span></a>
+              </div>
+              <!--/ tags -->
+
+              <h6 class="foo">Badges</h6>
+
+              <div class="badges">
+                <!-- Badges -->
+                <div class="badge badge-outlet"></div>
+                <div class="badge badge-try"></div>
+                <div class="badge badge-popular"></div>
+                <!--/ Badges -->
+              </div>
+            </div>
+
+            <div class="col-sm-2 col-sm-offset-1">
+              <h6 class="foo">Controls</h6>
+
+              <div class="controls">
+                <!-- Controls -->
+                <div class="input_styled checklist pull-left"><div class="rowCheckbox checkbox-red"><input name="signup" checked type="checkbox" id="signup" value="signup"><label for="signup"></label></div></div>
+                <div class="input_styled checklist pull-left"><div class="rowCheckbox"><input name="signup2" checked type="checkbox" id="signup2" value="signup2"><label for="signup2"></label></div></div>
+                <div class="input_styled checklist pull-left"><div class="rowCheckbox"><input name="signup3" type="checkbox" id="signup3" value="signup3"><label for="signup3"></label></div></div>
+                <div class="clear"></div>
+                <div class="input_styled inlinelist pull-left"><div class="rowRadio radio-red"><input type="radio" name="signup4" value="radio_v1" id="radio_v1" checked><label for="radio_v1"></label></div></div>
+                <div class="input_styled inlinelist pull-left"><div class="rowRadio"><input type="radio" name="signup4" value="radio_v2" id="radio_v2"><label for="radio_v2"></label></div></div>
+                <div class="input_styled inlinelist pull-left"><div class="rowRadio"><input type="radio" name="signup4" value="radio_v2" id="radio_v3"><label for="radio_v3"></label></div></div>
+                <div class="clear"></div>
+                <div class="input_styled checklist foo-1"><div class="rowCheckbox checkbox-large"><input name="invoice" type="checkbox" checked id="invoice" value="invoice"><label for="invoice"></label></div></div>
+                <div class="input_styled checklist foo-2"><div class="rowCheckbox checkbox-large"><input name="invoice2" type="checkbox" id="invoice2" value="invoice2"><label for="invoice2"></label></div></div>
+                <!--/ Controls -->
+              </div>
+            </div>
+          </div>
+          <!--/ row -->
+
+          <!-- blog -->
+          <!-- row-->
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- content-->
+              <div class="content " role="main">
+
+                <!-- post list -->
+                <div class="postlist">
+
+                  <h6 class="foo">Blog post example</h6>
+                  <!-- post item-->
+                  <div class="post-item">
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">Comedy Central to host five-day comedy festival on Vine and Twitter next month</a></h2></div>
+                      <div class="post-image"><div class="badge badge-new"></div><img src="app/images/global/dark/temp/post_img1.jpg" alt=""></div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                      <div class="post-desc">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/post item-->
+
+                  <h6 class="foo">Blog post with background</h6>
+                  <!-- post item-->
+                  <div class="post-item boxed style2">
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">Best ADS for 2013: what to watch out for!</a></h2></div>
+                      <div class="post-image"><img src="app/images/global/dark/temp/post_img2.jpg" alt=""></div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                      <div class="post-desc">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, i wanted to trip with you on a porttitor lectus condimentum laoreet.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/post item-->
+
+                  <h6 class="foo">Blog post with image on left</h6>
+                  <!-- post item-->
+                  <div class="post-item style3 clearfix">
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">'SimCity' scheduled for first major update, server downtime begins at 4PM ET on Monday</a></h2></div>
+                      <div class="post-image"><img src="app/images/global/dark/temp/post_img3.jpg" alt=""></div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-desc">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                      </div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="post-meta-bot post-meta-links">
+                        <a href="#" class="btn btn-red"><span>Read more</span></a>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--/post item-->
+
+                  <h6 class="foo">BLOG POST WITH BACKGROUND AND IMAGE RIGHT</h6>
+                  <!-- post item-->
+                  <div class="post-item boxed style4 clearfix">
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">Cameras become art with casings made books</a></h2></div>
+                      <div class="post-image"><img src="app/images/global/dark/temp/post_img4.jpg" alt=""></div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-desc">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor retiu posuere. Praesent id metus massa, ut blandit odio. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, i wanted to trip with you on a porttitor</p>
+                      </div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="post-meta-bot post-meta-links">
+                        <a href="#" class="btn btn-red"><span>Read more</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/post item-->
+
+                  <h6 class="foo">Quote blog entry</h6>
+                  <!-- post item-->
+                  <div class="post-item post-quote boxed">
+                    <span class="post-label"></span>
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">“Quisque Eget Odio Ac Lectus Vestibulum Faucibus Eget In Metus. In Pellentesque Faucibus Iiritus ep Vestibulum. Nulla At Nulla Nunc Eu Ullamcorper Orcitur Lorep Misup Quisque”</a></h2></div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <!--/post item-->
+
+                  <h6 class="foo">Image blog entry</h6>
+                  <!-- post item images -->
+                  <div class="post-item post-img boxed">
+                    <span class="post-label label-image"></span>
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">Pellentesque Faucibus Iiritus ep Vestibulum. Nulla At Nulla Nunc Eu Ullamcorper</a></h2></div>
+                      <div class="post-image">
+                        <div class="post-carousel">
+                          <div id="myCarousel" class="carousel slide" data-interval="20000">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div class="active item">
+                                <img src="app/images/global/dark/temp/post_img5.jpg" alt="" />
+                                <div class="carousel-title"><h6>Star Dust</h6><p>Not a flat you live inside</p></div>
+                              </div>
+                              <div class="item">
+                                <img src="app/images/global/dark/temp/post_img1.jpg" alt="" />
+                                <div class="carousel-title"><h6>Star Track</h6><p>Not a flat you live inside</p></div>
+                              </div>
+                              <div class="item">
+                                <img src="app/images/global/dark/temp/post_img2.jpg" alt="" />
+                                <div class="carousel-title"><h6>Star Dust</h6><p>Not a flat you live inside</p></div>
+                              </div>
+                              <div class="item">
+                                <img src="app/images/global/dark/temp/post_img6.jpg" alt="" />
+                                <div class="carousel-title"><h6>Star Track</h6><p>Not a flat you live inside</p></div>
+                              </div>
+                            </div>
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Carousel nav -->
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <!--/post item images -->
+
+                  <h6 class="foo">Video blog entry</h6>
+                  <!-- post item video -->
+                  <div class="post-item post-video boxed">
+                    <span class="post-label label-video"></span>
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">Sed Auctor Neque Eu Tellus Rhoncus Ut Eleifend</a></h2></div>
+                      <div class="post-image">
+                        <div class="video_player">
+                          <video id="my_video_1" class="video-js vjs-default-skin" controls loop
+                                 preload="auto" poster="app/images/global/dark/temp/vjs_poster.png"
+                                 data-setup="{}">
+                            <source src="http://test.themefuse.com/artiom/galapagos.mp4" type='video/mp4'>
+                          </video>
+                          <script>
+                            _V_("my_video_1").ready(function(){
+                              var myPlayer = this;
+                              var aspectRatio = 192/380;
+                              var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                              myPlayer.width(width).height( width * aspectRatio );
+
+                              function resizeVideoJS(){
+                                var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                                myPlayer.width(width).height( width * aspectRatio );
+                              }
+                              resizeVideoJS();
+                              window.onresize = resizeVideoJS;
+                            });
+                          </script>
+                        </div>
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <!--/post item video -->
+
+                  <h6 class="foo">Audio blog entry</h6>
+                  <!-- post item audio -->
+                  <div class="post-item post-audio boxed">
+                    <span class="post-label label-audio"></span>
+                    <div class="inner">
+                      <div class="post-title"><h2><a href="#">The Official UK Top40 Singles Chart</a></h2></div>
+                      <div class="post-image clearfix">
+                        <!-- jplayer-->
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div id="jp_container_1" class="jp-audio">
+                          <div class="jp-type-playlist">
+                            <div class="jp-gui jp-interface">
+                              <div class="song_title_wrap">
+                                <div class="song_title"></div>
+                              </div>
+                              <div class="jp-controls-wrap">
+                                <div class="jp-progress">
+                                  <div class="jp-seek-bar">
+                                    <div class="jp-play-bar"></div>
+                                  </div>
+                                </div>
+                                <ul class="jp-controls">
+                                  <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-previous disabled" tabindex="1">previous</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li><!--
+                                                        --><li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                                </ul>
+                                <div class="jp-volume-bar">
+                                  <div class="jp-volume-bar-value"></div>
+                                </div>
+                                <div class="jp-current-time"></div>
+                                <div class="jp-duration"></div>
+                              </div>
+                            </div>
+                            <div class="jp-playlist">
+                              <ul class="jp-playlist-inner">
+                                <li></li>
+                              </ul>
+                            </div>
+                            <div class="jp-no-solution">
+                              <span>Update Required</span>
+                              To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                            </div>
+                          </div>
+                        </div>
+
+                        <script type="text/javascript">
+                          setTimeout(function () {
+                            jQuery(function() {
+                              jQuery('.jp-playlist').jScrollPane({
+                                verticalDragMaxHeight: 39,
+                                verticalDragMinHeight: 39
+                              });
+                              $(window).resize(function() {
+                                jQuery('.jp-playlist').jScrollPane({
+                                  verticalDragMaxHeight: 39,
+                                  verticalDragMinHeight: 39
+                                });
+                              });
+                            });
+                          }, 200);
+                        </script>
+                        <!--/ jplayer-->
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a><a href="#" class="post-like">15 likes</a></div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <!--/post item audio -->
+
+                </div>
+                <!--/ postlist-->
+              </div>
+              <!--/ content-->
+            </div>
+
+            <div class="col-sm-4">
+              <!-- sidebar-->
+              <div class="sidebar sidebar-thin">
+                <h6 class="foo">Sidebars</h6>
+
+                <!-- widget categories -->
+                <div class="widget-container widget_categories boxed">
+                  <div class="inner">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul>
+                      <li><a href="#"><span>Blog Category 01</span></a></li>
+                      <li class="current-menu-item"><a href="#"><span>Blog Category 02</span></a></li>
+                      <li><a href="#"><span>Blog Category 03</span></a></li>
+                      <li><a href="#"><span>Blog Category 04</span></a></li>
+                      <li><a href="#"><span>Blog Category 05</span></a></li>
+                      <li><a href="#"><span>Blog Category 06</span></a></li>
+                      <li><a href="#"><span>Blog Category 07</span></a></li>
+                      <li><a href="#"><span>Blog Category 08</span></a></li>
+                      <li><a href="#"><span>Blog Category 09</span></a></li>
+                      <li><a href="#"><span>Blog Category 10</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--/widget categories-->
+
+                <!-- latest stories -->
+                <div class="widget-container widget_recent_entries boxed-velvet">
+                  <div class="inner">
+                    <h3 class="widget-title">Latest Stories</h3>
+                    <ul>
+                      <li class="clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest1.png" alt="" /></a>
+                        <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest2.png" alt="" /></a>
+                        <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest3.png" alt="" /></a>
+                        <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest4.png" alt="" /></a>
+                        <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest5.png" alt="" /></a>
+                        <a href="#" class="post-title">Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn"><span>Read more</span></a>
+                  </div>
+                </div>
+                <!--/latest stories -->
+
+                <!-- latest comments-->
+                <div class="widget-container widget_recent_comments boxed-velvet">
+                  <div class="inner">
+                    <h3 class="widget-title">Latest Comments</h3>
+                    <ul id="recentcomments">
+                      <li class="recentcomments clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest6.png" alt="" /></a>
+                        <span class="recent_comment"><a href="#" rel="external nofollow">Mike Millerton: </a>Degestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+                      </li>
+                      <li class="recentcomments clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest7.png" alt="" /></a>
+                        <span class="recent_comment"><a href="#" rel="external nofollow">Sandy Gravers Moll: </a>Purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare</span>
+                      </li>
+                      <li class="recentcomments clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest8.png" alt="" /></a>
+                        <span class="recent_comment"><a href="#" rel="external nofollow">Danny Ocean: </a>Egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+                      </li>
+                      <li class="recentcomments clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest9.png" alt="" /></a>
+                        <span class="recent_comment"><a href="#" rel="external nofollow">Freddy Myers: </a>egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus</span>
+                      </li>
+                      <li class="recentcomments clearfix">
+                        <a href="#" class="widget-thumb"><img src="app/images/global/dark/temp/latest10.png" alt="" /></a>
+                        <span class="recent_comment"><a href="#" rel="external nofollow">Jonhatan Destric: </a>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn"><span>Read more</span></a>
+                  </div>
+                </div>
+                <!-- latest comments-->
+
+                <!-- widget tags-->
+                <div class="widget-container widget_tag_cloud">
+                  <div class="inner">
+                    <h3 class="widget-title">Popular Tags</h3>
+                    <div class="tagcloud">
+                      <a href="#" class="tag-link-1" title="2 topics"><span>Design</span></a>
+                      <a href="#" class="tag-link-2" title="3 topics"><span>Fashion</span></a>
+                      <a href="#" class="tag-link-3" title="5 topics"><span>Cinema</span></a>
+                      <a href="#" class="tag-link-4" title="8 topics"><span>Electricity</span></a>
+                      <a href="#" class="tag-link-5" title="9 topics"><span>Kitchen</span></a>
+                      <a href="#" class="tag-link-6" title="3 topics"><span>Angels</span></a>
+                      <a href="#" class="tag-link-1" title="2 topics"><span>Design</span></a>
+                      <a href="#" class="tag-link-2" title="3 topics"><span>Fashion</span></a>
+                      <a href="#" class="tag-link-3" title="5 topics"><span>Cinema</span></a>
+                      <a href="#" class="tag-link-4" title="8 topics"><span>Electricity</span></a>
+                      <a href="#" class="tag-link-5" title="9 topics"><span>Cooking</span></a>
+                      <a href="#" class="tag-link-6" title="3 topics"><span>Design</span></a>
+
+                    </div>
+                  </div>
+                </div>
+                <!--/ widget tags-->
+
+                <!-- widget flickr-->
+                <div class="widget-container flickr boxed-velvet clearfix">
+                  <div class="inner">
+                    <h3 class="widget-title">Flickr Photo Stream</h3>
+                    <div class="flickr-inner">
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest1.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest2.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest3.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest4.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest9.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest6.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest7.png" alt="" /></a></div>
+                      <div class="flickr_badge_image"><a href="#"><img src="app/images/global/dark/temp/latest8.png" alt="" /></a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ widget flickr-->
+
+                <!-- widget text-->
+                <div class="widget-container widget_text boxed-velvet">
+                  <div class="inner">
+                    <h3 class="widget-title">Text widget</h3>
+                    <div class="textwidget">
+                      <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /widget text-->
+
+                <!-- widget calendar-->
+                <div class="widget-container widget_calendar boxed-velvet">
+                  <div class="inner">
+                    <input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+                    <script>
+                      // <![CDATA[
+                      jQuery(document).ready(function($) {
+                        var daysRange = 5;
+
+                        function assignCalendar(id){
+                          $('<div class="calendar" />')
+                                  .insertAfter( $(id) )
+                                  .multiDatesPicker({
+                                    dateFormat: 'yy-mm-dd',
+                                    minDate: new Date(),
+                                    maxDate: '+1y',
+                                    altField: id,
+                                    firstDay: 1,
+                                    showOtherMonths: true
+                                  }).prev().hide();
+                        }
+
+                        assignCalendar('#date_departure');
+                      });
+                      // ]]>
+                    </script>
+                  </div>
+                </div>
+                <!--/ widget calendar-->
+
+              </div>
+              <!--/ sidebar-->
+            </div>
+          </div>
+          <!--/ row-->
+
+          <!-- row-->
+          <div class="row">
+            <!-- content -->
+            <div class="content clearfix">
+
+              <div class="col-sm-12"><h6 class="foo">Popular blog entries</h6></div>
+              <!-- post list -->
+              <div class="postlist">
+
+                <div class="col-sm-4">
+                  <!-- post item wide -->
+                  <div class="post-item-wide">
+                    <div class="inner">
+                      <div class="post_title">
+                        <h2><a href="#">Curabitur Vulputate, Ligula Lacinia Scelerisque</a></h2>
+                      </div>
+                      <div class="post-image">
+                        <div class="badge badge-outlet"></div>
+                        <img src="app/images/global/dark/temp/post_img7.jpg" alt="" />
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-descr">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+                      </div>
+                      <div class="post-meta-bot post-meta-links">
+                        <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+                        <a href="#" class="btn btn-red"><span>Read more</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ post item wide -->
+                </div>
+
+                <div class="col-sm-4">
+                  <!-- post item wide -->
+                  <div class="post-item-wide">
+                    <div class="inner">
+                      <div class="post_title">
+                        <h2><a href="#">Amet Leo Consequat Posuere. Vestibulum Ante</a></h2>
+                      </div>
+                      <div class="post-image">
+                        <div class="badge badge-popular"></div>
+                        <img src="app/images/global/dark/temp/post_img8.jpg" alt="" />
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-descr">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+                      </div>
+                      <div class="post-meta-bot post-meta-links">
+                        <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+                        <a href="#" class="btn btn-red"><span>Read more</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ post item wide -->
+                </div>
+
+                <div class="col-sm-4">
+                  <!-- post item wide -->
+                  <div class="post-item-wide">
+                    <div class="inner">
+                      <div class="post_title">
+                        <h2><a href="#">Etiam At Risus Et Justo Dignissim Congue.</a></h2>
+                      </div>
+                      <div class="post-image">
+                        <div class="badge badge-try"></div>
+                        <img src="app/images/global/dark/temp/post_img9.jpg" alt="" />
+                      </div>
+                      <div class="post-meta-top">Posted <span class="post-date">2 days ago</span> by <span class="post-author">Marcel Styraus</span></div>
+                      <div class="post-descr">
+                        <p>Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rew rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna.</p>
+                      </div>
+                      <div class="post-meta-bot post-meta-links">
+                        <div class="post-meta-likes"><a href="#" class="post-comm">3 comments</a></div>
+                        <a href="#" class="btn btn-red"><span>Read more</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ post item wide -->
+                </div>
+
+              </div>
+              <!--/ post list -->
+            </div>
+            <!--/ content -->
+          </div>
+          <!--/ row-->
+
+          <!-- row-->
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- content -->
+              <div class="content">
+
+                <h6 class="foo">Comments section with reply form</h6>
+
+                <!-- post comments -->
+                <div class="comment-list clearfix" id="comments">
+                  <h2>4 Comments already</h2>
+                  <a href="#addcomments" class="link-add-comment anchor">Join the Discussion</a>
+
+                  <ol>
+                    <li class="comment">
+
+                      <div class="comment-body">
+                        <div class="inner">
+                          <div class="comment-arrow"></div>
+                          <div class="comment-avatar">
+                            <div class="avatar"><img src="app/images/global/dark/temp/avatar1.png" alt="" /></div>
+                          </div>
+                          <div class="comment-text">
+                            <div class="comment-author clearfix">
+                              <a href="#" class="link-author">Justin Timberlake</a> <span class="comment-date">April 3rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                            </div>
+                            <div class="comment-entry">
+                              Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+
+                    </li>
+
+                    <li class="comment">
+
+                      <div class="comment-body">
+                        <div class="inner">
+                          <div class="comment-arrow"></div>
+                          <div class="comment-avatar">
+                            <div class="avatar"><img src="app/images/global/dark/temp/avatar2.png" alt="" /></div>
+                          </div>
+                          <div class="comment-text">
+                            <div class="comment-author clearfix">
+                              <a href="#" class="link-author">Mila Kunis</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                            </div>
+                            <div class="comment-entry">
+                              Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+
+                      <!-- comment reply -->
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="comment-body">
+                            <div class="inner">
+                              <div class="comment-arrow"></div>
+                              <div class="comment-avatar">
+                                <div class="avatar"><img src="app/images/global/dark/temp/avatar3.png" alt="" /></div>
+                              </div>
+                              <div class="comment-text">
+                                <div class="comment-author clearfix">
+                                  <a href="#" class="link-author">Madalina Ghenea</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                                </div>
+                                <div class="comment-entry">
+                                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                </div>
+                              </div>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <!--/ comment reply -->
+
+                    </li>
+
+                    <li class="comment">
+
+                      <div class="comment-body">
+                        <div class="inner">
+                          <div class="comment-arrow"></div>
+                          <div class="comment-avatar">
+                            <div class="avatar"><img src="app/images/global/dark/temp/avatar4.png" alt="" /></div>
+                          </div>
+                          <div class="comment-text">
+                            <div class="comment-author clearfix">
+                              <a href="#" class="link-author">Gerard Butler</a> <span class="comment-date">April 2rd, 2013</span> | <a href="#addcomments" class="link-reply anchor">Reply</a>
+                            </div>
+                            <div class="comment-entry">
+                              Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+
+                    </li>
+
+                  </ol>
+                </div>
+                <!--/ post comments -->
+
+                <!-- comment form -->
+                <div class="add-comment add-comment-velvet" id="addcomments">
+
+                  <div class="add-comment-title"><h3>Leave a Message</h3></div>
+
+                  <div class="comment-form">
+                    <form action="#" method="post" id="commentForm" class="ajax_form">
+
+                      <div class="form-inner">
+                        <div class="field_text">
+                          <label for="name" class="label_title">Name:</label>
+                          <input type="text" name="name" id="name" value="" class="inputtext input_middle required" />
+                        </div>
+                        <div class="field_text omega">
+                          <label for="email" class="label_title">Email Address (not disclosed):</label>
+                          <input type="text" name="email" id="email" value="" class="inputtext input_middle required" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="field_text field_textarea">
+                          <label for="message" class="label_title">Comment:</label>
+                          <textarea cols="30" rows="10" name="message" id="message" class="textarea textarea_middle required"></textarea>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+
+                      <div class="rowSubmit">
+                        <a onclick="document.getElementById('commentForm').reset();return false" href="#" class="link-reset btn btn-black"><span>Discard</span></a>
+                        <span class="btn btn-send"><input type="submit" id="send" value="Send Message" /></span>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+                <!--/ comment form -->
+
+                <h6 class="foo">Pagination</h6>
+
+                <!-- tf pagination -->
+                <div class="tf_pagination">
+                  <a class="page_prev btn btn-left" href="#"><span>Previous</span></a>
+                  <div class="inner">
+                    <div class="inner_links">
+                      <a href="#" class="page-numbers">1</a>
+                      <a href="#" class="page-numbers">2</a>
+                      <a href="#" class="page-numbers">3</a>
+                      <span class="page-numbers page_current">4</span>
+                      <a href="#" class="page-numbers">5</a>
+                      <a href="#" class="page-numbers">6</a>
+                      <a href="#" class="page-numbers">7</a>
+                      <a href="#" class="page-numbers">8</a>
+                      <a href="#" class="page-numbers">9</a>
+                      <a href="#" class="page-numbers">10</a>
+                    </div>
+                  </div>
+                  <a class="page_next btn btn-right" href="#"><span>Next</span></a>
+                </div>
+                <!--/ tf pagination -->
+
+                <!-- tf pagination -->
+                <div class="tf_pagination style2">
+                  <a class="page_prev btn btn-left btn-acute" href="#"><span>Previous</span></a>
+                  <div class="inner">
+                    <div class="inner_links">
+                      <a href="#" class="page-numbers">1</a>
+                      <a href="#" class="page-numbers">2</a>
+                      <a href="#" class="page-numbers">3</a>
+                      <span class="page-numbers page_current">4</span>
+                      <a href="#" class="page-numbers">5</a>
+                      <a href="#" class="page-numbers">6</a>
+                      <a href="#" class="page-numbers">7</a>
+                      <a href="#" class="page-numbers">8</a>
+                      <a href="#" class="page-numbers">9</a>
+                      <a href="#" class="page-numbers">10</a>
+                    </div>
+                  </div>
+                  <a class="page_next btn btn-right btn-acute" href="#"><span>Next</span></a>
+                </div>
+                <!--/ tf pagination -->
+
+                <div class="buttons">
+                  <a href="#" class="btn btn-round"><span>Normal</span></a>
+                  <a href="#" class="btn btn-round hover"><span>Hover</span></a>
+                  <a href="#" class="btn btn-round active"><span>Pressed</span></a>
+                </div>
+
+              </div>
+              <!--/ content -->
+            </div>
+          </div>
+          <!--/ row-->
+
+          <!-- row-->
+          <div class="row">
+            <!-- content -->
+            <div class="content dividers clearfix">
+
+              <div class="col-sm-12"><h6 class="foo">Dividers</h6></div>
+
+              <div class="col-sm-12"><div class="divider"></div></div>
+              <div class="col-sm-6"><div class="divider"></div></div>
+              <div class="col-sm-6"><div class="divider"></div></div>
+              <div class="col-sm-4"><div class="divider"></div></div>
+              <div class="col-sm-4"><div class="divider"></div></div>
+              <div class="col-sm-4"><div class="divider"></div></div>
+              <div class="clearfix"></div>
+              <div class="col-sm-12"><div class="divider dashed"></div></div>
+              <div class="col-sm-6"><div class="divider dashed"></div></div>
+              <div class="col-sm-6"><div class="divider dashed"></div></div>
+              <div class="col-sm-4"><div class="divider dashed"></div></div>
+              <div class="col-sm-4"><div class="divider dashed"></div></div>
+              <div class="col-sm-4"><div class="divider dashed"></div></div>
+
+            </div>
+            <!--/ content -->
+          </div>
+          <!--/ row-->
+          <!--/ blog -->
+
+
+        </div>
+        <!--/ content -->
+      </div>
+      <!--/ container -->
+    </div>
+  </body>
+</html>

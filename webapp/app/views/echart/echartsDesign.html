@@ -1,0 +1,55 @@
+<div class="dashboard-wrapper" >
+<div class="row">
+  <div class="col-lg-4 col-md-4">
+	<div class="widget">
+	  <div class="widget-header">
+		<div class="title">
+		  图表参数 
+		  <span class="mini-title">
+			 <a id="create-account"></a>
+		  </span>
+		</div>
+	  </div>
+	  <div class="widget-body" style="min-height:600px;">
+		<form class="form-horizontal no-margin">
+		  <div >
+		  <div class="form-group" ng-repeat="item in data">
+			<div class="col-sm-12" ng-if="item.xtype=='text'">
+			  <input type="text" class="form-control" ng-model="charts[item.ngmodel]" placeholder="{{item.tips}}">
+			</div>
+			<div class="col-sm-12" ng-if="item.xtype=='checkbox'">
+			  <div class="checkbox">
+			   <label><input type="checkbox" ng-model="charts[item.ngmodel]" value="">{{item.tips}}</label>
+			</div>
+		  </div>
+		  </div>
+		  
+		  <div class="form-group">
+			<div class="col-sm-offset-4 col-sm-8">
+			  <button type="submit" class="btn btn-info" ng-click="createEcharts()">生成图表</button>
+			</div>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  </div>
+  </div>
+  
+	<div class="col-lg-8 col-md-8">
+		<div class="widget">
+		  <div class="widget-header">
+			<div class="title">
+			  图表预览
+			  <span class="mini-title">
+				 <a id="create-account"></a>
+			  </span>
+			</div>
+		  </div>
+		  <div  class="widget-body" style="min-height:600px;" >
+			<cluster-disk-pie id="clusterChartConfigDisk" legend="legend" item="item" data="data"></cluster-disk-pie>
+		  </div>
+	  </div>
+  </div>
+		  
+</div>
+</div>
